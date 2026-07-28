@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px 0;
+  background: #e9e9e9;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #222;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Top notice bar */
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  line-height: 1.5;
+}
+.notice .icon {
+  flex: none;
+}
+.notice a {
+  color: #1a56c4;
+  font-weight: bold;
+}
+.notice a.hl {
+  color: #cc0000;
+  text-decoration: underline;
+}
+.notice a.green {
+  color: #2a8a3e;
+}
+
+/* Logo banner */
+.banner {
+  text-align: center;
+  padding: 18px 10px 22px;
+  background: linear-gradient(180deg, #d7edf9 0%, #eef8fd 60%, #ffffff 100%);
+}
+.banner .logo {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.banner .logo .c1 { color: #e2231a; }
+.banner .logo .c2 { color: #f2a900; }
+.banner .logo .c3 { color: #2a8a3e; }
+.banner .logo .c4 { color: #1a56c4; }
+.banner .logo .c5 { color: #e2231a; }
+.banner .logo .dot { color: #f2a900; }
+.banner .deco {
+  font-size: 20px;
+  opacity: 0.85;
+  letter-spacing: 8px;
+}
+
+/* Nav row (ARMY / AVATAR / NINJA / KPAH) */
+.nav-row {
+  display: flex;
+  border: 1px solid #4ca6e2;
+  border-left: none;
+  margin: 0 8px 8px;
+}
+.nav-row a {
+  flex: 1;
+  text-align: center;
+  padding: 8px 4px;
+  font-weight: bold;
+  color: #222;
+  border-left: 1px solid #4ca6e2;
+}
+
+/* Generic list block */
+.list {
+  border-top: 1px solid #ddd;
+}
+.list .row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-bottom: 1px solid #e3e3e3;
+  background: #fff;
+}
+.list .row:nth-child(even) {
+  background: #f3f6f8;
+}
+.list .row .ic {
+  flex: none;
+  font-size: 13px;
+}
+.list .row a {
+  font-weight: bold;
+}
+
+/* section header bars */
+.hdr {
+  padding: 7px 10px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 3px solid #335fd8;
+}
+.hdr.blue {
+  background: linear-gradient(180deg, #77c7ed 0%, #4ca6e2 60%, #4ca6e2 100%);
+}
+.hdr.teal {
+  background: #3a8485;
+}
+
+/* highlighted sub-row (Thu Mua ..., Cai Khong Cho Phep Gui SMS, Huong Dan ...) */
+.subrow {
+  padding: 7px 10px;
+  background: #ddf1fc;
+  border-bottom: 1px solid #e3e3e3;
+  font-weight: bold;
+  color: #cc0000;
+}
+.subrow.italic {
+  background: #eef2f5;
+  font-style: italic;
+  font-weight: normal;
+  color: #333;
+}
+
+/* Like / Facebook box */
+.like-box {
+  text-align: center;
+  padding: 10px;
+  background: #f3f6f8;
+  border-bottom: 1px solid #ddd;
+}
+.like-box .lead {
+  margin-bottom: 8px;
+}
+.like-box .lead a {
+  color: #cc0000;
+  font-weight: bold;
+}
+.fb-btn {
+  display: inline-block;
+  padding: 5px 14px;
+  margin: 0 3px;
+  background: #4267b2;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #33518f;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* group / search bar */
+.group-bar {
+  text-align: center;
+  padding: 8px 10px;
+  background: #fae6fc;
+  border-bottom: 1px solid #ddd;
+}
+.group-bar .links a {
+  font-weight: bold;
+}
+.group-bar .links .a1 { color: #1a56c4; }
+.group-bar .links .a2 { color: #2a8a3e; }
+.group-bar .links .a3 { color: #cc0000; }
+.search-form {
+  margin-top: 8px;
+}
+.search-form input[type="text"] {
+  padding: 5px 8px;
+  width: 60%;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+.search-form button {
+  padding: 5px 14px;
+  border: 1px solid #999;
+  background: #f0f0f0;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+/* nick listing rows */
+.nick-row {
+  padding: 7px 10px;
+  border-bottom: 1px solid #e3e3e3;
+  background: #fff;
+}
+.nick-row:nth-child(even) {
+  background: #f3f6f8;
+}
+.nick-row .ms { color: #cc0000; font-weight: bold; }
+.nick-row a { color: #1a56c4; font-weight: bold; }
+.nick-row b { color: #222; }
+
+.more-link {
+  display: block;
+  padding: 7px 10px;
+  color: #2a8a3e;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+/* badges */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 2px;
+  margin-right: 3px;
+}
+.badge.red { background: #e2231a; }
+.badge.orange { background: linear-gradient(180deg,#ffb347,#e2231a); }
+
+/* pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #eef2f5;
+  border-bottom: 1px solid #ddd;
+}
+.pagination span,
+.pagination a,
+.pagination .cur {
+  padding: 2px 7px;
+  border: 1px solid #bbb;
+  background: #fff;
+  font-size: 12px;
+}
+.pagination .cur {
+  background: #4ca6e2;
+  color: #fff;
+  border-color: #335fd8;
+  font-weight: bold;
+}
+.pagination .next {
+  font-weight: bold;
+}
+
+.select-more {
+  padding: 8px 10px;
+  background: #eef2f5;
+  border-bottom: 1px solid #ddd;
+}
+.select-more select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #bbb;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  padding: 8px 10px;
+  background: linear-gradient(180deg, #77c7ed 0%, #4ca6e2 100%);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* link color rotation used inside plain text lists (Thu Thuat / Giai Tri / etc.) */
+.list .c-blue { color: #1a56c4; }
+.list .c-red { color: #cc0000; }
+.list .c-purple { color: #7a1fa2; }
+.list .c-teal { color: #1a7a6e; }
+.list .c-brown { color: #a35a00; }
+.hl-u { color: #cc0000; text-decoration: underline; font-weight: bold; }
