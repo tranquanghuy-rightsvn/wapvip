@@ -1,6 +1,1 @@
-[
-  { "id": "cat-army", "slug": "army", "name": "Mobi Army", "order": 1 },
-  { "id": "cat-avatar", "slug": "avatar", "name": "Avatar", "order": 2 },
-  { "id": "cat-ngocrong", "slug": "ngoc-rong", "name": "Ngọc Rồng", "order": 3 },
-  { "id": "cat-tool", "slug": "tool", "name": "Tool", "order": 4 }
-]
+[]
