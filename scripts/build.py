@@ -169,6 +169,20 @@ def build_sitemap(site, posts_full):
     (SITE_DIR / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def build_robots_txt(site):
+    """robots.txt - khai bao sitemap.xml theo dung site_url (dong bo voi build_sitemap, khong
+    con hard-code domain rieng - doi domain qua CMS la ca 2 file tu cap nhat theo)."""
+    base = (site.get("site_url") or DEFAULT_SITE_URL).rstrip("/")
+    lines = [
+        "User-agent: *",
+        "Allow: /",
+        "Disallow: /admin/",
+        "",
+        "Sitemap: {}/sitemap.xml".format(base),
+    ]
+    (SITE_DIR / "robots.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def build():
     site = load_json(DATA / "site.json", {})
     categories = load_json(DATA / "categories.json", [])
@@ -188,6 +202,7 @@ def build():
     build_index(site, categories, cat_by_id, posts_full)
     build_posts(site, categories, cat_by_id, posts_full)
     build_sitemap(site, posts_full)
+    build_robots_txt(site)
     cleanup_removed_posts(posts_full)
 
     print("Build xong: {} category, {} bai viet.".format(len(categories), len(posts_full)))

@@ -26,7 +26,8 @@ gas/ (CMS)  --commit qua GitHub Contents API-->  data/*.json
 | `html/css/style.css` | Người, tay | Có |
 | `scripts/build.py`, `.github/workflows/build.yml` | Người, tay | Có |
 | `gas/*` | Người, tay (deploy bằng clasp hoặc copy-paste vào script.google.com) | Có |
-| `html/admin/index.html`, `html/robots.txt` | Người, tay | Có (xem mục "Link quản trị") |
+| `html/admin/index.html` | Người, tay | Có (xem mục "Link quản trị") |
+| `html/robots.txt`, `html/sitemap.xml` | `scripts/build.py` | **Không** — bị ghi đè mỗi lần build (xem mục "sitemap.xml") |
 
 Chạy build cục bộ: `python3 scripts/build.py` (chỉ cần Python 3 stdlib, không cần cài gì thêm).
 `data/` hiện đang chứa dữ liệu THẬT do CMS ghi vào (không còn data mẫu) — không sửa tay.
@@ -37,16 +38,21 @@ Chạy build cục bộ: `python3 scripts/build.py` (chỉ cần Python 3 stdlib
 (`/exec`) hiện tại — chỉ để tiện nhớ URL (`domain.com/admin`), không phải trang quản trị thật.
 Đổi URL này khi Deploy → New deployment tạo URL `/exec` mới (New version thì URL giữ nguyên,
 không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không index: meta tag trong chính trang
-+ `Disallow: /admin/` trong `html/robots.txt`.
++ `Disallow: /admin/` trong `html/robots.txt` (xem mục "sitemap.xml" — file này giờ do build.py
+tự sinh, không sửa tay).
 
-## sitemap.xml
+## sitemap.xml + robots.txt
 
-`scripts/build.py` tự sinh `html/sitemap.xml` (trang chủ + từng trang bài viết, kèm `<lastmod>`
-theo `updated_at`) mỗi lần build. URL tuyệt đối lấy từ `site.site_url` (Cấu hình Site trong CMS —
-field "URL website"), mặc định `http://giaitri321.com` nếu chưa từng lưu field này (sheet cũ tự
-được bổ sung field với giá trị mặc định này ở lần load kế tiếp). Đổi domain thật: sửa field đó
-trong CMS rồi lưu lại — không sửa tay `sitemap.xml` hay hardcode domain ở đâu khác.
-`html/robots.txt` đã có dòng `Sitemap: ...` trỏ tới file này.
+`scripts/build.py` tự sinh cả 2 file này mỗi lần build (hàm `build_sitemap`/`build_robots_txt`),
+dùng chung 1 nguồn domain nên không bao giờ lệch nhau:
+
+- `html/sitemap.xml`: trang chủ + từng trang bài viết, kèm `<lastmod>` theo `updated_at`.
+- `html/robots.txt`: `Disallow: /admin/` (cố định) + dòng `Sitemap: <domain>/sitemap.xml`.
+
+URL tuyệt đối lấy từ `site.site_url` (Cấu hình Site trong CMS — field "URL website"), mặc định
+`http://giaitri321.com` nếu chưa từng lưu field này (sheet cũ tự được bổ sung field với giá trị
+mặc định này ở lần load kế tiếp). Đổi domain thật: sửa field đó trong CMS rồi lưu lại — build lại
+là cả `sitemap.xml` lẫn `robots.txt` tự cập nhật theo, không sửa tay/hardcode domain ở đâu khác.
 
 ## Schema dữ liệu
 
