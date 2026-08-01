@@ -17,7 +17,6 @@ DATA = ROOT / "data"
 TEMPLATES = ROOT / "templates"
 SITE_DIR = ROOT / "html"
 
-MAX_UPLOAD_BYTES = 100 * 1024 * 1024  # 100MB — khop rule cua CMS (xem gas.md muc 3)
 NAME_CLASSES = ["c1", "c2", "c3", "c4", "c5"]  # mau cycle, tai su dung tu style.css hien co
 HDR_CLASSES = ["teal", "blue"]  # xen ke theo template hien tai (DANH SACH TAI GAME=teal, TOOL=blue)
 ROW_CLASSES = ["c-blue", "c-red", "c-purple", "c-teal", "c-brown"]
@@ -99,8 +98,13 @@ def format_date(iso_str):
 def download_href_and_attrs(post, depth_prefix):
     """Tra (href, extra_attrs) cho nut download, hoac (None, None) neu khong hop le/khong co
     (link tai la TUY CHON - xem gas/Code.js savePost: khong nhap gi thi download_type = "none").
-    Doc dung field phang ma gas/Code.js thuc te ghi ra (download_file_name/_size/_path), khong
-    phai dang object long "download_file" (schema cu chi con trong data mau viet tay ban dau)."""
+
+    File upload gio duoc gas/Code.js tu dong chia 3 noi luu theo dung luong (xem DL_TIER_* trong
+    Code.js): "repo" (< 25MB, ghi thang vao site qua Contents API, dung download_file_path - path
+    tuong doi CUNG origin nen dung duoc thuoc tinh download="..." de goi y ten file tai ve) hoac
+    "release"/"drive" (>= 25MB, dung download_external_url - URL tuyet doi KHAC origin, trinh
+    duyet se bo qua thuoc tinh download="..." voi URL khac origin nen khong dung no, xu ly nhu
+    link ngoai binh thuong)."""
     dtype = post.get("download_type")
     if dtype == "link":
         url = post.get("download_url")
@@ -108,13 +112,20 @@ def download_href_and_attrs(post, depth_prefix):
             return None, None
         return url, ' target="_blank" rel="noopener"'
     if dtype == "upload":
-        path = post.get("download_file_path")
-        if not path:
-            return None, None
-        if post.get("download_file_size", 0) > MAX_UPLOAD_BYTES:
-            print("  [CANH BAO] '{}': file upload {} vuot 100MB, bo qua nut tai.".format(post["slug"], post.get("download_file_name")))
-            return None, None
-        return "{}{}".format(depth_prefix, path), ' download="{}"'.format(html.escape(post.get("download_file_name", "")))
+        # Bai luu TRUOC khi co cot download_storage (schema cu, 1 tang duy nhat = repo) khong co
+        # field nay - tu suy ra 'repo' tu su ton tai cua download_file_path de khong mat nut tai.
+        storage = post.get("download_storage") or ("repo" if post.get("download_file_path") else "")
+        if storage == "repo":
+            path = post.get("download_file_path")
+            if not path:
+                return None, None
+            return "{}{}".format(depth_prefix, path), ' download="{}"'.format(html.escape(post.get("download_file_name", "")))
+        if storage in ("release", "drive"):
+            url = post.get("download_external_url")
+            if not url:
+                return None, None
+            return url, ' target="_blank" rel="noopener"'
+        return None, None
     return None, None
 
 

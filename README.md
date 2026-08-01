@@ -51,8 +51,10 @@ không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không
   vòng cho link bài viết) được `build.py` tự tính theo **thứ tự trong mảng**, không lưu màu vào
   data — thêm/bớt/sắp xếp lại category là tự động đổi màu theo, không cần sửa CSS.
 - `data/posts.json`: index nhẹ (không có `content`) — title, slug, category_id, game, icon,
-  download_type, download_url, download_file_name/_size/_path/_drive_id/_mime, created_at,
-  updated_at.
+  download_type, download_url, download_file_name/_size/_path/_drive_id/_mime, download_storage
+  (`"repo"|"release"|"drive"`, xem mục "Giới hạn upload file tải game" bên dưới),
+  download_external_url (URL tuyệt đối khi storage là release/drive), download_release_asset_id,
+  created_at, updated_at.
 - `data/posts/<slug>.json`: như trên + `content` (HTML từ rich-text editor trong CMS).
 - Field `game` trên bài viết là **tự do, gõ tay, khác với category** — CMS không ràng buộc nó vào
   danh sách category, chỉ hiển thị làm badge trên trang bài viết (đúng yêu cầu "1 bài viết có thể
@@ -68,8 +70,8 @@ không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không
   bộ này — 🎮 chỉ hiện khi được chọn chủ động, tránh trùng ý nghĩa với lựa chọn tay).
 - **Link tải là tuỳ chọn**: `download_type` có thể là `"none"` (không nhập gì) — bài viết vẫn lưu
   và publish bình thường, chỉ là trang bài viết sẽ không có nút tải (`build.py` tự bỏ qua khi
-  thiếu `download_url`/`download_file_path`). Khi sửa bài đã upload sẵn file mà không chọn file
-  mới, `gas/Code.js` tự giữ nguyên file cũ (không bắt buộc upload lại mỗi lần lưu).
+  thiếu dữ liệu tương ứng với `download_storage`). Khi sửa bài đã upload sẵn file mà không chọn
+  file mới, `gas/Code.js` tự giữ nguyên file cũ (không bắt buộc upload lại mỗi lần lưu).
 
 ## Setup Google Apps Script
 
@@ -79,6 +81,8 @@ không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không
    (Project Settings → bật "Show appsscript.json").
 3. Project Settings → Script Properties, thêm:
    - `GITHUB_TOKEN` — fine-grained PAT, quyền `Contents: Read and write`, giới hạn đúng repo này.
+     Quyền này **đã đủ cho cả GitHub Releases** (dùng cho file tải 25MB-2GB) — Releases nằm chung
+     nhóm quyền "Contents" của fine-grained PAT, không cần tạo token mới/thêm scope.
    - `GITHUB_REPO` — `<user>/<repo>`.
    - `GITHUB_BRANCH` — tên nhánh chính (bỏ trống = mặc định `master`).
 4. Deploy → New deployment → Web app, Execute as **Me**, Who has access **Anyone**.
@@ -91,32 +95,40 @@ không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không
    (không phải "New deployment") để URL `/exec` cũ nhận code mới — bấm Save trong editor thôi
    là CHƯA đủ.
 
-## Giới hạn upload 100MB (đọc trước khi tin tính năng "upload trực tiếp")
+## Giới hạn upload file tải game (3 tầng lưu trữ theo dung lượng)
 
-`gas.md` yêu cầu: file tải lên trực tiếp repo bị chặn nếu vượt 100MB. Điều này đã được implement
-đúng ở cả client (`onPostFileChosen`/`onBannerFileChosen`) lẫn server (`uploadPostFile`,
-`uploadBannerFile`, `savePost`, `saveSiteSettings` đều re-check).
+File "upload trực tiếp" cho bài viết (khác banner, banner vẫn giữ nguyên 1 tầng, tối đa 100MB,
+đẩy thẳng vào repo) giờ tự động chọn nơi lưu cuối cùng theo dung lượng, xem hằng số `DL_TIER_*`
+đầu `gas/Code.js`:
 
-**Nhưng cần biết rõ trần kỹ thuật thật của Apps Script trước khi hứa với khách/người dùng:**
+| Dung lượng | Nơi lưu | Vì sao |
+|---|---|---|
+| < 25MB | Repo (Contents API), y hệt cơ chế cũ | Nằm chắc chắn trong trần an toàn của `UrlFetchApp` |
+| 25MB – 2GB | 1 asset của **GitHub Release** (tag `game-downloads`, tự tạo) | Endpoint upload riêng (`uploads.github.com`), không qua base64+JSON nên không bị trần ~50MB của Contents API; giới hạn 2GB/asset là do GitHub |
+| 2GB – 5GB | **Google Drive**, 1 thư mục riêng tự set "Anyone with link" ngay lần đầu tạo (không cần vào Drive set tay) | Quota Drive không phải giới hạn của code — phụ thuộc dung lượng còn trống của account |
+| > 5GB | Từ chối thẳng, báo lỗi rõ ràng | Ngưỡng an toàn tự đặt, dùng "Link tải ngoài" thay vì upload |
 
-- `UrlFetchApp` (dùng để gọi GitHub Contents API) có giới hạn thực tế **~50MB/request** (cả
-  chiều gửi lẫn nhận), không phải do code ở đây tự đặt ra.
-- File phải mã hoá base64 trước khi nhét vào JSON gửi GitHub — base64 làm payload phình to
-  thêm **~33%**. Một file 100MB sẽ thành ~133MB base64 → chắc chắn vượt trần 50MB của
-  `UrlFetchApp`, request sẽ lỗi (hoặc timeout) chứ không chạy được như mô tả "cho phép tới
-  100MB" nghe có vẻ đơn giản.
-- Việc đọc file thành base64 ngay trên trình duyệt (`FileReader.readAsDataURL`) với file gần
-  100MB cũng có thể chậm/tốn RAM tuỳ máy người dùng.
+Khi sửa bài thay file khác (hoặc bỏ chọn download, hoặc xoá hẳn bài), file CŨ ở đúng nơi nó đang
+nằm (repo/Release asset/Drive) sẽ tự được dọn (`cleanupOldDownload_`) — không tích rác quota.
 
-**Kết luận thực tế**: cơ chế "upload trực tiếp" trong CMS này chạy tốt và đáng tin cậy với file
-**dưới ~30-40MB**. Trên ngưỡng đó, khả năng cao sẽ lỗi ở bước đẩy GitHub dù UI báo "upload xong"
-(vì bước đó chỉ mới lưu tạm vào Drive — lỗi thật sự xảy ra ở lúc bấm Lưu bài, khi GAS đọc bytes
-từ Drive rồi gọi GitHub). Đây là lý do UI đã có dòng khuyến nghị dùng "Link tải ngoài" cho file
-lớn — **không lặng lẽ để tính năng trông như hoạt động rồi âm thầm fail ở file to**. Nếu thực tế
-cần hỗ trợ file sát ngưỡng 100MB thật, hướng đúng là nâng cấp sang Git Data API (trees, atomic hơn
-nhưng vẫn cùng trần `UrlFetchApp`) hoặc — thực tế hơn — chuyển hẳn file lớn sang 1 dịch vụ lưu trữ
-ngoài (Drive share link, hoặc CDN riêng) và chỉ lưu link, tức là dùng option 1 (link tải ngoài)
-thay vì option 2.
+**Nhưng vẫn cần biết trần kỹ thuật thật trước khi hứa "upload tới 5GB" nghe đơn giản:**
+
+3 tầng trên chỉ áp dụng **sau khi bytes đã tới được Apps Script**. Đường đi đưa bytes từ trình
+duyệt lên Apps Script (`uploadPostFile`, gọi qua `google.script.run`) vẫn phải mã hoá base64 và
+gửi qua tham số của `google.script.run` — bản thân bước này có trần thực tế **thấp hơn nhiều**
+so với 2GB/5GB (tương tự trần ~30-40MB đã ghi nhận với `UrlFetchApp` trước đây), vì:
+
+- `FileReader.readAsDataURL()` phải load nguyên file vào RAM trình duyệt trước — file vài trăm MB
+  có thể làm tab trình duyệt treo/crash tuỳ máy.
+- Payload của `google.script.run` (chuỗi base64, phình to ~33%) cũng có giới hạn thực tế tương tự
+  `UrlFetchApp`, không phải do code ở đây tự đặt ra.
+
+**Kết luận thực tế**: logic phân tầng ở trên đúng và sẽ chạy đúng cho **mọi file thực sự upload
+lên được**. Nhưng file cỡ vài trăm MB trở lên nhiều khả năng sẽ chậm/thất bại ngay ở bước **chọn
+file trong CMS** (trước khi kịp chạm tới logic phân tầng), không phải lỗi của tầng lưu trữ. Muốn
+upload tin cậy file thật sự lớn (vài trăm MB – vài GB), hướng đúng là đổi hẳn cơ chế upload: cho
+trình duyệt upload thẳng lên Drive bằng Drive resumable upload API, bỏ qua Apps Script ở bước
+truyền bytes — đây là thay đổi lớn hơn nhiều, **ngoài phạm vi lần sửa này**.
 
 ## Trạng thái hiện tại
 
