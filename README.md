@@ -71,8 +71,9 @@ trong CMS rồi lưu lại — không sửa tay `sitemap.xml` hay hardcode domai
   thuộc 1 game nào đó, khác category thường").
 - **Menu ngang trên cùng lấy từ Game, không phải Category**: `site.menu_games` là mảng **tên Game
   do admin multi-select** trong CMS (Cấu hình Site) — danh sách để chọn được lấy từ các giá trị
-  `game` đã từng gõ ở bài viết (không gõ tay link/tên riêng). Mỗi mục menu bấm vào đều quay về
-  trang chủ (`index.html`) — chỉ là danh sách hiển thị/thương hiệu, không lọc/filter gì.
+  `game` đã từng gõ ở bài viết (không gõ tay link/tên riêng). Mỗi mục menu tự động link về
+  `index.html?q=<tên game>`, tái dùng luôn cơ chế search client-side (`data-search`) để quay về
+  trang chủ VÀ lọc đúng các bài thuộc game đó — không cần trang danh sách riêng cho từng game.
 - **Icon đầu tiêu đề** (`post.icon`, tuỳ chọn): `""` (không có) | `hot` | `new` | `game` | `rocket`
   | `fire`, chọn qua nhóm nút trong CMS. `hot`/`new` render badge đỏ; `game`/`rocket`/`fire` render
   emoji 🎮/🚀/🎆. Khi để trống, trang chủ tự cycle qua 1 bộ icon trang trí khác (không có 🎮 trong

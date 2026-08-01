@@ -8,6 +8,7 @@ Chay: python3 scripts/build.py
 import html
 import json
 import unicodedata
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
@@ -69,11 +70,14 @@ def site_name_spans(name):
 def nav_row_links(menu_games, prefix=""):
     """Menu ngang tren cung lay tu danh sach Game co san (admin multi-select trong Cau hinh Site,
     KHONG go tay), KHONG lay tu Category. menu_games la mang ten game (string) - moi muc bam vao
-    LUON quay ve trang chu (khong loc/filter gi ca, dung link trang chu thuan)."""
+    QUAY VE TRANG CHU va tu dong tim/loc dung theo ten game do (index.html?q=<ten game>), tai su
+    dung co che search client-side da co san (data-search) - khong can trang rieng cho tung game."""
     if not menu_games:
         return "    <!-- Chua co Game nao duoc chon lam menu (chon trong Cau hinh Site > Menu) -->"
-    href = "{}index.html".format(prefix)
-    lines = ['    <a href="{}">{}</a>'.format(html.escape(href), html.escape(name)) for name in menu_games]
+    lines = []
+    for name in menu_games:
+        href = "{}index.html?q={}".format(prefix, urllib.parse.quote(name))
+        lines.append('    <a href="{}">{}</a>'.format(html.escape(href), html.escape(name)))
     return "\n".join(lines)
 
 
