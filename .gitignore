@@ -1,0 +1,4 @@
+# GAS CMS source — deploy thu cong qua script.google.com / clasp, khong push qua repo nay
+# (chua san sang chia se cong khai: chua deploy that, chua thay GITHUB_TOKEN/GITHUB_REPO mau).
+gas/
+gas.md

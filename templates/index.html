@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>{{PAGE_TITLE}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Logo banner -->
+  <div class="banner">
+    <div class="deco">✈️ &nbsp; 🚀 &nbsp; 🎯</div>
+    <div class="logo">
+      {{SITE_NAME_SPANS}}
+    </div>
+  </div>
+
+  <!-- Loi ngo -->
+  <div class="intro">
+    <h2>{{INTRO_TITLE}}</h2>
+{{INTRO_PARAGRAPHS}}
+  </div>
+
+  <!-- Nav row (tu dong theo category, CMS quan ly) -->
+  <div class="nav-row">
+{{NAV_ROW_LINKS}}
+  </div>
+
+  <!-- O tim kiem -->
+  <div class="group-bar">
+    <form class="search-form" onsubmit="return false;">
+      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+      <button type="submit">Tìm</button>
+    </form>
+  </div>
+
+  <!-- Banner ngang quang ba giai dau (ti le 21:9), CMS quan ly -->
+  <div class="wide-banner">
+{{BANNER_MEDIA}}
+    <div class="cap">{{BANNER_TEXT}}</div>
+  </div>
+
+{{CATEGORY_SECTIONS}}
+  <div class="footer">{{FOOTER_TEXT}}</div>
+
+</div>
+</body>
+</html>

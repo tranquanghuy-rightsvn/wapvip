@@ -1,0 +1,40 @@
+name: Build site from CMS data
+
+on:
+  push:
+    branches: [master]
+    paths:
+      # Chi trigger o dung file LUON la commit chot cua moi thao tac CMS (index tong).
+      # Khong dung "data/**" - se chay o commit dang do (vd da xoa file nhung index.json
+      # chua cap nhat kip) va deploy nham trang thai chua hoan tat. Xem docs/gas-cms.md.
+      - 'data/posts.json'
+      - 'data/categories.json'
+      - 'data/site.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build html/ from data/ + templates/
+        run: python3 scripts/build.py
+
+      - name: Commit & push generated html/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add html/index.html html/posts
+          if git diff --cached --quiet; then
+            echo "Khong co thay doi, bo qua commit."
+          else
+            git commit -m "CI: build html from data"
+            git push
+          fi

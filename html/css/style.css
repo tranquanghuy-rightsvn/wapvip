@@ -73,20 +73,26 @@ a:hover {
   letter-spacing: 8px;
 }
 
-/* Nav row (ARMY / AVATAR / NINJA / KPAH) */
+/* Nav row (ARMY / AVATAR / NINJA / KPAH) — grid-auto-flow keeps every <a> in ONE row,
+   splitting it into as many equal columns as there are links (2 links = 2 cols, 4 = 4 cols...);
+   add/remove <a> tags in the HTML and the columns rebalance automatically, no CSS edits needed. */
 .nav-row {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   border: 1px solid #4ca6e2;
-  border-left: none;
   margin: 0 8px 8px;
 }
 .nav-row a {
-  flex: 1;
   text-align: center;
   padding: 8px 4px;
   font-weight: bold;
   color: #222;
   border-left: 1px solid #4ca6e2;
+  text-transform: uppercase;
+}
+.nav-row a:first-child {
+  border-left: none;
 }
 
 /* Generic list block */
@@ -286,3 +292,254 @@ a:hover {
 .list .c-teal { color: #1a7a6e; }
 .list .c-brown { color: #a35a00; }
 .hl-u { color: #cc0000; text-decoration: underline; font-weight: bold; }
+
+/* ===== post.html ===== */
+
+/* breadcrumb */
+.breadcrumb {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #999;
+}
+.breadcrumb a {
+  color: #2a8a3e;
+}
+
+/* post title bar (reuses .hdr.blue) */
+.post-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+.post-title .hl {
+  color: #ffe08a;
+}
+
+/* byline row under title */
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+.byline .click {
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+.byline .game {
+  color: #1a7a6e;
+}
+
+/* floating download button (post page) — fixed bottom-right, never overlaps title/content above it */
+.dl-fab {
+  position: fixed;
+  right: max(12px, calc((100vw - 720px) / 2 + 12px));
+  bottom: 18px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 18px;
+  background: linear-gradient(180deg, #ff6a4d 0%, #e2231a 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+.dl-fab:hover {
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+.byline .click span:nth-child(1) { color: #e2231a; }
+.byline .click span:nth-child(2) { color: #2a8a3e; }
+.byline .click span:nth-child(3) { color: #1a56c4; }
+.byline .click span:nth-child(4) { color: #f2a900; }
+.byline .click span:nth-child(5) { color: #7a1fa2; }
+.byline .tag { color: #e2231a; }
+.byline a { color: #1a56c4; }
+
+/* facebook group callout box */
+.fb-group-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px;
+  padding: 8px 14px;
+  border: 1px solid #b8c6d9;
+  border-radius: 8px;
+  background: #f4f8fc;
+  font-weight: bold;
+  color: #7a1fa2;
+}
+
+/* article content */
+.article-body {
+  padding: 4px 10px 10px;
+  line-height: 1.65;
+}
+.article-body p {
+  margin: 10px 0;
+}
+.article-body .bul {
+  color: #cc0000;
+  margin-right: 3px;
+}
+.article-body .head {
+  font-weight: bold;
+}
+.article-body .head.green { color: #2a8a3e; }
+.article-body .head.red { color: #cc0000; }
+.article-body a { color: #1a56c4; }
+.article-body b { color: #111; }
+
+/* placeholder embedded screenshot */
+.shot {
+  display: block;
+  max-width: 320px;
+  height: 170px;
+  margin: 12px auto 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #bfe3f7 0%, #bfe3f7 45%, #8fd18f 45%, #6fc06f 100%);
+}
+.shot-caption {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+/* boss config mock box */
+.cmd-box {
+  max-width: 340px;
+  margin: 10px auto;
+  padding: 10px 12px;
+  background: #f2f2f2;
+  border: 1px solid #bbb;
+  font-size: 12px;
+}
+.cmd-box .field {
+  margin-bottom: 8px;
+}
+.cmd-box label {
+  display: block;
+  color: #444;
+  margin-bottom: 2px;
+}
+.cmd-box .val {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 3px 6px;
+}
+
+/* post meta (date + comment button) */
+.post-meta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-style: italic;
+  border-top: 1px dashed #ddd;
+}
+.post-meta .cmt-btn {
+  font-style: normal;
+  font-weight: bold;
+  color: #1a56c4;
+  border: 1px solid #4ca6e2;
+  border-radius: 2px;
+  padding: 2px 8px;
+}
+
+/* share row */
+.share-row {
+  text-align: center;
+  padding: 10px;
+  background: #f3f6f8;
+  border-bottom: 1px solid #ddd;
+}
+.share-row b { color: #1a56c4; }
+
+/* pink single-line notice (reuses group-bar palette) */
+.notice-pink {
+  padding: 7px 10px;
+  background: #fae6fc;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+.notice-pink b { color: #cc0000; }
+.notice-pink a { color: #1a56c4; font-weight: bold; }
+
+/* ===== index-new.html ===== */
+
+/* welcome / intro section (Loi ngo) */
+.intro {
+  padding: 14px 14px 16px;
+  background: linear-gradient(180deg, #fff7e0 0%, #ffffff 100%);
+  border-bottom: 1px solid #ddd;
+  line-height: 1.7;
+}
+.intro h2 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #cc0000;
+}
+.intro p {
+  margin: 0 0 8px;
+  color: #333;
+}
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* wide 21:9 tournament banner — placeholder gradient, swap for GIF/PNG/video asset */
+.wide-banner {
+  position: relative;
+  margin: 10px;
+  aspect-ratio: 21 / 9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a2b6d 0%, #4ca6e2 55%, #f2a900 100%);
+}
+.wide-banner img,
+.wide-banner video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wide-banner .cap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* bottom HOME / MINI nav */
+.bottom-nav {
+  display: flex;
+  border: 1px solid #4ca6e2;
+  margin: 8px;
+}
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  padding: 8px 4px;
+  font-weight: bold;
+  color: #222;
+  border-left: 1px solid #4ca6e2;
+}
+.bottom-nav a:first-child {
+  border-left: none;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>NRO 1.4.4 PreV5.9 Android - Hội Tụ Tất Cả Các Chức Năng Khủng Nhất HOT Nhất - WapVip.Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Top notice -->
+  <div class="notice">
+    <span class="icon">🎧</span>
+    <span>Đã Giảm Giá Cực Mạnh Tất Cả Các Nick Tại Shop <a href="#" class="hl">MuaBanNick.Vn</a>. Xúc Nhanh Kẻo Hết</span>
+  </div>
+
+  <!-- Logo banner -->
+  <div class="banner">
+    <div class="deco">✈️ &nbsp; 🚀 &nbsp; 🎯</div>
+    <div class="logo">
+      <a href="index.html" style="color:inherit"><span class="c1">W</span><span class="c2">ap</span><span class="c3">V</span><span class="c4">ip</span><span class="c5">.</span><span class="c2">P</span><span class="c3">r</span><span class="c4">o</span></a>
+    </div>
+  </div>
+
+  <!-- Nav row -->
+  <div class="nav-row">
+    <a href="#">ARMY</a>
+    <a href="#">AVATAR</a>
+    <a href="#">NINJA</a>
+    <a href="#">KPAH</a>
+  </div>
+
+  <!-- Featured games -->
+  <div class="list">
+    <div class="row"><span class="ic">🍃</span><a href="#" style="color:#7a1fa2">Cú Pháp Đăng Ký Nick Team</a></div>
+    <div class="row"><span class="ic">💕</span><a href="#" style="color:#cc0055">Mạng Xã Hội Avatar 2.5.7</a></div>
+    <div class="row"><span class="ic">🔫</span><a href="#" style="color:#1a56c4">Bắn Súng Mobi Army 2.3.9</a></div>
+    <div class="row"><span class="ic">🎮</span><a href="#" style="color:#2a8a3e">Phong Vân Truyền Kỳ v30</a></div>
+    <div class="row"><span class="ic">🥷</span><a href="#" style="color:#a35a00">Ninja School Online 1.4.3</a></div>
+    <div class="row"><span class="ic">⚔️</span><a href="#" style="color:#7a1fa2">Khí Phách Anh Hùng 1.7.3</a></div>
+    <div class="row"><span class="ic">🌪️</span><a href="#" style="color:#1a7a6e">Ngôi Làng Của Gió 3D 1.1.9</a></div>
+  </div>
+
+  <!-- Like box -->
+  <div class="like-box">
+    <div class="lead">👍 <a href="#">Like Ủng Hộ WapVip.Pro</a></div>
+    <a href="#" class="fb-btn">👍 Thích</a>
+    <a href="#" class="fb-btn">Chia sẻ</a>
+  </div>
+
+  <!-- Group bar -->
+  <div class="group-bar">
+    <div class="links">» <a href="#" class="a1">GROUP</a> - <a href="#" class="a2">YouTube</a> - <a href="#" class="a3">FB ADMIN</a> «</div>
+    <form class="search-form" onsubmit="return false;">
+      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+      <button type="submit">Tìm</button>
+    </form>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">🏠 › <a href="#">Game Online Độc</a> › <a href="#">Ngọc Rồng Online</a></div>
+
+  <!-- Post title -->
+  <div class="hdr blue post-title">⬇ NRO 1.4.4 PreV5.9 <span class="hl">Android</span> - Hội Tụ Tất Cả Các Chức Năng Khủng Nhất HOT Nhất</div>
+
+  <!-- Byline -->
+  <div class="byline">
+    <span class="click"><span>C</span><span>L</span><span>I</span><span>C</span><span>K</span></span>
+    <span class="tag">Admin Đang Mua Nick</span> | <a href="#">Bán Nick</a> - Giá Hấp Dẫn
+  </div>
+
+  <!-- FB group callout -->
+  <div class="fb-group-box">📥 <a href="#" style="color:inherit">Tham Gia Nhóm Ngọc Rồng Online Trên FaceBook</a></div>
+
+  <!-- Article body -->
+  <div class="article-body">
+    <p><span class="bul">➜</span><b>Menu Pro</b>: Chat "<a href="#">mkhoa</a>" để Ẩn hoặc Hiện <b>Menu Chạm Pro</b></p>
+
+    <div class="shot"></div>
+    <p class="shot-caption">tai ngoc rong, tai ngoc rong 144, nro 144</p>
+
+    <p>
+      - <b>4 Nút Tròn Trái</b>: Ứng với 4 nút khinh công, độn thổ, dịch trái, dịch phải<br>
+      - <b>Nút '&lt;'</b>: Giảm tốc độ chạy<br>
+      - <b>Nút '&gt;'</b>: Tăng tốc độ chạy<br>
+      - <b>Nút Tròn Phải</b>: Goto đến đối tượng đang chọn (quái, npc, vật phẩm, nhân vật khác)
+    </p>
+
+    <p><span class="head green">• Chỉnh Thời Gian Hiện SMS KTG</span>:<br>
+    - Chỉnh thời gian hiển thị của kênh thế giới trong lệnh chat menu "<a href="#">cd</a>". Ví dụ: Trước có ai chat lên ktg thì nó hiện 15s, bây giờ có thể chỉnh cho nó hiện lâu hơn hoặc hiện ít đi.</p>
+
+    <div class="cmd-box">
+      <div class="field"><label>Nhập tên boss, cách nhau dấu chấm phẩy(;)</label><span class="val">&nbsp;</span></div>
+      <div class="field"><label>Nhập khu, cách nhau dấu chấm phẩy(;)</label><span class="val">10;11;12</span></div>
+      <div class="field"><label>Tốc độ thông báo:</label><span class="val">2</span></div>
+      <div class="field"><label>Thời gian hiển thị kênh thế giới</label><span class="val">15</span></div>
+      <div class="field"><label>Thời gian auto buff đậu (giây)</label><span class="val">0</span></div>
+      <div class="field"><label>HP tối thiểu:</label><span class="val">100</span></div>
+    </div>
+
+    <p><span class="head green">• Thông Báo Khi Có Bản Mới</span>:<br>
+    - Khi wapvip.pro ra phiên bản mới sẽ có thông báo hiện khi chưa login cho ace biết bằng cách chạy url với ip <b>103.82.35.97</b> của wapvip.pro để lấy thông báo</p>
+
+    <p><span class="bul">➜</span><span class="head">Auto Chat</span>:<br>
+    - Fix menu cài đặt có thể kéo lên kéo xuống cho điện thoại màn hình bé và fix lệnh chat chuyển khu ngoài ra bổ xung thêm AutoChat<br>
+    - Mở menu cài đặt để thêm nội dung auto chat, cách nhau dấu chấm phẩy (;), chat "<a href="#">atc</a>" để bật/tắt auto chat</p>
+
+    <p><span class="bul">➜</span><span class="head">Menu Cài Đặt</span>:<br>
+    Chat '<a href="#">cd</a>' để mở menu cài đặt. Do khi chạm vào màn hình thì nhân vật cũng di chuyển nên chỉ để một vài nút chạm màn hình này, còn lại chuyển sang lệnh chat hết 😊</p>
+
+    <p><span class="bul">➜</span><span class="head">Auto Săn Boss</span>: Ngay khi có thông báo từ server sẽ tự phân tích và vẽ thông tin về boss lên màn hình như tên boss, nơi xuất hiện, khu vực xuất hiện.<br>
+    - Mặc định <b>ngọc rồng premium</b> là <b>Bật</b> và săn tất cả các boss, bạn có thể <b>Bật/Tắt</b> rong menu <b>Cài Đặt</b>, có thể chỉnh sửa để chỉ săn 1 số loại boss trong menu cài đặt.<br>
+    Nhập tên boss: Bạn phải nhập đầy đủ dấu nếu tên boss có dấu, ví dụ bạn muốn săn boss Số 4, bạn phải nhập 'số 4'<br>
+    Bạn có thể thêm nhiều loại boss, cách nhau bởi dấu chấm phẩy (;)</p>
+
+    <p><span class="bul">➜</span><span class="head">Ẩn Thông Báo</span>: Không hiện dòng thông báo bên dưới màn hình nữa (Chức năng báo boss vẫn hoạt động bình thường nếu bật ẩn thông báo)</p>
+
+    <p><span class="bul">➜</span><span class="head">Tốc Độ Thông Báo</span>: Bạn có thể chỉnh cho thông báo chạy nhanh hơn hoặc chậm đi tùy thích, mặc định tốc độ thông báo là 2</p>
+
+    <p><span class="bul">➜</span><span class="head">Đóng Băng (Khóa) Skill Hiện Tại</span>:<br>
+    - Chat '<a href="#">c</a>' cùng với đó là sửa lỗi tính năng đóng băng quái ở phiên bản v4 trước đây, các bạn <b>Bật/tắt</b> hoàn toàn dễ dàng bằng lệnh chat '<a href="#">bang</a>' không còn lỗi nữa.</p>
+
+    <p><span class="bul">➜</span><span class="head">Auto Nhặt Đồ (Hút Vật Phẩm)</span>: Auto nhặt y như bùa thu hút, mặc định khi khởi động game là <b>Bật</b>, bạn có thể tắt đi bằng lệnh chat "<a href="#">anhat</a>"</p>
+
+    <p><span class="bul">➜</span><span class="head">Tàn Sát</span>: Nhân vật sẽ tự chạy đến quái và đánh, ngoài ra nhân vật sẽ tự chuyển khu khi khu đang đứng hết quái (có thể Cài Đặt trong Menu)</p>
+
+    <p><span class="head red">• Lệnh Chat Trong Bản NRO 144 Premium V5.9 Android HD:</span><br>
+    <b>Lưu Ý:</b> Các số <b>sau</b> chữ <span style="color:#cc0000">màu đỏ</span> các bạn có thể tự chỉnh được nhé!<br>
+    <a href="#">atc</a>: Bật/tắt auto chat<br>
+    <a href="#">cd</a>: Mở menu cài đặt<br>
+    <span style="color:#cc0000">k</span>X: Chuyển đến khu X<br>
+    <a href="#">c</a>: Đóng băng skill đang chọn (KI tiêu hao bằng 0, thời gian hồi chiêu bằng 0)<br>
+    <a href="#">ts</a>: Bật/tắt tàn sát<br>
+    <a href="#">anhat</a>: Bật/tắt auto nhặt đồ (mặc định là bật)<br>
+    <a href="#">bang</a>: Bật/tắt đóng băng quái<br>
+    <a href="#">ak</a>: Bật/tắt tự đánh<br>
+    <span style="color:#cc0000">ak</span>X: Bật/tắt tự đánh theo thời gian, với X là khoảng thời gian đánh, đơn vị mili giây, tối thiểu 500mili giây (nếu không đặt thời gian auto buff đậu thì sẽ buff khi hp hoặc mp nhỏ hơn 10%)<br>
+    <span style="color:#cc0000">sm</span>X: Fake sức mạnh X<br>
+    <span style="color:#cc0000">tn</span>X: Fake tiềm năng X<br>
+    <span style="color:#cc0000">td</span>50: Chỉnh tốc độ game (0: FixLagMax, 50: Tốc Độ Gốc, 100: MaxSpeed)<br>
+    <span style="color:#cc0000">s</span>10: Hack giày 10<br>
+    <a href="#">u</a>: Khinh công<br>
+    <a href="#">d</a>: Độn thổ<br>
+    <a href="#">r</a>: Dịch phải<br>
+    <a href="#">l</a>: Dịch trái<br>
+    <span style="color:#cc0000">u</span>50: Khinh công 50<br>
+    <span style="color:#cc0000">d</span>50: Độn thổ 50<br>
+    <span style="color:#cc0000">r</span>50: Dịch phải 50<br>
+    <span style="color:#cc0000">l</span>50: Dịch trái 50<br>
+    + Tác Giả: WapVip.Pro</p>
+
+    <p><span class="head red">CHÚ Ý:</span> <b>NRO Premium</b> là sản phẩm độc quyền và được xây dựng bởi WapVip.Pro. Vì thế, WapVip.Pro tin các bạn sẽ sáng suốt trong việc lựa chọn phiên bản thích hợp phục vụ nhu cầu chơi game của bản thân 😊<br>
+    <span class="bul">➜</span>Một số máy có cài phần mềm diệt virus và báo các bản hack là có virus thì xin thưa: Phần mềm đó quét có cú pháp đăng ký nick và nạp thẻ trên phiên bản nên đã hiểu nhầm là virus đó. Các bạn yên tâm mà chơi. Không sao cả!</p>
+
+    <p><span class="bul">➜</span>Nếu bạn muốn chơi được 2 nick thì tải bản Nick 1 và Nick 2 về máy rồi cài đặt (cài cả 2 bản) rồi mở từng bản và chơi thôi!</p>
+  </div>
+
+  <!-- Post meta -->
+  <div class="post-meta">
+    <span>04.02.2017 / 17:44</span>
+    <a href="#" class="cmt-btn">» Bình Luận «</a>
+  </div>
+
+  <!-- Download links -->
+  <div class="list">
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Bản Hỗ Trợ Tất Cả MH Nick 1 .APK</a></div>
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Bản Hỗ Trợ Tất Cả MH Nick 2 .APK</a></div>
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Bản MH 240x320 và 320x480 .APK</a></div>
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Bản MH 480x800, 540x960 và 600x1024 .APK</a></div>
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Bản MH 720x1280 .APK</a></div>
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Bản MH 1080x1920 và 1440x2560 .APK</a></div>
+    <div class="row"><span class="ic">⬇️</span><a href="#" class="c-red">Tải Các Bản Cũ Hơn Về Máy .APK</a></div>
+    <div class="row"><span class="ic">📢</span><a href="#" class="c-teal">Tham Gia Nhóm Ngọc Rồng Online Trên FaceBook</a></div>
+  </div>
+
+  <!-- Share row -->
+  <div class="share-row">Chia Sẻ <b>Bài Viết</b> này lên <b>Face</b> 📘</div>
+
+  <!-- Pink notice -->
+  <div class="notice-pink">• Khi tải <b>File</b> bị lỗi hoặc báo <b>Không Thể Lưu File Quá Dài</b> thì hãy dùng <a href="#">Uc Browser</a> và <a href="#">Xem Hướng Dẫn</a></div>
+
+  <!-- Related posts -->
+  <div class="hdr blue">» BẠN ĐÃ XEM CHƯA?</div>
+  <div class="subrow italic"><b>Bài mới</b> | Xem nhiều</div>
+  <div class="list">
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Ngọc Rồng 1.1.0 Speed, FixLag, AutoClick, Phím Số, x2, MOD Full và GDL Tối Đa</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Game Ngọc Rồng OL 051 Speed, FixLag, AutoClick, Phím Số, ReLoad, x2 và <span class="c-red">GDL Tối Đa</span></a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Ngọc Rồng 0.8.0 Speed, FixLag, AutoClick, Phím Số, x2, MOD Full và <span class="c-red">GDL Tối Đa</span></a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Ngọc Rồng Online 019 Mới – Songoku Tìm 7 Viên Ngọc Rồng Hack Full Phiên Bản</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Game Ngọc Rồng Online 038 Mới <span class="c-red">GDL Tối Đa</span> Hack Full Phiên Bản</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Game Ngọc Rồng Online 035 Mới <span class="c-red">GDL Tối Đa</span> Hack Full Phiên Bản</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">NRO 1.1.5 Premium V4.5 - Thêm Auto Buff Đậu, Auto Đánh Theo Thời Gian...v.v HIT</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Ngọc Rồng 0.9.8 Auto Chat - Hỗ Trợ Rao Bán Đồ, MOD Full Phiên Bản Hỗ Trợ HIT</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Ngọc Rồng Online 004 – Songoku Tìm 7 Viên Ngọc Rồng Hack Full Phiên Bản</a></div>
+    <div class="row"><span class="ic">➜</span><a href="#" class="c-blue">Ngọc Rồng Online 017 Mới – Songoku Tìm 7 Viên Ngọc Rồng Hack Full Phiên Bản</a></div>
+  </div>
+
+  <!-- Home / Mini bottom nav -->
+  <div class="bottom-nav">
+    <a href="index.html">🏠 HOME</a>
+    <a href="#">📁 MINI</a>
+  </div>
+
+  <!-- TRUNG TAM HO TRO -->
+  <div class="hdr blue">» TRUNG TÂM HỖ TRỢ</div>
+  <div class="list">
+    <div class="row"><span class="ic">✉️</span><a href="#" class="c-red">T.T Báo Lỗi</a> - <a href="#" class="c-blue">Hỗ Trợ</a> - <a href="#" class="c-teal">Góp Ý</a></div>
+  </div>
+
+  <div class="footer">WapVip.Pro © 2016</div>
+
+</div>
+</body>
+</html>
