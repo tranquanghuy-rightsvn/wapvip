@@ -26,10 +26,18 @@ gas/ (CMS)  --commit qua GitHub Contents API-->  data/*.json
 | `html/css/style.css` | Người, tay | Có |
 | `scripts/build.py`, `.github/workflows/build.yml` | Người, tay | Có |
 | `gas/*` | Người, tay (deploy bằng clasp hoặc copy-paste vào script.google.com) | Có |
+| `html/admin/index.html`, `html/robots.txt` | Người, tay | Có (xem mục "Link quản trị") |
 
 Chạy build cục bộ: `python3 scripts/build.py` (chỉ cần Python 3 stdlib, không cần cài gì thêm).
-`data/` hiện có dữ liệu mẫu (4 category, 4 bài viết demo) để build.py chạy thử được ngay —
-xoá/thay bằng dữ liệu thật khi CMS đã hoạt động.
+`data/` hiện đang chứa dữ liệu THẬT do CMS ghi vào (không còn data mẫu) — không sửa tay.
+
+## Link quản trị (`/admin/`)
+
+`html/admin/index.html` là 1 trang redirect tĩnh (meta refresh + JS) trỏ sang URL web app GAS
+(`/exec`) hiện tại — chỉ để tiện nhớ URL (`domain.com/admin`), không phải trang quản trị thật.
+Đổi URL này khi Deploy → New deployment tạo URL `/exec` mới (New version thì URL giữ nguyên,
+không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không index: meta tag trong chính trang
++ `Disallow: /admin/` trong `html/robots.txt`.
 
 ## Schema dữ liệu
 
