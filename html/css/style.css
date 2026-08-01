@@ -67,6 +67,13 @@ a:hover {
 .banner .logo .c4 { color: #1a56c4; }
 .banner .logo .c5 { color: #e2231a; }
 .banner .logo .dot { color: #f2a900; }
+.banner .logo img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 80px;
+  height: auto;
+  vertical-align: middle;
+}
 .banner .deco {
   font-size: 20px;
   opacity: 0.85;

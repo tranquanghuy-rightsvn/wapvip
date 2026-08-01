@@ -54,7 +54,8 @@ def normalize_search(text):
 
 
 def site_name_spans(name):
-    """Moi ky tu 1 mau, cycle qua .c1..c5 (dung lai CSS co san trong .banner .logo)."""
+    """Moi ky tu 1 mau, cycle qua .c1..c5 (dung lai CSS co san trong .banner .logo) - CHI dung lam
+    fallback khi chua co logo anh (site.logo_url rong), khong con la cach hien thi chinh."""
     parts = []
     i = 0
     for ch in name:
@@ -65,6 +66,15 @@ def site_name_spans(name):
         parts.append('<span class="{}">{}</span>'.format(cls, html.escape(ch)))
         i += 1
     return "".join(parts)
+
+
+def logo_html(site, site_name, prefix=""):
+    """Logo header - dung anh (site.logo_url, quan tri qua CMS) neu co, fallback ve chu mau tung
+    ky tu (site_name_spans) neu chua tung upload logo nao (vd sheet Site moi tao)."""
+    logo_url = site.get("logo_url")
+    if logo_url:
+        return '<img src="{}{}" alt="{}">'.format(prefix, html.escape(logo_url), html.escape(site_name))
+    return site_name_spans(site_name)
 
 
 def nav_row_links(menu_games, prefix=""):
@@ -244,7 +254,7 @@ def build_index(site, categories, cat_by_id, posts_full):
 
     mapping = {
         "PAGE_TITLE": html.escape(site_name + " - Tải Game Mobile Huyền Thoại, Tool Hack Miễn Phí"),
-        "SITE_NAME_SPANS": site_name_spans(site_name),
+        "LOGO_HTML": logo_html(site, site_name),
         "INTRO_TITLE": html.escape(site.get("intro_title", "")),
         "INTRO_PARAGRAPHS": intro_paragraphs,
         "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", [])),
@@ -281,7 +291,7 @@ def build_posts(site, categories, cat_by_id, posts_full):
 
         mapping = {
             "PAGE_TITLE": html.escape(post["title"] + " - " + site_name),
-            "SITE_NAME_SPANS": site_name_spans(site_name),
+            "LOGO_HTML": logo_html(site, site_name, prefix=depth_prefix),
             "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", []), prefix=depth_prefix),
             "BREADCRUMB_CATEGORY": breadcrumb,
             "POST_ICON": post_icon_html,
