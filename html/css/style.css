@@ -365,6 +365,11 @@ a:hover {
   text-decoration: none;
   filter: brightness(1.05);
 }
+/* .article-body a { color: #1a56c4; } co specificity cao hon .dl-button don le nen se de len
+   mau xanh neu khong co dong nay - .article-body .dl-button danh dau ro rang giu mau trang. */
+.article-body .dl-button {
+  color: #fff;
+}
 .byline .click span:nth-child(1) { color: #e2231a; }
 .byline .click span:nth-child(2) { color: #2a8a3e; }
 .byline .click span:nth-child(3) { color: #1a56c4; }
