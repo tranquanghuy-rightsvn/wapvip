@@ -412,6 +412,29 @@ a:hover {
 .article-body a { color: #1a56c4; }
 .article-body b { color: #111; }
 
+/* anh chen trong noi dung bai viet (qua nut Chen anh nhanh trong CMS) - can giua, khong bao gio
+   rong hon content (container da bi gioi han boi .wrap max-width roi, chi can 100% la du, khong
+   hard-code so px de tu dong theo neu .wrap doi max-width sau nay). */
+.article-body figure.image {
+  margin: 16px auto;
+  max-width: 100%;
+  text-align: center;
+}
+.article-body figure.image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.article-body figure.image figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  font-style: italic;
+  color: #777;
+}
+
 /* placeholder embedded screenshot */
 .shot {
   display: block;

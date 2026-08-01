@@ -54,6 +54,33 @@ URL tuyệt đối lấy từ `site.site_url` (Cấu hình Site trong CMS — fi
 mặc định này ở lần load kế tiếp). Đổi domain thật: sửa field đó trong CMS rồi lưu lại — build lại
 là cả `sitemap.xml` lẫn `robots.txt` tự cập nhật theo, không sửa tay/hardcode domain ở đâu khác.
 
+## Ảnh chèn trong nội dung bài viết
+
+Nút "🖼️ Ảnh" trong toolbar TinyMCE (không dùng dialog Image mặc định) mở thẳng file picker của hệ
+điều hành — chọn xong là chèn ngay (preview local qua `URL.createObjectURL`, không chờ mạng), con
+trỏ tự nhảy xuống dòng ngay sau ảnh, caption mặc định là chữ "Caption ảnh" (sửa trực tiếp trong
+trình soạn thảo, không qua prompt/dialog nào — đúng yêu cầu "quick insert").
+
+- Resize CLIENT-SIDE (canvas) về tối đa **700px chiều rộng** trước khi upload — khớp đúng độ rộng
+  hiệu dụng thật của `.article-body` trên site (`.wrap` max-width 720px trừ padding), tránh lưu dư
+  resolution không bao giờ hiển thị. Giữ định dạng PNG nếu ảnh gốc là PNG (cần trong suốt), còn lại
+  xuất JPEG chất lượng ~0.85.
+- Ảnh lưu tại `html/posts/<slug>/images/<file>` (ghi thẳng vào site, không qua `data/`, giống hệt
+  nguyên tắc file tải game — tránh duplicate). Đánh số bất biến (`01.jpg`, `02.jpg`...), ảnh cũ
+  không đổi tên khi thêm ảnh mới.
+- **Upload NGAY khi chèn ảnh, không đợi bấm Lưu bài**: nếu bài đã có slug (đã lưu ít nhất 1 lần),
+  ảnh được đẩy thẳng vào Drive (lưu trữ nội bộ, không public) VÀ GitHub (`html/posts/<slug>/images/`)
+  ngay lập tức (`uploadContentImage` trong `gas/Code.js`). Bài MỚI chưa từng lưu (chưa có slug thật)
+  thì ảnh chỉ lên Drive trước — tự động đẩy nốt lên GitHub cùng lúc với lần Lưu bài đầu tiên
+  (`publishPostImages_`), vì thư mục đích trên GitHub cần biết slug cuối cùng mới tạo được.
+- Bấm "Lưu bài viết" sẽ tự đợi hết các ảnh đang upload dở dang xong mới thực sự lưu (không mất ảnh
+  nếu bấm Lưu ngay sau khi vừa chèn ảnh).
+- `data/posts/<slug>.json` có thêm field `images` (mảng đường dẫn tương đối `posts/<slug>/images/NN.ext`).
+  Content HTML dùng cấu trúc `<figure class="image"><img><figcaption></figure>` — CSS căn giữa,
+  `max-width: 100%` (không bao giờ vượt khung nội dung, tự theo nếu `.wrap` đổi max-width sau này).
+- Xoá bài viết: dọn cả thư mục ảnh trên Drive (`post-images/<postId>`) lẫn trên GitHub (đã nằm
+  trong `html/posts/<slug>/` nên tự xoá theo khi xoá cả bài).
+
 ## Schema dữ liệu
 
 - `data/site.json`: `site_name`, `intro_title`, `intro_paragraphs` (mảng string, mỗi phần tử 1
@@ -71,7 +98,8 @@ là cả `sitemap.xml` lẫn `robots.txt` tự cập nhật theo, không sửa t
   (`"repo"|"release"|"drive"`, xem mục "Giới hạn upload file tải game" bên dưới),
   download_external_url (URL tuyệt đối khi storage là release/drive), download_release_asset_id,
   created_at, updated_at.
-- `data/posts/<slug>.json`: như trên + `content` (HTML từ rich-text editor trong CMS).
+- `data/posts/<slug>.json`: như trên + `content` (HTML từ rich-text editor trong CMS) + `images`
+  (mảng đường dẫn ảnh chèn trong content, xem mục "Ảnh chèn trong nội dung bài viết" bên dưới).
 - Field `game` trên bài viết là **tự do, gõ tay, khác với category** — CMS không ràng buộc nó vào
   danh sách category, chỉ hiển thị làm badge trên trang bài viết (đúng yêu cầu "1 bài viết có thể
   thuộc 1 game nào đó, khác category thường").
