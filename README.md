@@ -39,11 +39,21 @@ Chạy build cục bộ: `python3 scripts/build.py` (chỉ cần Python 3 stdlib
 không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không index: meta tag trong chính trang
 + `Disallow: /admin/` trong `html/robots.txt`.
 
+## sitemap.xml
+
+`scripts/build.py` tự sinh `html/sitemap.xml` (trang chủ + từng trang bài viết, kèm `<lastmod>`
+theo `updated_at`) mỗi lần build. URL tuyệt đối lấy từ `site.site_url` (Cấu hình Site trong CMS —
+field "URL website"), mặc định `http://giaitri321.com` nếu chưa từng lưu field này (sheet cũ tự
+được bổ sung field với giá trị mặc định này ở lần load kế tiếp). Đổi domain thật: sửa field đó
+trong CMS rồi lưu lại — không sửa tay `sitemap.xml` hay hardcode domain ở đâu khác.
+`html/robots.txt` đã có dòng `Sitemap: ...` trỏ tới file này.
+
 ## Schema dữ liệu
 
 - `data/site.json`: `site_name`, `intro_title`, `intro_paragraphs` (mảng string, mỗi phần tử 1
   đoạn `<p>`), `banner: {type: "image"|"video", url, text}`, `menu_games` (mảng string — tên các
-  Game hiện ở **menu ngang trên cùng**, xem mục riêng bên dưới).
+  Game hiện ở **menu ngang trên cùng**, xem mục riêng bên dưới), `site_url` (domain thật, dùng
+  cho `sitemap.xml`, xem mục riêng bên dưới).
 - `data/categories.json`: mảng `{id, slug, name, order}`. `order` = thứ tự hiển thị (kéo-thả
   trong CMS), quyết định thứ tự các section màu xen kẽ trên trang chủ ("DANH SÁCH ..."). **Không
   còn quyết định menu ngang trên cùng** (xem mục Game bên dưới) — chỉ còn dùng để nhóm bài viết
@@ -61,9 +71,8 @@ không cần sửa). Gắn `noindex` 2 lớp để công cụ tìm kiếm không
   thuộc 1 game nào đó, khác category thường").
 - **Menu ngang trên cùng lấy từ Game, không phải Category**: `site.menu_games` là mảng **tên Game
   do admin multi-select** trong CMS (Cấu hình Site) — danh sách để chọn được lấy từ các giá trị
-  `game` đã từng gõ ở bài viết (không gõ tay link/tên riêng). Mỗi mục menu tự động link về
-  `index.html?q=<tên game>`, tái dùng luôn cơ chế search client-side (`data-search`) để lọc đúng
-  các bài thuộc game đó — không cần trang danh sách riêng cho từng game.
+  `game` đã từng gõ ở bài viết (không gõ tay link/tên riêng). Mỗi mục menu bấm vào đều quay về
+  trang chủ (`index.html`) — chỉ là danh sách hiển thị/thương hiệu, không lọc/filter gì.
 - **Icon đầu tiêu đề** (`post.icon`, tuỳ chọn): `""` (không có) | `hot` | `new` | `game` | `rocket`
   | `fire`, chọn qua nhóm nút trong CMS. `hot`/`new` render badge đỏ; `game`/`rocket`/`fire` render
   emoji 🎮/🚀/🎆. Khi để trống, trang chủ tự cycle qua 1 bộ icon trang trí khác (không có 🎮 trong
