@@ -34,18 +34,34 @@ xoá/thay bằng dữ liệu thật khi CMS đã hoạt động.
 ## Schema dữ liệu
 
 - `data/site.json`: `site_name`, `intro_title`, `intro_paragraphs` (mảng string, mỗi phần tử 1
-  đoạn `<p>`), `banner: {type: "image"|"video", url, text}`.
+  đoạn `<p>`), `banner: {type: "image"|"video", url, text}`, `menu_games` (mảng string — tên các
+  Game hiện ở **menu ngang trên cùng**, xem mục riêng bên dưới).
 - `data/categories.json`: mảng `{id, slug, name, order}`. `order` = thứ tự hiển thị (kéo-thả
-  trong CMS), quyết định cả vị trí trong menu ARMY/AVATAR/... lẫn thứ tự section trên trang chủ.
-  Màu xen kẽ (xanh dương/xanh ngọc cho tiêu đề section, 5 màu xoay vòng cho link bài viết) được
-  `build.py` tự tính theo **thứ tự trong mảng**, không lưu màu vào data — thêm/bớt/sắp xếp lại
-  category là tự động đổi màu theo, không cần sửa CSS.
-- `data/posts.json`: index nhẹ (không có `content`) — title, slug, category_id, game, download_*,
-  created_at, updated_at.
+  trong CMS), quyết định thứ tự các section màu xen kẽ trên trang chủ ("DANH SÁCH ..."). **Không
+  còn quyết định menu ngang trên cùng** (xem mục Game bên dưới) — chỉ còn dùng để nhóm bài viết
+  thành từng khối trên trang chủ. Màu xen kẽ (xanh dương/xanh ngọc cho tiêu đề section, 5 màu xoay
+  vòng cho link bài viết) được `build.py` tự tính theo **thứ tự trong mảng**, không lưu màu vào
+  data — thêm/bớt/sắp xếp lại category là tự động đổi màu theo, không cần sửa CSS.
+- `data/posts.json`: index nhẹ (không có `content`) — title, slug, category_id, game, icon,
+  download_type, download_url, download_file_name/_size/_path/_drive_id/_mime, created_at,
+  updated_at.
 - `data/posts/<slug>.json`: như trên + `content` (HTML từ rich-text editor trong CMS).
-- Field `game` trên bài viết là **tự do, khác với category** — CMS không ràng buộc nó vào danh
-  sách category, chỉ hiển thị làm badge trên trang bài viết (đúng yêu cầu "1 bài viết có thể
+- Field `game` trên bài viết là **tự do, gõ tay, khác với category** — CMS không ràng buộc nó vào
+  danh sách category, chỉ hiển thị làm badge trên trang bài viết (đúng yêu cầu "1 bài viết có thể
   thuộc 1 game nào đó, khác category thường").
+- **Menu ngang trên cùng lấy từ Game, không phải Category**: `site.menu_games` là mảng **tên Game
+  do admin multi-select** trong CMS (Cấu hình Site) — danh sách để chọn được lấy từ các giá trị
+  `game` đã từng gõ ở bài viết (không gõ tay link/tên riêng). Mỗi mục menu tự động link về
+  `index.html?q=<tên game>`, tái dùng luôn cơ chế search client-side (`data-search`) để lọc đúng
+  các bài thuộc game đó — không cần trang danh sách riêng cho từng game.
+- **Icon đầu tiêu đề** (`post.icon`, tuỳ chọn): `""` (không có) | `hot` | `new` | `game` | `rocket`
+  | `fire`, chọn qua nhóm nút trong CMS. `hot`/`new` render badge đỏ; `game`/`rocket`/`fire` render
+  emoji 🎮/🚀/🎆. Khi để trống, trang chủ tự cycle qua 1 bộ icon trang trí khác (không có 🎮 trong
+  bộ này — 🎮 chỉ hiện khi được chọn chủ động, tránh trùng ý nghĩa với lựa chọn tay).
+- **Link tải là tuỳ chọn**: `download_type` có thể là `"none"` (không nhập gì) — bài viết vẫn lưu
+  và publish bình thường, chỉ là trang bài viết sẽ không có nút tải (`build.py` tự bỏ qua khi
+  thiếu `download_url`/`download_file_path`). Khi sửa bài đã upload sẵn file mà không chọn file
+  mới, `gas/Code.js` tự giữ nguyên file cũ (không bắt buộc upload lại mỗi lần lưu).
 
 ## Setup Google Apps Script
 

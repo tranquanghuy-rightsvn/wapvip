@@ -6,13 +6,13 @@
   "game": "",
   "download_type": "upload",
   "download_url": null,
-  "download_file": {
-    "name": "tool-up-nguyen-lieu-v2.zip",
-    "size": 5242880,
-    "path": "downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip"
-  },
   "created_at": "2017-02-09T08:00:00.000Z",
   "updated_at": "2017-02-09T08:00:00.000Z",
   "content": "<p><span class=\"bul\">➜</span><b>Tool Up Nguyên Liệu V2</b>: Auto farm nguyên liệu không cần đứng máy canh, chạy nền ổn định.</p>\n\n<p><span class=\"head green\">• Hướng Dẫn Sử Dụng</span>:<br>\n- Giải nén file tải về<br>\n- Mở tool, đăng nhập tài khoản game<br>\n- Chọn khu vực cần farm rồi bấm Bắt Đầu</p>\n\n<p><span class=\"bul\">➜</span>Tool chỉ hỗ trợ mục đích farm nguyên liệu, không can thiệp vào dữ liệu tài khoản.</p>",
-  "icon": ""
+  "icon": "",
+  "download_file_name": "tool-up-nguyen-lieu-v2.zip",
+  "download_file_size": 5242880,
+  "download_file_path": "downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip",
+  "download_drive_id": "",
+  "download_mime": "application/zip"
 }

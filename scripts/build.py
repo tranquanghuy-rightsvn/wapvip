@@ -8,6 +8,7 @@ Chay: python3 scripts/build.py
 import html
 import json
 import unicodedata
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
@@ -63,16 +64,17 @@ def site_name_spans(name):
     return "".join(parts)
 
 
-def nav_row_links(menu_games):
-    """Menu ngang tren cung lay tu danh sach Game (quan tri trong Cau hinh Site),
-    KHONG lay tu Category. Moi muc la {"name":..., "link":...} do admin tu nhap,
-    link giu nguyen y admin go (co the la "#", URL ngoai, hoac duong dan tuy y)."""
+def nav_row_links(menu_games, prefix=""):
+    """Menu ngang tren cung lay tu danh sach Game co san (admin multi-select trong Cau hinh Site,
+    KHONG go tay), KHONG lay tu Category. menu_games la mang ten game (string) - moi muc link ve
+    trang chu kem tu khoa tim kiem (index.html?q=<ten game>), tai su dung luon co che search
+    client-side da co san (data-search) de loc dung cac bai thuoc game do, khong can trang rieng."""
     if not menu_games:
-        return "    <!-- Chua co muc menu nao (them trong Cau hinh Site > Menu) -->"
+        return "    <!-- Chua co Game nao duoc chon lam menu (chon trong Cau hinh Site > Menu) -->"
     lines = []
-    for item in menu_games:
-        link = item.get("link") or "#"
-        lines.append('    <a href="{}">{}</a>'.format(html.escape(link), html.escape(item.get("name", ""))))
+    for name in menu_games:
+        href = "{}index.html?q={}".format(prefix, urllib.parse.quote(name))
+        lines.append('    <a href="{}">{}</a>'.format(html.escape(href), html.escape(name)))
     return "\n".join(lines)
 
 
@@ -95,7 +97,10 @@ def format_date(iso_str):
 
 
 def download_href_and_attrs(post, depth_prefix):
-    """Tra (href, extra_attrs) cho nut download, hoac (None, None) neu khong hop le."""
+    """Tra (href, extra_attrs) cho nut download, hoac (None, None) neu khong hop le/khong co
+    (link tai la TUY CHON - xem gas/Code.js savePost: khong nhap gi thi download_type = "none").
+    Doc dung field phang ma gas/Code.js thuc te ghi ra (download_file_name/_size/_path), khong
+    phai dang object long "download_file" (schema cu chi con trong data mau viet tay ban dau)."""
     dtype = post.get("download_type")
     if dtype == "link":
         url = post.get("download_url")
@@ -103,13 +108,13 @@ def download_href_and_attrs(post, depth_prefix):
             return None, None
         return url, ' target="_blank" rel="noopener"'
     if dtype == "upload":
-        f = post.get("download_file")
-        if not f or not f.get("path"):
+        path = post.get("download_file_path")
+        if not path:
             return None, None
-        if f.get("size", 0) > MAX_UPLOAD_BYTES:
-            print("  [CANH BAO] '{}': file upload {} vuot 100MB, bo qua nut tai.".format(post["slug"], f.get("name")))
+        if post.get("download_file_size", 0) > MAX_UPLOAD_BYTES:
+            print("  [CANH BAO] '{}': file upload {} vuot 100MB, bo qua nut tai.".format(post["slug"], post.get("download_file_name")))
             return None, None
-        return "{}{}".format(depth_prefix, f["path"]), ' download="{}"'.format(html.escape(f.get("name", "")))
+        return "{}{}".format(depth_prefix, path), ' download="{}"'.format(html.escape(post.get("download_file_name", "")))
     return None, None
 
 
@@ -225,7 +230,7 @@ def build_posts(site, categories, cat_by_id, posts_full):
         mapping = {
             "PAGE_TITLE": html.escape(post["title"] + " - " + site_name),
             "SITE_NAME_SPANS": site_name_spans(site_name),
-            "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", [])),
+            "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", []), prefix=depth_prefix),
             "BREADCRUMB_CATEGORY": breadcrumb,
             "POST_ICON": post_icon_html,
             "POST_TITLE": html.escape(post["title"]),

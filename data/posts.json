@@ -7,7 +7,6 @@
     "game": "Ngọc Rồng Online",
     "download_type": "link",
     "download_url": "https://example.com/downloads/nro-144-prev59.apk",
-    "download_file": null,
     "created_at": "2017-02-04T10:44:00.000Z",
     "updated_at": "2017-02-04T10:44:00.000Z",
     "icon": "hot"
@@ -20,14 +19,14 @@
     "game": "Mobi Army 2",
     "download_type": "upload",
     "download_url": null,
-    "download_file": {
-      "name": "army-239-cangoc-v9.5.apk",
-      "size": 18874368,
-      "path": "downloads/mobi-army-2-3-9-can-goc-v9-5/army-239-cangoc-v9.5.apk"
-    },
     "created_at": "2017-02-06T09:00:00.000Z",
     "updated_at": "2017-02-06T09:00:00.000Z",
-    "icon": "new"
+    "icon": "new",
+    "download_file_name": "army-239-cangoc-v9.5.apk",
+    "download_file_size": 18874368,
+    "download_file_path": "downloads/mobi-army-2-3-9-can-goc-v9-5/army-239-cangoc-v9.5.apk",
+    "download_drive_id": "",
+    "download_mime": "application/vnd.android.package-archive"
   },
   {
     "id": "post-avatarq-250-v911",
@@ -37,7 +36,6 @@
     "game": "Avatar 250",
     "download_type": "link",
     "download_url": "https://example.com/downloads/avatarq-250-v9.1.1.apk",
-    "download_file": null,
     "created_at": "2017-02-08T14:20:00.000Z",
     "updated_at": "2017-02-08T14:20:00.000Z",
     "icon": "rocket"
@@ -50,13 +48,13 @@
     "game": "",
     "download_type": "upload",
     "download_url": null,
-    "download_file": {
-      "name": "tool-up-nguyen-lieu-v2.zip",
-      "size": 5242880,
-      "path": "downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip"
-    },
     "created_at": "2017-02-09T08:00:00.000Z",
     "updated_at": "2017-02-09T08:00:00.000Z",
-    "icon": ""
+    "icon": "",
+    "download_file_name": "tool-up-nguyen-lieu-v2.zip",
+    "download_file_size": 5242880,
+    "download_file_path": "downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip",
+    "download_drive_id": "",
+    "download_mime": "application/zip"
   }
 ]

@@ -10,11 +10,6 @@
     "url": "",
     "text": "🏆 GIẢI ĐẤU MOBI ARMY 2 MÙA HÈ 2026 - ĐĂNG KÝ NGAY"
   },
-  "menu_games": [
-    { "name": "ARMY", "link": "#" },
-    { "name": "AVATAR", "link": "#" },
-    { "name": "NINJA", "link": "#" },
-    { "name": "KPAH", "link": "#" }
-  ],
+  "menu_games": ["Mobi Army 2", "Avatar 250", "Ngọc Rồng Online"],
   "updated_at": "2026-08-01T00:00:00.000Z"
 }
