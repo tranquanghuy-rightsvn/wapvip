@@ -9,7 +9,8 @@
     "download_url": "https://example.com/downloads/nro-144-prev59.apk",
     "download_file": null,
     "created_at": "2017-02-04T10:44:00.000Z",
-    "updated_at": "2017-02-04T10:44:00.000Z"
+    "updated_at": "2017-02-04T10:44:00.000Z",
+    "icon": "hot"
   },
   {
     "id": "post-army-239-cangoc-v95",
@@ -19,9 +20,14 @@
     "game": "Mobi Army 2",
     "download_type": "upload",
     "download_url": null,
-    "download_file": { "name": "army-239-cangoc-v9.5.apk", "size": 18874368, "path": "downloads/mobi-army-2-3-9-can-goc-v9-5/army-239-cangoc-v9.5.apk" },
+    "download_file": {
+      "name": "army-239-cangoc-v9.5.apk",
+      "size": 18874368,
+      "path": "downloads/mobi-army-2-3-9-can-goc-v9-5/army-239-cangoc-v9.5.apk"
+    },
     "created_at": "2017-02-06T09:00:00.000Z",
-    "updated_at": "2017-02-06T09:00:00.000Z"
+    "updated_at": "2017-02-06T09:00:00.000Z",
+    "icon": "new"
   },
   {
     "id": "post-avatarq-250-v911",
@@ -33,7 +39,8 @@
     "download_url": "https://example.com/downloads/avatarq-250-v9.1.1.apk",
     "download_file": null,
     "created_at": "2017-02-08T14:20:00.000Z",
-    "updated_at": "2017-02-08T14:20:00.000Z"
+    "updated_at": "2017-02-08T14:20:00.000Z",
+    "icon": "rocket"
   },
   {
     "id": "post-tool-up-nguyen-lieu-v2",
@@ -43,8 +50,13 @@
     "game": "",
     "download_type": "upload",
     "download_url": null,
-    "download_file": { "name": "tool-up-nguyen-lieu-v2.zip", "size": 5242880, "path": "downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip" },
+    "download_file": {
+      "name": "tool-up-nguyen-lieu-v2.zip",
+      "size": 5242880,
+      "path": "downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip"
+    },
     "created_at": "2017-02-09T08:00:00.000Z",
-    "updated_at": "2017-02-09T08:00:00.000Z"
+    "updated_at": "2017-02-09T08:00:00.000Z",
+    "icon": ""
   }
 ]

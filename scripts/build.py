@@ -20,7 +20,17 @@ MAX_UPLOAD_BYTES = 100 * 1024 * 1024  # 100MB — khop rule cua CMS (xem gas.md 
 NAME_CLASSES = ["c1", "c2", "c3", "c4", "c5"]  # mau cycle, tai su dung tu style.css hien co
 HDR_CLASSES = ["teal", "blue"]  # xen ke theo template hien tai (DANH SACH TAI GAME=teal, TOOL=blue)
 ROW_CLASSES = ["c-blue", "c-red", "c-purple", "c-teal", "c-brown"]
-ROW_ICONS = ["🎮", "🔫", "💕", "🥷", "⚔️", "🌪️", "🎯", "🕹️"]
+ROW_ICONS = ["🔫", "💕", "🥷", "⚔️", "🌪️", "🎯", "🕹️"]  # khong co 🎮 - icon do chi hien khi chon tay o CMS
+
+# Icon dau tieu de bai viet, chon tay trong CMS (post.icon) - danh sach preset dung chung voi gas/app.html.
+# Khong chon (icon rong) -> homepage dung ROW_ICONS auto-cycle nhu cu; co chon -> uu tien hien thi icon nay.
+POST_ICON_HTML = {
+    "hot": '<span class="badge red">HOT</span>',
+    "new": '<span class="badge red">NEW</span>',
+    "game": "🎮",
+    "rocket": "🚀",
+    "fire": "🎆",
+}
 
 
 def load_json(path, default=None):
@@ -162,7 +172,7 @@ def build_index(site, categories, cat_by_id, posts_full):
         else:
             for i, p in enumerate(cat_posts):
                 row_cls = ROW_CLASSES[i % len(ROW_CLASSES)]
-                icon = ROW_ICONS[i % len(ROW_ICONS)]
+                icon = POST_ICON_HTML.get(p.get("icon")) or ROW_ICONS[i % len(ROW_ICONS)]
                 href = "posts/{}/index.html".format(p["slug"])
                 search_text = normalize_search(" ".join(filter(None, [p["title"], p.get("game"), cat["name"]])))
                 sections.append(
@@ -206,15 +216,18 @@ def build_posts(site, categories, cat_by_id, posts_full):
         meta_parts = ['<span>{}</span>'.format(format_date(post.get("updated_at", "")))]
         meta_parts.append('<span class="tag">{}</span>'.format(html.escape(cat_name)))
         if post.get("game"):
-            meta_parts.append('<span class="game">🎮 {}</span>'.format(html.escape(post["game"])))
+            meta_parts.append('<span class="game">{}</span>'.format(html.escape(post["game"])))
         post_meta = " | ".join(meta_parts)
         download_button = download_button_html(post, depth_prefix)
+        post_icon = POST_ICON_HTML.get(post.get("icon"))
+        post_icon_html = (post_icon + " ") if post_icon else ""
 
         mapping = {
             "PAGE_TITLE": html.escape(post["title"] + " - " + site_name),
             "SITE_NAME_SPANS": site_name_spans(site_name),
             "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", [])),
             "BREADCRUMB_CATEGORY": breadcrumb,
+            "POST_ICON": post_icon_html,
             "POST_TITLE": html.escape(post["title"]),
             "POST_META": post_meta,
             "DOWNLOAD_BUTTON": download_button,
