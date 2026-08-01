@@ -2,9 +2,9 @@
   {
     "id": "4cbdab01-14c5-4637-87d9-0fc8c56cb24e",
     "slug": "bai-viet-2",
-    "title": "Bài viết 2",
+    "title": "Army 220 V10 Căn Góc All Nhân Vật , KD2",
     "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "Avatar",
+    "game": "Army",
     "download_type": "upload",
     "download_url": "",
     "download_file_name": "f618f966-7a44-4a9a-9a5e-7112afd4c932.jpeg",
@@ -13,8 +13,11 @@
     "download_drive_id": "1gOm-rnb5pdHk5ghqS6Ic7kuNiwL5bbVY",
     "download_mime": "image/jpeg",
     "created_at": "2026-08-01T04:04:03.173Z",
-    "updated_at": "2026-08-01T05:20:10.820Z",
-    "icon": ""
+    "updated_at": "2026-08-01T07:23:14.202Z",
+    "icon": "",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": ""
   },
   {
     "id": "3466919a-0929-40d7-a050-e985096ce550",
@@ -31,7 +34,10 @@
     "download_mime": "",
     "created_at": "2026-08-01T04:38:53.077Z",
     "updated_at": "2026-08-01T05:14:45.377Z",
-    "icon": "rocket"
+    "icon": "rocket",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": ""
   },
   {
     "id": "6afb8a04-4b72-4c6e-8bc9-e71307015162",
@@ -48,6 +54,9 @@
     "download_mime": "",
     "created_at": "2026-08-01T04:51:42.158Z",
     "updated_at": "2026-08-01T05:14:32.081Z",
-    "icon": ""
+    "icon": "",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": ""
   }
 ]
