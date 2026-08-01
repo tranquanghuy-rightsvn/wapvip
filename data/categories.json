@@ -22,5 +22,11 @@
     "slug": "tan-thu",
     "name": "TÂN THỦ",
     "order": 4
+  },
+  {
+    "id": "8d06112f-4307-49ba-9dee-f5997ad51681",
+    "slug": "danh-sach-ung-dung",
+    "name": "DANH SÁCH ỨNG DỤNG",
+    "order": 5
   }
 ]
