@@ -1,5 +1,39 @@
 [
   {
+    "id": "6afb8a04-4b72-4c6e-8bc9-e71307015162",
+    "slug": "bai-viet-4",
+    "title": "Army 220 V10 Mod Căn Góc All Nhân Vật - Speed Mượt",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Mobi Army 2",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-01T04:51:42.158Z",
+    "updated_at": "2026-08-01T12:18:00.811Z",
+    "icon": "hot",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "driveId": "1gEYbMOAkBbcAUZTFvNOGwmhdaMa7WmHz",
+        "file": "01.jpg"
+      },
+      {
+        "file": "03.jpg",
+        "driveId": "1oZgDHxS83VLS1CmHoJTBf8xyjOGDrkgk"
+      },
+      {
+        "driveId": "1q-cpW2uWiNU0bpVXOI-tyX3X3I05_JAC",
+        "file": "05.jpg"
+      }
+    ]
+  },
+  {
     "id": "3466919a-0929-40d7-a050-e985096ce550",
     "slug": "bai-viet-2-3466",
     "title": "Army 230 V9 Mod Full Căn Góc Nhân Vật, Hỗ Trợ KD2 - Speed Mượt",
@@ -44,26 +78,5 @@
         "driveId": "15Z-sV1L4XNgF8wASbYuWj3XMbNsDn-rj"
       }
     ]
-  },
-  {
-    "id": "6afb8a04-4b72-4c6e-8bc9-e71307015162",
-    "slug": "bai-viet-4",
-    "title": "Bài viết 4",
-    "category_id": "b25db140-724a-4221-9266-559a9141d8df",
-    "game": "",
-    "download_type": "none",
-    "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-08-01T04:51:42.158Z",
-    "updated_at": "2026-08-01T05:14:32.081Z",
-    "icon": "",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": []
   }
 ]
