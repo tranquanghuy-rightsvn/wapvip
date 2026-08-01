@@ -28,10 +28,10 @@
 {{NAV_ROW_LINKS}}
   </div>
 
-  <!-- O tim kiem -->
+  <!-- O tim kiem: loc ngay tren trang (JS ben duoi), submit GET van hoat dong khong can JS -->
   <div class="group-bar">
-    <form class="search-form" onsubmit="return false;">
-      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+    <form class="search-form" method="get" action="">
+      <input type="text" id="search-input" name="q" placeholder="Bạn Cần Tìm Gì?">
       <button type="submit">Tìm</button>
     </form>
   </div>
@@ -43,8 +43,44 @@
   </div>
 
 {{CATEGORY_SECTIONS}}
+  <div class="search-empty hidden" id="search-empty">Không tìm thấy bài viết nào khớp từ khoá.</div>
+
   <div class="footer">{{FOOTER_TEXT}}</div>
 
 </div>
+<script>
+(function () {
+  function normalize(s) {
+    return (s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+  }
+  var input = document.getElementById('search-input');
+  var emptyMsg = document.getElementById('search-empty');
+  if (!input) return;
+
+  function applyFilter(rawQuery) {
+    var q = normalize(rawQuery);
+    var anyVisible = false;
+    Array.prototype.slice.call(document.querySelectorAll('.list')).forEach(function (list) {
+      var rows = Array.prototype.slice.call(list.querySelectorAll('.row[data-search]'));
+      if (!rows.length) return; // list khong phai danh sach bai viet (vd khong co bai nao trong category)
+      var visibleCount = 0;
+      rows.forEach(function (row) {
+        var match = !q || row.getAttribute('data-search').indexOf(q) !== -1;
+        row.classList.toggle('hidden', !match);
+        if (match) { visibleCount++; anyVisible = true; }
+      });
+      var showSection = !q || visibleCount > 0;
+      list.classList.toggle('hidden', !showSection);
+      var hdr = list.previousElementSibling;
+      if (hdr && hdr.classList.contains('hdr')) hdr.classList.toggle('hidden', !showSection);
+    });
+    if (emptyMsg) emptyMsg.classList.toggle('hidden', !q || anyVisible);
+  }
+
+  input.addEventListener('input', function () { applyFilter(input.value); });
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { input.value = q; applyFilter(q); }
+})();
+</script>
 </body>
 </html>

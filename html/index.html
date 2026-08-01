@@ -26,16 +26,16 @@
 
   <!-- Nav row (tu dong theo category, CMS quan ly) -->
   <div class="nav-row">
-    <a href="index.html#cat-army">Mobi Army</a>
-    <a href="index.html#cat-avatar">Avatar</a>
-    <a href="index.html#cat-ngoc-rong">Ngọc Rồng</a>
-    <a href="index.html#cat-tool">Tool</a>
+    <a href="#">ARMY</a>
+    <a href="#">AVATAR</a>
+    <a href="#">NINJA</a>
+    <a href="#">KPAH</a>
   </div>
 
-  <!-- O tim kiem -->
+  <!-- O tim kiem: loc ngay tren trang (JS ben duoi), submit GET van hoat dong khong can JS -->
   <div class="group-bar">
-    <form class="search-form" onsubmit="return false;">
-      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+    <form class="search-form" method="get" action="">
+      <input type="text" id="search-input" name="q" placeholder="Bạn Cần Tìm Gì?">
       <button type="submit">Tìm</button>
     </form>
   </div>
@@ -48,26 +48,62 @@
 
   <div class="hdr teal" id="cat-army">» MOBI ARMY</div>
   <div class="list">
-    <div class="row"><span class="ic">🎮</span><a href="posts/mobi-army-2-3-9-can-goc-v9-5/index.html" class="c-blue">Army 2.3.9 Căn Góc v9.5 - Tự Chọn Giao Diện, Căn Cả 2 Lực, Chạy Siêu Mượt</a></div>
+    <div class="row" data-search="army 2.3.9 can goc v9.5 - tu chon giao dien, can ca 2 luc, chay sieu muot mobi army 2 mobi army"><span class="ic">🎮</span><a href="posts/mobi-army-2-3-9-can-goc-v9-5/index.html" class="c-blue">Army 2.3.9 Căn Góc v9.5 - Tự Chọn Giao Diện, Căn Cả 2 Lực, Chạy Siêu Mượt</a></div>
   </div>
 
   <div class="hdr blue" id="cat-avatar">» AVATAR</div>
   <div class="list">
-    <div class="row"><span class="ic">🎮</span><a href="posts/avatarq-250-v9-1-1/index.html" class="c-blue">AvatarQ 250 V9.1.1 - Hỗ Trợ Làm Event Tết Nguyên Đán Siêu Nhanh</a></div>
+    <div class="row" data-search="avatarq 250 v9.1.1 - ho tro lam event tet nguyen dan sieu nhanh avatar 250 avatar"><span class="ic">🎮</span><a href="posts/avatarq-250-v9-1-1/index.html" class="c-blue">AvatarQ 250 V9.1.1 - Hỗ Trợ Làm Event Tết Nguyên Đán Siêu Nhanh</a></div>
   </div>
 
   <div class="hdr teal" id="cat-ngoc-rong">» NGỌC RỒNG</div>
   <div class="list">
-    <div class="row"><span class="ic">🎮</span><a href="posts/nro-1-4-4-prev5-9-android/index.html" class="c-blue">NRO 1.4.4 PreV5.9 Android - Hội Tụ Tất Cả Các Chức Năng Khủng Nhất HOT Nhất</a></div>
+    <div class="row" data-search="nro 1.4.4 prev5.9 android - hoi tu tat ca cac chuc nang khung nhat hot nhat ngoc rong online ngoc rong"><span class="ic">🎮</span><a href="posts/nro-1-4-4-prev5-9-android/index.html" class="c-blue">NRO 1.4.4 PreV5.9 Android - Hội Tụ Tất Cả Các Chức Năng Khủng Nhất HOT Nhất</a></div>
   </div>
 
   <div class="hdr blue" id="cat-tool">» TOOL</div>
   <div class="list">
-    <div class="row"><span class="ic">🎮</span><a href="posts/tool-up-nguyen-lieu-v2/index.html" class="c-blue">Tool Up Nguyên Liệu V2 - Auto Farm Không Cần Đứng Máy</a></div>
+    <div class="row" data-search="tool up nguyen lieu v2 - auto farm khong can dung may tool"><span class="ic">🎮</span><a href="posts/tool-up-nguyen-lieu-v2/index.html" class="c-blue">Tool Up Nguyên Liệu V2 - Auto Farm Không Cần Đứng Máy</a></div>
   </div>
+
+  <div class="search-empty hidden" id="search-empty">Không tìm thấy bài viết nào khớp từ khoá.</div>
 
   <div class="footer">WapVip.Pro © 2026</div>
 
 </div>
+<script>
+(function () {
+  function normalize(s) {
+    return (s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+  }
+  var input = document.getElementById('search-input');
+  var emptyMsg = document.getElementById('search-empty');
+  if (!input) return;
+
+  function applyFilter(rawQuery) {
+    var q = normalize(rawQuery);
+    var anyVisible = false;
+    Array.prototype.slice.call(document.querySelectorAll('.list')).forEach(function (list) {
+      var rows = Array.prototype.slice.call(list.querySelectorAll('.row[data-search]'));
+      if (!rows.length) return; // list khong phai danh sach bai viet (vd khong co bai nao trong category)
+      var visibleCount = 0;
+      rows.forEach(function (row) {
+        var match = !q || row.getAttribute('data-search').indexOf(q) !== -1;
+        row.classList.toggle('hidden', !match);
+        if (match) { visibleCount++; anyVisible = true; }
+      });
+      var showSection = !q || visibleCount > 0;
+      list.classList.toggle('hidden', !showSection);
+      var hdr = list.previousElementSibling;
+      if (hdr && hdr.classList.contains('hdr')) hdr.classList.toggle('hidden', !showSection);
+    });
+    if (emptyMsg) emptyMsg.classList.toggle('hidden', !q || anyVisible);
+  }
+
+  input.addEventListener('input', function () { applyFilter(input.value); });
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { input.value = q; applyFilter(q); }
+})();
+</script>
 </body>
 </html>

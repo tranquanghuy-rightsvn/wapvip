@@ -22,10 +22,10 @@
 {{NAV_ROW_LINKS}}
   </div>
 
-  <!-- O tim kiem -->
+  <!-- O tim kiem: khong co danh sach de loc tai day, submit se chuyen ve trang chu kem tu khoa (?q=) -->
   <div class="group-bar">
-    <form class="search-form" onsubmit="return false;">
-      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+    <form class="search-form" method="get" action="../../index.html">
+      <input type="text" name="q" placeholder="Bạn Cần Tìm Gì?">
       <button type="submit">Tìm</button>
     </form>
   </div>
@@ -39,12 +39,11 @@
   <!-- Post meta: ngay cap nhat + game (neu co) -->
   <div class="byline">{{POST_META}}</div>
 
-  <!-- Nut tai floating, khong de len content (xem css .dl-fab) -->
-{{DOWNLOAD_BUTTON}}
-
-  <!-- Article body (content tu CMS) -->
+  <!-- Article body (content tu CMS); nut tai game nam trong content, cuoi cung, to ro rang -->
   <div class="article-body">
 {{CONTENT}}
+
+{{DOWNLOAD_BUTTON}}
   </div>
 
   <!-- Home / Mini bottom nav -->

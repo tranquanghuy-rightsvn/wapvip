@@ -7,6 +7,7 @@ Chay: python3 scripts/build.py
 """
 import html
 import json
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 
@@ -29,6 +30,15 @@ def load_json(path, default=None):
         return json.load(f)
 
 
+def normalize_search(text):
+    """Bo dau + lowercase, dung logic tuong duong voi normalize() ben JS (search-input) de
+    data-search sinh o day khop duoc voi tu khoa nguoi dung go (co dau hay khong dau deu tim ra)."""
+    s = unicodedata.normalize("NFKD", text or "")
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.replace("đ", "d").replace("Đ", "D")
+    return s.lower()
+
+
 def site_name_spans(name):
     """Moi ky tu 1 mau, cycle qua .c1..c5 (dung lai CSS co san trong .banner .logo)."""
     parts = []
@@ -43,13 +53,16 @@ def site_name_spans(name):
     return "".join(parts)
 
 
-def nav_row_links(categories, prefix=""):
-    if not categories:
-        return "    <!-- Chua co category nao -->"
+def nav_row_links(menu_games):
+    """Menu ngang tren cung lay tu danh sach Game (quan tri trong Cau hinh Site),
+    KHONG lay tu Category. Moi muc la {"name":..., "link":...} do admin tu nhap,
+    link giu nguyen y admin go (co the la "#", URL ngoai, hoac duong dan tuy y)."""
+    if not menu_games:
+        return "    <!-- Chua co muc menu nao (them trong Cau hinh Site > Menu) -->"
     lines = []
-    for cat in categories:
-        href = "{}index.html#cat-{}".format(prefix, cat["slug"])
-        lines.append('    <a href="{}">{}</a>'.format(href, html.escape(cat["name"])))
+    for item in menu_games:
+        link = item.get("link") or "#"
+        lines.append('    <a href="{}">{}</a>'.format(html.escape(link), html.escape(item.get("name", ""))))
     return "\n".join(lines)
 
 
@@ -88,6 +101,14 @@ def download_href_and_attrs(post, depth_prefix):
             return None, None
         return "{}{}".format(depth_prefix, f["path"]), ' download="{}"'.format(html.escape(f.get("name", "")))
     return None, None
+
+
+def download_button_html(post, depth_prefix):
+    """Nut tai to, nam trong dong chay noi dung (cuoi bai viet) - khong con la nut fixed/floating."""
+    href, attrs = download_href_and_attrs(post, depth_prefix)
+    if not href:
+        return '  <!-- Chua co link/file tai, hoac file vuot 100MB -->'
+    return '  <a class="dl-button" href="{}"{}>⬇️ TẢI GAME NGAY</a>'.format(html.escape(href), attrs)
 
 
 def render(template_text, mapping):
@@ -143,8 +164,10 @@ def build_index(site, categories, cat_by_id, posts_full):
                 row_cls = ROW_CLASSES[i % len(ROW_CLASSES)]
                 icon = ROW_ICONS[i % len(ROW_ICONS)]
                 href = "posts/{}/index.html".format(p["slug"])
-                sections.append('    <div class="row"><span class="ic">{}</span><a href="{}" class="{}">{}</a></div>'.format(
-                    icon, href, row_cls, html.escape(p["title"])))
+                search_text = normalize_search(" ".join(filter(None, [p["title"], p.get("game"), cat["name"]])))
+                sections.append(
+                    '    <div class="row" data-search="{}"><span class="ic">{}</span><a href="{}" class="{}">{}</a></div>'.format(
+                        html.escape(search_text), icon, href, row_cls, html.escape(p["title"])))
         sections.append('  </div>')
         sections.append('')
 
@@ -157,7 +180,7 @@ def build_index(site, categories, cat_by_id, posts_full):
         "SITE_NAME_SPANS": site_name_spans(site_name),
         "INTRO_TITLE": html.escape(site.get("intro_title", "")),
         "INTRO_PARAGRAPHS": intro_paragraphs,
-        "NAV_ROW_LINKS": nav_row_links(categories, prefix=""),
+        "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", [])),
         "BANNER_MEDIA": banner_media_html(site.get("banner")),
         "BANNER_TEXT": html.escape((site.get("banner") or {}).get("text", "")),
         "CATEGORY_SECTIONS": "\n".join(sections),
@@ -185,17 +208,12 @@ def build_posts(site, categories, cat_by_id, posts_full):
         if post.get("game"):
             meta_parts.append('<span class="game">🎮 {}</span>'.format(html.escape(post["game"])))
         post_meta = " | ".join(meta_parts)
-
-        href, attrs = download_href_and_attrs(post, depth_prefix)
-        if href:
-            download_button = '  <a class="dl-fab" href="{}"{}>⬇️ TẢI VỀ</a>'.format(html.escape(href), attrs)
-        else:
-            download_button = '  <!-- Chua co link/file tai, hoac file vuot 100MB -->'
+        download_button = download_button_html(post, depth_prefix)
 
         mapping = {
             "PAGE_TITLE": html.escape(post["title"] + " - " + site_name),
             "SITE_NAME_SPANS": site_name_spans(site_name),
-            "NAV_ROW_LINKS": nav_row_links(categories, prefix=depth_prefix),
+            "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", [])),
             "BREADCRUMB_CATEGORY": breadcrumb,
             "POST_TITLE": html.escape(post["title"]),
             "POST_META": post_meta,

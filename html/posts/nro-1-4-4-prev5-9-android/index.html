@@ -19,16 +19,16 @@
 
   <!-- Nav row (dong bo voi index.html) -->
   <div class="nav-row">
-    <a href="../../index.html#cat-army">Mobi Army</a>
-    <a href="../../index.html#cat-avatar">Avatar</a>
-    <a href="../../index.html#cat-ngoc-rong">Ngọc Rồng</a>
-    <a href="../../index.html#cat-tool">Tool</a>
+    <a href="#">ARMY</a>
+    <a href="#">AVATAR</a>
+    <a href="#">NINJA</a>
+    <a href="#">KPAH</a>
   </div>
 
-  <!-- O tim kiem -->
+  <!-- O tim kiem: khong co danh sach de loc tai day, submit se chuyen ve trang chu kem tu khoa (?q=) -->
   <div class="group-bar">
-    <form class="search-form" onsubmit="return false;">
-      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+    <form class="search-form" method="get" action="../../index.html">
+      <input type="text" name="q" placeholder="Bạn Cần Tìm Gì?">
       <button type="submit">Tìm</button>
     </form>
   </div>
@@ -42,10 +42,7 @@
   <!-- Post meta: ngay cap nhat + game (neu co) -->
   <div class="byline"><span>04.02.2017</span> | <span class="tag">Ngọc Rồng</span> | <span class="game">🎮 Ngọc Rồng Online</span></div>
 
-  <!-- Nut tai floating, khong de len content (xem css .dl-fab) -->
-  <a class="dl-fab" href="https://example.com/downloads/nro-144-prev59.apk" target="_blank" rel="noopener">⬇️ TẢI VỀ</a>
-
-  <!-- Article body (content tu CMS) -->
+  <!-- Article body (content tu CMS); nut tai game nam trong content, cuoi cung, to ro rang -->
   <div class="article-body">
 <p><span class="bul">➜</span><b>Menu Pro</b>: Chat "<a href="#">mkhoa</a>" để Ẩn hoặc Hiện <b>Menu Chạm Pro</b></p>
 
@@ -66,6 +63,8 @@
 - Mặc định <b>ngọc rồng premium</b> là <b>Bật</b> và săn tất cả các boss, bạn có thể <b>Bật/Tắt</b> trong menu <b>Cài Đặt</b>.</p>
 
 <p><span class="head red">CHÚ Ý:</span> <b>NRO Premium</b> là sản phẩm độc quyền và được xây dựng bởi WapVip.Pro 😊</p>
+
+  <a class="dl-button" href="https://example.com/downloads/nro-144-prev59.apk" target="_blank" rel="noopener">⬇️ TẢI GAME NGAY</a>
   </div>
 
   <!-- Home / Mini bottom nav -->

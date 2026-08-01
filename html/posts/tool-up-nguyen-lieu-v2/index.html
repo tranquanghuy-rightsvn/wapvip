@@ -19,16 +19,16 @@
 
   <!-- Nav row (dong bo voi index.html) -->
   <div class="nav-row">
-    <a href="../../index.html#cat-army">Mobi Army</a>
-    <a href="../../index.html#cat-avatar">Avatar</a>
-    <a href="../../index.html#cat-ngoc-rong">Ngọc Rồng</a>
-    <a href="../../index.html#cat-tool">Tool</a>
+    <a href="#">ARMY</a>
+    <a href="#">AVATAR</a>
+    <a href="#">NINJA</a>
+    <a href="#">KPAH</a>
   </div>
 
-  <!-- O tim kiem -->
+  <!-- O tim kiem: khong co danh sach de loc tai day, submit se chuyen ve trang chu kem tu khoa (?q=) -->
   <div class="group-bar">
-    <form class="search-form" onsubmit="return false;">
-      <input type="text" placeholder="Bạn Cần Tìm Gì?">
+    <form class="search-form" method="get" action="../../index.html">
+      <input type="text" name="q" placeholder="Bạn Cần Tìm Gì?">
       <button type="submit">Tìm</button>
     </form>
   </div>
@@ -42,10 +42,7 @@
   <!-- Post meta: ngay cap nhat + game (neu co) -->
   <div class="byline"><span>09.02.2017</span> | <span class="tag">Tool</span></div>
 
-  <!-- Nut tai floating, khong de len content (xem css .dl-fab) -->
-  <a class="dl-fab" href="../../downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip" download="tool-up-nguyen-lieu-v2.zip">⬇️ TẢI VỀ</a>
-
-  <!-- Article body (content tu CMS) -->
+  <!-- Article body (content tu CMS); nut tai game nam trong content, cuoi cung, to ro rang -->
   <div class="article-body">
 <p><span class="bul">➜</span><b>Tool Up Nguyên Liệu V2</b>: Auto farm nguyên liệu không cần đứng máy canh, chạy nền ổn định.</p>
 
@@ -55,6 +52,8 @@
 - Chọn khu vực cần farm rồi bấm Bắt Đầu</p>
 
 <p><span class="bul">➜</span>Tool chỉ hỗ trợ mục đích farm nguyên liệu, không can thiệp vào dữ liệu tài khoản.</p>
+
+  <a class="dl-button" href="../../downloads/tool-up-nguyen-lieu-v2/tool-up-nguyen-lieu-v2.zip" download="tool-up-nguyen-lieu-v2.zip">⬇️ TẢI GAME NGAY</a>
   </div>
 
   <!-- Home / Mini bottom nav -->
