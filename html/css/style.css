@@ -12,7 +12,7 @@ body {
 }
 
 .wrap {
-  max-width: 1000px; /* rong hon cho de doc noi dung bai viet (truoc la 720px) */
+  max-width: 720px;
   margin: 0 auto;
   background: #fff;
   border: 1px solid #ccc;
