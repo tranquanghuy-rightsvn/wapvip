@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "id": "6afb8a04-4b72-4c6e-8bc9-e71307015162",
+    "slug": "bai-viet-4",
+    "title": "Bài viết 4",
+    "category_id": "b25db140-724a-4221-9266-559a9141d8df",
+    "game": "",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-01T04:51:42.158Z",
+    "updated_at": "2026-08-01T05:14:32.081Z",
+    "icon": ""
+  },
+  {
+    "id": "3466919a-0929-40d7-a050-e985096ce550",
+    "slug": "bai-viet-2-3466",
+    "title": "Bài viết 3",
+    "category_id": "2030177a-91c7-4a12-b619-43a6dee1199a",
+    "game": "Mobi Army 2",
+    "download_type": "link",
+    "download_url": "https://google.com.vn",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-01T04:38:53.077Z",
+    "updated_at": "2026-08-01T04:49:47.975Z",
+    "icon": "rocket"
+  },
+  {
+    "id": "4cbdab01-14c5-4637-87d9-0fc8c56cb24e",
+    "slug": "bai-viet-2",
+    "title": "Bài viết 2",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Avatar",
+    "download_type": "link",
+    "download_url": "https://google.com",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-01T04:04:03.173Z",
+    "updated_at": "2026-08-01T04:04:03.173Z",
+    "icon": ""
+  }
+]
