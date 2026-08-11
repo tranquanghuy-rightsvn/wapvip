@@ -1,5 +1,56 @@
 [
   {
+    "id": "8bf8f74d-a2e5-4418-8150-19f15d0bdc9b",
+    "slug": "army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon",
+    "title": "Army 230 V9 Speed 60 Hỗ Trợ Full Item",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Mobi Army 2",
+    "download_type": "upload",
+    "download_url": "",
+    "download_file_name": "230VMax.jar",
+    "download_file_size": 556646,
+    "download_file_path": "downloads/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/230VMax.jar",
+    "download_drive_id": "",
+    "download_mime": "application/java-archive",
+    "created_at": "2026-08-03T20:05:26.475Z",
+    "updated_at": "2026-08-11T18:12:33.188Z",
+    "icon": "hot3",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1fEftelU-Mhw7nqHH2RVnrJSorjAhTTJE"
+      },
+      {
+        "file": "03.jpg",
+        "driveId": "1taGUAUOG7BklH-QQokhCPNXVW3un5NII"
+      },
+      {
+        "driveId": "1tICAP08ZEpVy0KXYPzSeyIyN0kK_rYAP",
+        "file": "05.jpg"
+      },
+      {
+        "driveId": "1mM_0vGTA4ji1rO60B1WacKGQJ_F2RDIz",
+        "file": "07.jpg"
+      },
+      {
+        "driveId": "1Q7_8BeBMhU-pTG17Wdgerf3sdNh42sy3",
+        "file": "09.jpg"
+      },
+      {
+        "file": "11.jpg",
+        "driveId": "1rjaOy0siZmOTXlY9Ir2zz4q_VbkTZ44M"
+      },
+      {
+        "driveId": "10gg-w_O6IuTbEB83xGEwQd9sVZDG6DTj",
+        "file": "13.jpg"
+      }
+    ],
+    "contentFiles": []
+  },
+  {
     "id": "e0abde9a-0d91-4d00-9eaa-a4e1160c930b",
     "slug": "dich-vu-lay-lai-mk-clan-mo-item-clan-trung-time",
     "title": "Dịch Vụ Lấy Lại MK Clan, Mở Item Clan Trùng Time",
@@ -23,7 +74,8 @@
         "file": "01.jpg",
         "driveId": "1JPD6JX8kL6Ybz_Yb4pDL4PS7uc7-bNow"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "2adb8059-3725-470b-a792-fd871b557787",
@@ -40,11 +92,12 @@
     "download_mime": "application/octet-stream",
     "created_at": "2026-08-07T05:50:41.427Z",
     "updated_at": "2026-08-07T05:50:41.427Z",
-    "icon": "hotqua02",
+    "icon": "rocket",
     "download_storage": "repo",
     "download_external_url": "",
     "download_release_asset_id": "",
-    "images": []
+    "images": [],
+    "contentFiles": []
   },
   {
     "id": "ef0ea175-c986-4d1c-b4cd-c504c844215c",
@@ -78,7 +131,8 @@
         "driveId": "1CJYHQwdRPSkRZXlj3lAIuZjouE-OHaWy",
         "file": "05.jpg"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "9166f406-7582-41a0-aee5-70496cb44de5",
@@ -104,7 +158,8 @@
         "file": "01.png",
         "driveId": "1YliidAuJnQDmOIJYV_6pEKNQyCFzFdhN"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "3466919a-0929-40d7-a050-e985096ce550",
@@ -162,57 +217,8 @@
         "file": "11.jpg",
         "driveId": "1kiAfpt1MLzcwuU7SRbFnq2AB_oeDYhvw"
       }
-    ]
-  },
-  {
-    "id": "8bf8f74d-a2e5-4418-8150-19f15d0bdc9b",
-    "slug": "army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon",
-    "title": "Army 230 V9 Speed 50 Full Căn Góc Hỗ Trợ Anh Em bắn Item đấu giải cực ngon",
-    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "Mobi Army 2",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "GiaiTri321 230VMax.jar",
-    "download_file_size": 557137,
-    "download_file_path": "downloads/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/GiaiTri321 230VMax.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-03T20:05:26.475Z",
-    "updated_at": "2026-08-04T10:27:19.471Z",
-    "icon": "hottop",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1fEftelU-Mhw7nqHH2RVnrJSorjAhTTJE"
-      },
-      {
-        "driveId": "1taGUAUOG7BklH-QQokhCPNXVW3un5NII",
-        "file": "03.jpg"
-      },
-      {
-        "file": "05.jpg",
-        "driveId": "1tICAP08ZEpVy0KXYPzSeyIyN0kK_rYAP"
-      },
-      {
-        "driveId": "1mM_0vGTA4ji1rO60B1WacKGQJ_F2RDIz",
-        "file": "07.jpg"
-      },
-      {
-        "driveId": "1Q7_8BeBMhU-pTG17Wdgerf3sdNh42sy3",
-        "file": "09.jpg"
-      },
-      {
-        "driveId": "1rjaOy0siZmOTXlY9Ir2zz4q_VbkTZ44M",
-        "file": "11.jpg"
-      },
-      {
-        "file": "13.jpg",
-        "driveId": "10gg-w_O6IuTbEB83xGEwQd9sVZDG6DTj"
-      }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "0d586f8f-5116-4d1d-901a-b4bc63976743",
@@ -242,7 +248,8 @@
         "driveId": "1fIVbwqaatQ_Nttn0C-7uKMk7IxvbPamZ",
         "file": "03.jpg"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "85ef88a4-0d0d-4c57-8572-b56b7d36d087",
@@ -259,7 +266,7 @@
     "download_mime": "",
     "created_at": "2026-08-02T16:39:08.729Z",
     "updated_at": "2026-08-02T16:43:02.501Z",
-    "icon": "hottop",
+    "icon": "new",
     "download_storage": "",
     "download_external_url": "",
     "download_release_asset_id": "",
@@ -272,7 +279,8 @@
         "file": "03.jpg",
         "driveId": "1CGrT7HxCclW_og2gxGSvkVc-9sDLDrqv"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "69959946-c7a0-442f-9657-7052166f2a6d",
@@ -289,7 +297,7 @@
     "download_mime": "",
     "created_at": "2026-08-02T16:42:18.848Z",
     "updated_at": "2026-08-02T16:42:18.848Z",
-    "icon": "muiten6",
+    "icon": "rocket",
     "download_storage": "",
     "download_external_url": "",
     "download_release_asset_id": "",
@@ -302,7 +310,8 @@
         "driveId": "1WZGCEW-NAogUl2Bs8sAtQ_tgXsz12iTE",
         "file": "03.jpg"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "2bd2dbd8-09ba-4e19-8930-92d93d9e8139",
@@ -332,7 +341,8 @@
         "driveId": "1l8nd1oYT3ewHi_-Wy6_3SwmvhAdVEKY1",
         "file": "03.jpg"
       }
-    ]
+    ],
+    "contentFiles": []
   },
   {
     "id": "c0c16908-d010-47b5-8190-d96e10675ba1",
@@ -366,6 +376,7 @@
         "driveId": "1mdxoxq0weIH1lBG7OWPwXLJgm0v6Ea37",
         "file": "05.jpg"
       }
-    ]
+    ],
+    "contentFiles": []
   }
 ]
