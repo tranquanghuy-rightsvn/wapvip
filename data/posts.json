@@ -1,5 +1,36 @@
 [
   {
+    "id": "85ef88a4-0d0d-4c57-8572-b56b7d36d087",
+    "slug": "dich-vu-mo-full-item-clan-ho-tro-chi-so",
+    "title": "Dịch Vụ Up Nguyên Liệu Chế Trang Bị Gold",
+    "category_id": "849ff227-ddac-4db5-8a2e-0f8b3a38c078",
+    "game": "Mobi Army 2",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-02T16:39:08.729Z",
+    "updated_at": "2026-08-11T18:25:48.975Z",
+    "icon": "hotqua",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "driveId": "1OUQT4EMEyzjiqnTEKUThEK_eL5Ja4n6l",
+        "file": "01.jpg"
+      },
+      {
+        "driveId": "1CGrT7HxCclW_og2gxGSvkVc-9sDLDrqv",
+        "file": "03.jpg"
+      }
+    ],
+    "contentFiles": []
+  },
+  {
     "id": "2bd2dbd8-09ba-4e19-8930-92d93d9e8139",
     "slug": "dich-vu-up-level-thue-cuc-nhanh-max-level-2-ti-exp-gia-uu-dai",
     "title": "Dịch Vụ Up Level Thuê Siêu Tốc",
@@ -278,37 +309,6 @@
       {
         "file": "11.jpg",
         "driveId": "1kiAfpt1MLzcwuU7SRbFnq2AB_oeDYhvw"
-      }
-    ],
-    "contentFiles": []
-  },
-  {
-    "id": "85ef88a4-0d0d-4c57-8572-b56b7d36d087",
-    "slug": "dich-vu-mo-full-item-clan-ho-tro-chi-so",
-    "title": "Dịch Vụ Mở Full Item Clan Hỗ Trợ Chỉ Số",
-    "category_id": "849ff227-ddac-4db5-8a2e-0f8b3a38c078",
-    "game": "Mobi Army 2",
-    "download_type": "none",
-    "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-08-02T16:39:08.729Z",
-    "updated_at": "2026-08-02T16:43:02.501Z",
-    "icon": "new",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "driveId": "1OUQT4EMEyzjiqnTEKUThEK_eL5Ja4n6l",
-        "file": "01.jpg"
-      },
-      {
-        "file": "03.jpg",
-        "driveId": "1CGrT7HxCclW_og2gxGSvkVc-9sDLDrqv"
       }
     ],
     "contentFiles": []
