@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <title>{{PAGE_TITLE}}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+{{SEO_META}}
 <link rel="stylesheet" href="css/style.css">
+{{JSONLD}}
 </head>
 <body>
 <div class="wrap">
 
   <!-- Logo banner -->
   <div class="banner">
-    <div class="deco">✈️ &nbsp; 🚀 &nbsp; 🎯</div>
     <div class="logo">
       {{LOGO_HTML}}
     </div>
@@ -30,6 +32,7 @@
 
   <!-- O tim kiem: loc ngay tren trang (JS ben duoi), submit GET van hoat dong khong can JS -->
   <div class="group-bar">
+    <div class="links"><span class="arrow">»</span> <a href="#" class="a3">GROUP</a> <span class="sep">-</span> <a href="#" class="a2">YouTube</a> <span class="sep">-</span> <a href="#" class="a1">FANPAGE</a> <span class="arrow">«</span></div>
     <form class="search-form" method="get" action="">
       <input type="text" id="search-input" name="q" placeholder="Bạn Cần Tìm Gì?">
       <button type="submit">Tìm</button>

@@ -5,9 +5,9 @@
 body {
   margin: 0;
   padding: 16px 0;
-  background: #e9e9e9;
-  font-family: Tahoma, Verdana, Arial, sans-serif;
-  font-size: 13px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
   color: #222;
 }
 
@@ -16,6 +16,8 @@ body {
   margin: 0 auto;
   background: #fff;
   border: 1px solid #ccc;
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.35), 4px 0 6px rgba(0, 0, 0, 0.35);
+  cursor: url("../images/clovel.cur"), auto;
 }
 
 a {
@@ -52,8 +54,9 @@ a:hover {
 /* Logo banner */
 .banner {
   text-align: center;
-  padding: 18px 10px 22px;
-  background: linear-gradient(180deg, #d7edf9 0%, #eef8fd 60%, #ffffff 100%);
+  padding: 10px 10px 14px;
+  background: url("../images/head.gif") repeat-x;
+  background-size: auto 100%;
 }
 .banner .logo {
   font-size: 34px;
@@ -74,12 +77,6 @@ a:hover {
   height: auto;
   vertical-align: middle;
 }
-.banner .deco {
-  font-size: 20px;
-  opacity: 0.85;
-  letter-spacing: 8px;
-}
-
 /* Nav row (ARMY / AVATAR / NINJA / KPAH) — grid-auto-flow keeps every <a> in ONE row,
    splitting it into as many equal columns as there are links (2 links = 2 cols, 4 = 4 cols...);
    add/remove <a> tags in the HTML and the columns rebalance automatically, no CSS edits needed. */
@@ -89,6 +86,7 @@ a:hover {
   grid-auto-columns: 1fr;
   border: 1px solid #4ca6e2;
   margin: 0 8px 8px;
+  font-size: 13px;
 }
 .nav-row a {
   text-align: center;
@@ -104,39 +102,50 @@ a:hover {
 
 /* Generic list block */
 .list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 1px;
+  background: #fff;
   border-top: 1px solid #ddd;
 }
 .list .row {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 7px 10px;
-  border-bottom: 1px solid #e3e3e3;
+  padding: 3px 3px;
   background: #fff;
+  border: 1px solid #e3e3e3;
 }
-.list .row:nth-child(even) {
-  background: #f3f6f8;
+.list .row.empty {
+  border: none;
 }
 .list .row .ic {
   flex: none;
   font-size: 13px;
 }
+.list .row .ic img {
+  display: block;
+  height: 8px;
+  width: auto;
+}
 .list .row a {
   font-weight: bold;
+  font-size: 12px;
 }
 
 /* section header bars */
 .hdr {
   padding: 7px 10px;
   font-weight: bold;
+  font-size: 13px;
   color: #fff;
   border-bottom: 3px solid #335fd8;
+  text-shadow: #45cdf5 1px 1px 1px;
 }
-.hdr.blue {
-  background: linear-gradient(180deg, #77c7ed 0%, #4ca6e2 60%, #4ca6e2 100%);
-}
+.hdr.blue,
 .hdr.teal {
-  background: #3a8485;
+  background: #08A8E8;
 }
 
 /* highlighted sub-row (Thu Mua ..., Cai Khong Cho Phep Gui SMS, Huong Dan ...) */
@@ -187,27 +196,23 @@ a:hover {
   background: #fae6fc;
   border-bottom: 1px solid #ddd;
 }
+.group-bar .links {
+  font-weight: bold;
+  font-size: 13px;
+}
 .group-bar .links a {
   font-weight: bold;
 }
-.group-bar .links .a1 { color: #1a56c4; }
-.group-bar .links .a2 { color: #2a8a3e; }
-.group-bar .links .a3 { color: #cc0000; }
+.group-bar .links .arrow,
+.group-bar .links .a2 { color: #377E22; }
+.group-bar .links .a1 { color: #0000F5; }
+.group-bar .links .a3 { color: #EA3323; }
+.group-bar .links .sep { color: #606060; font-weight: normal; }
 .search-form {
   margin-top: 8px;
 }
 .search-form input[type="text"] {
-  padding: 5px 8px;
-  width: 60%;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-}
-.search-form button {
-  padding: 5px 14px;
-  border: 1px solid #999;
-  background: #f0f0f0;
-  border-radius: 2px;
-  font-weight: bold;
+  width: 115px;
 }
 
 /* dung boi search JS de an/hien section+row khong khop tu khoa */
@@ -299,9 +304,10 @@ a:hover {
 .footer {
   text-align: center;
   padding: 8px 10px;
-  background: linear-gradient(180deg, #77c7ed 0%, #4ca6e2 100%);
+  background: #08A8E8;
   color: #fff;
   font-weight: bold;
+  font-size: 13px;
 }
 
 /* link color rotation used inside plain text lists (Thu Thuat / Giai Tri / etc.) */
@@ -333,6 +339,10 @@ a:hover {
 }
 .post-title .hl {
   color: #ffe08a;
+}
+.post-title img {
+  height: 14px;
+  vertical-align: middle;
 }
 
 /* byline row under title */
@@ -402,6 +412,7 @@ a:hover {
 /* article content */
 .article-body {
   padding: 4px 10px 10px;
+  font-size: 13px;
   line-height: 1.65;
 }
 .article-body p {
@@ -539,6 +550,7 @@ a:hover {
   padding: 14px 14px 16px;
   background: linear-gradient(180deg, #fff7e0 0%, #ffffff 100%);
   border-bottom: 1px solid #ddd;
+  font-size: 13px;
   line-height: 1.7;
 }
 .intro h2 {
@@ -558,7 +570,6 @@ a:hover {
 .wide-banner {
   position: relative;
   margin: 10px;
-  aspect-ratio: 21 / 9;
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
@@ -568,8 +579,7 @@ a:hover {
 .wide-banner video {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 .wide-banner .cap {
   position: absolute;

@@ -7,6 +7,7 @@ Chay: python3 scripts/build.py
 """
 import html
 import json
+import re
 import unicodedata
 import urllib.parse
 from datetime import datetime
@@ -24,17 +25,45 @@ DEFAULT_SITE_URL = "http://giaitri321.com"
 NAME_CLASSES = ["c1", "c2", "c3", "c4", "c5"]  # mau cycle, tai su dung tu style.css hien co
 HDR_CLASSES = ["teal", "blue"]  # xen ke theo template hien tai (DANH SACH TAI GAME=teal, TOOL=blue)
 ROW_CLASSES = ["c-blue", "c-red", "c-purple", "c-teal", "c-brown"]
-ROW_ICONS = ["🔫", "💕", "🥷", "⚔️", "🌪️", "🎯", "🕹️"]  # khong co 🎮 - icon do chi hien khi chon tay o CMS
 
-# Icon dau tieu de bai viet, chon tay trong CMS (post.icon) - danh sach preset dung chung voi gas/app.html.
-# Khong chon (icon rong) -> homepage dung ROW_ICONS auto-cycle nhu cu; co chon -> uu tien hien thi icon nay.
-POST_ICON_HTML = {
-    "hot": '<span class="badge red">HOT</span>',
-    "new": '<span class="badge red">NEW</span>',
-    "game": "🎮",
-    "rocket": "🚀",
-    "fire": "🎆",
+# Icon mac dinh cho row khi bai viet KHONG chon icon (post.icon rong) - cycle qua vai icon mui
+# ten/dau cham trong images/icons/ (asset goc cua wapvip.pro) thay cho emoji nhu truoc.
+ROW_ICONS = [
+    '<img src="images/icons/muiten6.gif" alt="">',
+    '<img src="images/icons/muipro.gif" alt="">',
+    '<img src="images/icons/muiten2.gif" alt="">',
+    '<img src="images/icons/orange_dot.gif" alt="">',
+]
+
+# Icon dau tieu de bai viet, chon tay trong CMS (post.icon) - MOI key ung voi 1 file trong
+# images/icons/ (toan bo file co san, khop voi POST_ICON_KEYS ben gas/Code.js va cac nut chon
+# trong gas/app.html). Khong chon (icon rong) -> homepage dung ROW_ICONS auto-cycle nhu cu; co
+# chon -> uu tien hien thi icon nay. "{prefix}" duoc dien boi post_icon_html() tuy vi tri dung
+# (root cho index, "../../" cho post).
+POST_ICON_FILES = {
+    "hot": "hot.gif",
+    "hot3": "hot3.gif",
+    "hotqua": "hotqua.gif",
+    "hotqua02": "hotqua02.gif",
+    "hottop": "hottop.gif",
+    "mail": "mail.png",
+    "mobiarmy": "mobiarmy.png",
+    "muipro": "muipro.gif",
+    "muiten2": "muiten2.gif",
+    "muiten6": "muiten6.gif",
+    "orange_dot": "orange_dot.gif",
 }
+POST_ICON_HTML = {
+    key: '<img src="{{prefix}}images/icons/{}" alt="{}">'.format(filename, key)
+    for key, filename in POST_ICON_FILES.items()
+}
+
+
+def post_icon_html(icon_key, prefix=""):
+    tmpl = POST_ICON_HTML.get(icon_key)
+    if not tmpl:
+        return None
+    return tmpl.format(prefix=prefix)
 
 
 def load_json(path, default=None):
@@ -151,6 +180,89 @@ def download_button_html(post, depth_prefix):
     return '  <a class="dl-button" href="{}"{}>⬇️ TẢI GAME NGAY</a>'.format(html.escape(href), attrs)
 
 
+def strip_html_tags(text):
+    """Bo tag HTML + &nbsp;/entity co ban, gop khoang trang - dung de sinh meta description tu
+    content CMS (content la HTML, khong dung truc tiep duoc trong <meta content="...">)."""
+    text = re.sub(r"<[^>]+>", " ", text or "")
+    text = html.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def excerpt(text, length=160):
+    text = strip_html_tags(text)
+    if len(text) <= length:
+        return text
+    return text[:length].rsplit(" ", 1)[0] + "…"
+
+
+def abs_url(site_url, path):
+    """Noi site_url (co the co hoac khong co dau / cuoi) voi path tuong doi (khong co prefix
+    ../../) thanh URL tuyet doi - dung cho canonical/og:url/og:image/JSON-LD (bat buoc tuyet doi)."""
+    return "{}/{}".format((site_url or DEFAULT_SITE_URL).rstrip("/"), path.lstrip("/"))
+
+
+def seo_meta_html(site, title, description, url_path, image_path=None, page_type="website"):
+    """Sinh block meta SEO (description, canonical, Open Graph, Twitter Card) dung chung cho ca
+    index.html va post.html - url_path/image_path la path TUONG DOI tu goc site (khong prefix
+    ../../), tu quy doi ra tuyet doi qua site.site_url vi OG/canonical yeu cau URL tuyet doi."""
+    site_url = site.get("site_url") or DEFAULT_SITE_URL
+    canonical = abs_url(site_url, url_path)
+    image = abs_url(site_url, image_path or site.get("logo_url") or "images/logo.png")
+    desc = html.escape(description)
+    lines = [
+        '<meta name="description" content="{}">'.format(desc),
+        '<link rel="canonical" href="{}">'.format(html.escape(canonical)),
+        '<meta property="og:type" content="{}">'.format(page_type),
+        '<meta property="og:title" content="{}">'.format(html.escape(title)),
+        '<meta property="og:description" content="{}">'.format(desc),
+        '<meta property="og:url" content="{}">'.format(html.escape(canonical)),
+        '<meta property="og:image" content="{}">'.format(html.escape(image)),
+        '<meta property="og:site_name" content="{}">'.format(html.escape(site.get("site_name", ""))),
+        '<meta name="twitter:card" content="summary_large_image">',
+        '<meta name="twitter:title" content="{}">'.format(html.escape(title)),
+        '<meta name="twitter:description" content="{}">'.format(desc),
+        '<meta name="twitter:image" content="{}">'.format(html.escape(image)),
+    ]
+    return "\n".join(lines)
+
+
+def jsonld_website(site, site_name):
+    """WebSite schema cho trang chu - SearchAction khai bao o day de Google co the hien sitelinks
+    search box (tim theo ?q=, dung chung co che filter client-side da co san)."""
+    site_url = (site.get("site_url") or DEFAULT_SITE_URL).rstrip("/")
+    data = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": site_name,
+        "url": site_url + "/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{}/index.html?q={{search_term_string}}".format(site_url),
+            "query-input": "required name=search_term_string",
+        },
+    }
+    return '<script type="application/ld+json">\n{}\n</script>'.format(json.dumps(data, ensure_ascii=False, indent=2))
+
+
+def jsonld_article(post, site, site_name, cat_name, canonical_url, image_url):
+    """Article schema cho trang bai viet - dung Article (khong SoftwareApplication) vi noi dung
+    thien ve tin/huong dan hon la trang gioi thieu 1 app cu the (nhieu bai la tool/nick/dich vu)."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post["title"],
+        "description": excerpt(post.get("content", "")),
+        "image": [image_url],
+        "datePublished": post.get("created_at", ""),
+        "dateModified": post.get("updated_at", post.get("created_at", "")),
+        "author": {"@type": "Organization", "name": site_name},
+        "publisher": {"@type": "Organization", "name": site_name},
+        "mainEntityOfPage": canonical_url,
+        "articleSection": cat_name,
+    }
+    return '<script type="application/ld+json">\n{}\n</script>'.format(json.dumps(data, ensure_ascii=False, indent=2))
+
+
 def render(template_text, mapping):
     out = template_text
     for key, val in mapping.items():
@@ -235,11 +347,11 @@ def build_index(site, categories, cat_by_id, posts_full):
         cat_posts = posts_by_cat.get(cat["id"], [])
         sections.append('  <div class="list">')
         if not cat_posts:
-            sections.append('    <div class="row"><span class="ic">•</span><span>Chưa có bài viết nào</span></div>')
+            sections.append('    <div class="row empty"><span class="ic">•</span><span>Chưa có bài viết nào</span></div>')
         else:
             for i, p in enumerate(cat_posts):
                 row_cls = ROW_CLASSES[i % len(ROW_CLASSES)]
-                icon = POST_ICON_HTML.get(p.get("icon")) or ROW_ICONS[i % len(ROW_ICONS)]
+                icon = post_icon_html(p.get("icon")) or ROW_ICONS[i % len(ROW_ICONS)]
                 href = "posts/{}/index.html".format(p["slug"])
                 search_text = normalize_search(" ".join(filter(None, [p["title"], p.get("game"), cat["name"]])))
                 sections.append(
@@ -252,8 +364,11 @@ def build_index(site, categories, cat_by_id, posts_full):
         "    <p>{}</p>".format(html.escape(p)) for p in site.get("intro_paragraphs", [])
     )
 
+    page_title = "{} - Tải Game Mobile Huyền Thoại, Tool Hack Miễn Phí".format(site_name)
+    description = excerpt(" ".join(site.get("intro_paragraphs", [])[:2])) or page_title
+
     mapping = {
-        "PAGE_TITLE": html.escape(site_name + " - Tải Game Mobile Huyền Thoại, Tool Hack Miễn Phí"),
+        "PAGE_TITLE": html.escape(page_title),
         "LOGO_HTML": logo_html(site, site_name),
         "INTRO_TITLE": html.escape(site.get("intro_title", "")),
         "INTRO_PARAGRAPHS": intro_paragraphs,
@@ -262,6 +377,8 @@ def build_index(site, categories, cat_by_id, posts_full):
         "BANNER_TEXT": html.escape((site.get("banner") or {}).get("text", "")),
         "CATEGORY_SECTIONS": "\n".join(sections),
         "FOOTER_TEXT": "{} © {}".format(html.escape(site_name), datetime.now().year),
+        "SEO_META": seo_meta_html(site, page_title, description, ""),
+        "JSONLD": jsonld_website(site, site_name),
     }
     out = render(template, mapping)
     (SITE_DIR / "index.html").write_text(out, encoding="utf-8")
@@ -286,20 +403,31 @@ def build_posts(site, categories, cat_by_id, posts_full):
             meta_parts.append('<span class="game">{}</span>'.format(html.escape(post["game"])))
         post_meta = " | ".join(meta_parts)
         download_button = download_button_html(post, depth_prefix)
-        post_icon = POST_ICON_HTML.get(post.get("icon"))
-        post_icon_html = (post_icon + " ") if post_icon else ""
+        post_icon = post_icon_html(post.get("icon"), prefix=depth_prefix)
+        post_icon_out = (post_icon + " ") if post_icon else ""
+
+        page_title = "{} - {}".format(post["title"], site_name)
+        url_path = "posts/{}/index.html".format(post["slug"])
+        images = post.get("images") or []
+        image_path = images[0] if images else None
+        description = excerpt(post.get("content", "")) or page_title
+        site_url = site.get("site_url") or DEFAULT_SITE_URL
+        canonical_url = abs_url(site_url, url_path)
+        image_url = abs_url(site_url, image_path or site.get("logo_url") or "images/logo.png")
 
         mapping = {
-            "PAGE_TITLE": html.escape(post["title"] + " - " + site_name),
+            "PAGE_TITLE": html.escape(page_title),
             "LOGO_HTML": logo_html(site, site_name, prefix=depth_prefix),
             "NAV_ROW_LINKS": nav_row_links(site.get("menu_games", []), prefix=depth_prefix),
             "BREADCRUMB_CATEGORY": breadcrumb,
-            "POST_ICON": post_icon_html,
+            "POST_ICON": post_icon_out,
             "POST_TITLE": html.escape(post["title"]),
             "POST_META": post_meta,
             "DOWNLOAD_BUTTON": download_button,
             "CONTENT": post.get("content", ""),
             "FOOTER_TEXT": "{} © {}".format(html.escape(site_name), datetime.now().year),
+            "SEO_META": seo_meta_html(site, page_title, description, url_path, image_path, page_type="article"),
+            "JSONLD": jsonld_article(post, site, site_name, cat_name, canonical_url, image_url),
         }
         out = render(template, mapping)
 

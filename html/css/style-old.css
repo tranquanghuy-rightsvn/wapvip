@@ -1,0 +1,314 @@
+/* Stylesheet rieng cho index-new.html - phuc dung giao dien wap co (xem allwapvip.png).
+   KHONG dung chung voi css/style.css (css cho CMS/site hien tai) de tranh anh huong site that.
+   Chu y: khong border-radius, khong box-shadow, mau phang (flat) - dung phong cach wap doi 2016. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px 0;
+  background: #ababab;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #222;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #999;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Top notice bar */
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.5;
+}
+.notice .icon {
+  flex: none;
+}
+.notice a {
+  color: #1a56c4;
+  font-weight: bold;
+}
+.notice a.hl {
+  color: #cc0000;
+  text-decoration: underline;
+}
+.notice a.green {
+  color: #2a8a3e;
+}
+
+/* Logo banner */
+.banner {
+  text-align: center;
+  padding: 8px 10px 10px;
+  background: linear-gradient(180deg, #cbe7f8 0%, #eef8fd 55%, #ffffff 100%);
+}
+.banner .logo {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0;
+  font-style: italic;
+}
+.banner .logo .c1 { color: #e2231a; }
+.banner .logo .c2 { color: #f2a900; }
+.banner .logo .c3 { color: #2a8a3e; }
+.banner .logo .c4 { color: #1a56c4; }
+.banner .logo .c5 { color: #e2231a; }
+.banner .logo .dot { color: #f2a900; }
+.banner .logo img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 64px;
+  height: auto;
+  vertical-align: middle;
+}
+.banner .deco {
+  font-size: 16px;
+  opacity: 0.9;
+  letter-spacing: 4px;
+}
+
+/* Nav row (ARMY / AVATAR / NINJA / KPAH) */
+.nav-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  border: 1px solid #4ca6e2;
+  margin: 0 6px 6px;
+}
+.nav-row a {
+  text-align: center;
+  padding: 4px 4px;
+  font-weight: bold;
+  color: #222;
+  border-left: 1px solid #4ca6e2;
+  text-transform: uppercase;
+}
+.nav-row a:first-child {
+  border-left: none;
+}
+
+/* Generic list block */
+.list {
+  border-top: 1px solid #ddd;
+}
+.list .row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  border-bottom: 1px solid #e3e3e3;
+  background: #fff;
+}
+.list .row:nth-child(even) {
+  background: #f2f5f7;
+}
+.list .row .ic {
+  flex: none;
+  font-size: 12px;
+}
+.list .row a {
+  font-weight: bold;
+}
+/* rong chi chua text nhieu dong (co <br>) - flex se lam vo bo cuc nen chuyen ve block */
+.list .row.text {
+  display: block;
+}
+
+/* section header bars - FLAT, khong gradient, khong border day */
+.hdr {
+  padding: 5px 8px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px solid #2a6bb0;
+}
+.hdr.blue {
+  background: #4ca6e2;
+}
+.hdr.teal {
+  background: #3a8485;
+}
+
+/* highlighted sub-row */
+.subrow {
+  padding: 5px 8px;
+  background: #ddf1fc;
+  border-bottom: 1px solid #e3e3e3;
+  font-weight: bold;
+  color: #cc0000;
+}
+.subrow.italic {
+  background: #eef2f5;
+  font-style: italic;
+  font-weight: normal;
+  color: #333;
+}
+
+/* Like / Facebook box */
+.like-box {
+  text-align: center;
+  padding: 8px;
+  background: #f2f5f7;
+  border-bottom: 1px solid #ddd;
+}
+.like-box .lead {
+  margin-bottom: 6px;
+}
+.like-box .lead a {
+  color: #cc0000;
+  font-weight: bold;
+}
+.fb-btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0 2px;
+  background: #4267b2;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #33518f;
+  font-size: 12px;
+}
+
+/* group / search bar */
+.group-bar {
+  text-align: center;
+  padding: 6px 8px;
+  background: #fae6fc;
+  border-bottom: 1px solid #ddd;
+}
+.group-bar .links a {
+  font-weight: bold;
+}
+.group-bar .links .a1 { color: #1a56c4; }
+.group-bar .links .a2 { color: #2a8a3e; }
+.group-bar .links .a3 { color: #cc0000; }
+.search-form {
+  margin-top: 6px;
+}
+.search-form input[type="text"] {
+  padding: 4px 6px;
+  width: 60%;
+  border: 1px solid #bbb;
+}
+.search-form button {
+  padding: 4px 12px;
+  border: 1px solid #999;
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
+}
+.search-empty {
+  padding: 14px 8px;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  border-bottom: 1px solid #ddd;
+}
+
+/* nick listing rows */
+.nick-row {
+  padding: 5px 8px;
+  border-bottom: 1px solid #e3e3e3;
+  background: #fff;
+}
+.nick-row:nth-child(even) {
+  background: #f2f5f7;
+}
+.nick-row .ms { color: #cc0000; font-weight: bold; }
+.nick-row a { color: #1a56c4; font-weight: bold; }
+.nick-row b { color: #222; }
+
+.more-link {
+  display: block;
+  padding: 5px 8px;
+  color: #2a8a3e;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+/* badges - FLAT mau don, khong gradient */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  padding: 1px 5px;
+  margin-right: 3px;
+}
+.badge.red { background: #e2231a; }
+.badge.orange { background: #e8890a; }
+
+/* pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  background: #eef2f5;
+  border-bottom: 1px solid #ddd;
+}
+.pagination span,
+.pagination a,
+.pagination .cur {
+  padding: 2px 6px;
+  border: 1px solid #bbb;
+  background: #fff;
+  font-size: 11px;
+}
+.pagination .cur {
+  background: #4ca6e2;
+  color: #fff;
+  border-color: #2a6bb0;
+  font-weight: bold;
+}
+.pagination .next {
+  font-weight: bold;
+}
+
+.select-more {
+  padding: 6px 8px;
+  background: #eef2f5;
+  border-bottom: 1px solid #ddd;
+}
+.select-more select {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #bbb;
+}
+
+/* footer - FLAT, khong gradient */
+.footer {
+  text-align: center;
+  padding: 6px 8px;
+  background: #4ca6e2;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* link color rotation trong list text thuan */
+.list .c-blue { color: #1a56c4; }
+.list .c-red { color: #cc0000; }
+.list .c-purple { color: #7a1fa2; }
+.list .c-teal { color: #1a7a6e; }
+.list .c-brown { color: #a35a00; }
+.hl-u { color: #cc0000; text-decoration: underline; font-weight: bold; }
