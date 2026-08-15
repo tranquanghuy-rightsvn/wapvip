@@ -8,24 +8,59 @@
     "download_type": "upload",
     "download_url": "",
     "download_file_name": "GiaiTri321x8.jar",
-    "download_file_size": 3108619,
+    "download_file_size": 3107516,
     "download_file_path": "downloads/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/GiaiTri321x8.jar",
     "download_drive_id": "",
     "download_mime": "application/octet-stream",
     "created_at": "2026-08-04T10:24:36.835Z",
-    "updated_at": "2026-08-15T14:09:00.925Z",
+    "updated_at": "2026-08-15T15:07:21.922Z",
     "icon": "hotqua",
     "download_storage": "repo",
     "download_external_url": "",
     "download_release_asset_id": "",
     "images": [
       {
-        "file": "01.jpg",
-        "driveId": "1LSHI2nteOAPokNNg5nO-6VxRlo27D4rV"
+        "driveId": "1LSHI2nteOAPokNNg5nO-6VxRlo27D4rV",
+        "file": "01.jpg"
       },
       {
-        "file": "03.jpg",
-        "driveId": "1fIVbwqaatQ_Nttn0C-7uKMk7IxvbPamZ"
+        "driveId": "1fIVbwqaatQ_Nttn0C-7uKMk7IxvbPamZ",
+        "file": "03.jpg"
+      }
+    ],
+    "contentFiles": []
+  },
+  {
+    "id": "ef0ea175-c986-4d1c-b4cd-c504c844215c",
+    "slug": "army-223-android-can-goc-v9-ho-tro-all-nhan-vat",
+    "title": "Army 223 Android Căn Góc V9 Hỗ Trợ All Nhân Vật",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Mobi Army 2",
+    "download_type": "upload",
+    "download_url": "",
+    "download_file_name": "223V9NgangFix100.apk",
+    "download_file_size": 493688,
+    "download_file_path": "downloads/army-223-android-can-goc-v9-ho-tro-all-nhan-vat/223V9NgangFix100.apk",
+    "download_drive_id": "",
+    "download_mime": "application/vnd.android.package-archive",
+    "created_at": "2026-08-04T10:47:32.555Z",
+    "updated_at": "2026-08-15T15:03:52.014Z",
+    "icon": "hot",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1Qxy_Cz-cslCkFuZDNvognRmGpvpY-T-v"
+      },
+      {
+        "driveId": "1coK5ReVzrOTJsuZvFqaw3P75-MBYbdvs",
+        "file": "03.jpg"
+      },
+      {
+        "file": "05.jpg",
+        "driveId": "1CJYHQwdRPSkRZXlj3lAIuZjouE-OHaWy"
       }
     ],
     "contentFiles": []
@@ -190,41 +225,6 @@
     "download_external_url": "",
     "download_release_asset_id": "",
     "images": [],
-    "contentFiles": []
-  },
-  {
-    "id": "ef0ea175-c986-4d1c-b4cd-c504c844215c",
-    "slug": "army-223-android-can-goc-v9-ho-tro-all-nhan-vat",
-    "title": "Army 223 Android Căn Góc V9 Hỗ Trợ All Nhân Vật",
-    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "Mobi Army 2",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "base_2.apk",
-    "download_file_size": 493688,
-    "download_file_path": "downloads/army-223-android-can-goc-v9-ho-tro-all-nhan-vat/base_2.apk",
-    "download_drive_id": "",
-    "download_mime": "application/vnd.android.package-archive",
-    "created_at": "2026-08-04T10:47:32.555Z",
-    "updated_at": "2026-08-04T14:24:54.644Z",
-    "icon": "hot",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1Qxy_Cz-cslCkFuZDNvognRmGpvpY-T-v"
-      },
-      {
-        "driveId": "1coK5ReVzrOTJsuZvFqaw3P75-MBYbdvs",
-        "file": "03.jpg"
-      },
-      {
-        "driveId": "1CJYHQwdRPSkRZXlj3lAIuZjouE-OHaWy",
-        "file": "05.jpg"
-      }
-    ],
     "contentFiles": []
   },
   {
