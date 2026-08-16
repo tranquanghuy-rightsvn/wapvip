@@ -4,7 +4,7 @@
   "title": "Army 220 V5.6 Bản Cổ Mod by Clan Big One",
   "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
   "game": "Mobi Army 2",
-  "content": "<p>Mod by WapVip m&igrave;nh đ&atilde; Edit lại cho mượt hơn</p>\n<p>Giao diện kẻ g&oacute;c trong Game hỗ trợ all nh&acirc;n vật kẻ g&oacute;c cho KD2</p>\n<figure class=\"image\"><img src=\"images/07.jpg\">\n<figcaption>Giao Diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Menu V5.6 cho anh em setup</p>\n<figure class=\"image\"><img src=\"images/11.jpg\">\n<figcaption>Giao diện căn g&oacute;c V5.6 All 360</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+  "content": "<p>Mod by Đắc Th&agrave;nh - Clan BigOne 2015</p>\n<figure class=\"image\"><img src=\"images/07.jpg\">\n<figcaption>Giao Diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Menu V5.6 cho anh em setup</p>\n<figure class=\"image\"><img src=\"images/11.jpg\">\n<figcaption>Giao diện căn g&oacute;c V5.6 All 360</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
   "download_type": "upload",
   "download_url": "",
   "download_file_name": "Army_220_All.jar",
@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "application/octet-stream",
   "created_at": "2026-08-01T04:38:53.077Z",
-  "updated_at": "2026-08-16T17:56:15.459Z",
+  "updated_at": "2026-08-16T17:58:30.782Z",
   "icon": "hot",
   "download_storage": "repo",
   "download_external_url": "",
@@ -32,11 +32,11 @@
   "contentFiles": [],
   "extra_files": [
     {
+      "fileSize": 493658,
+      "fileType": "JAR",
       "mime": "application/octet-stream",
       "path": "posts/bai-viet-2-3466/extra-files/db1b520c-Army_220_All.jar",
-      "name": "Army_220_All.jar",
-      "fileType": "JAR",
-      "fileSize": 493658
+      "name": "Army_220_All.jar"
     }
   ]
 }
