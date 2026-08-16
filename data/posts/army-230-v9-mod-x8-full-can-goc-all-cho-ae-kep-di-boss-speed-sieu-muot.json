@@ -1,25 +1,53 @@
 {
   "id": "0d586f8f-5116-4d1d-901a-b4bc63976743",
   "slug": "army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot",
-  "title": "Army 230 V9 Mod X8 Full Căn Góc All - Cho AE Kẹp đi Boss Speed Siêu Mượt",
+  "title": "Army 230 V9 Mod X8 Căn Góc Hỗ Trợ Full Item",
   "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
   "game": "Mobi Army 2",
-  "content": "<p>File đ&atilde; được Mod X2 - X4 - X6 - X8 T&ugrave;y theo nhu cầu của c&aacute;c anh em Admin sẽ hỗ trợ ae hết m&igrave;nh</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Screen bản X8 Click Ph&iacute;m Sao *</figcaption>\n</figure>\n<figure class=\"image\"><img src=\"images/03.jpg\">\n<figcaption>Giao diện từng phi&ecirc;n bản</figcaption>\n</figure>\n<p>&nbsp;</p>",
+  "content": "<p>File đ&atilde; được Mod X2 - X4 - X6 - X8 T&ugrave;y theo nhu cầu của c&aacute;c anh em Admin sẽ hỗ trợ ae hết m&igrave;nh</p>\n<figure class=\"image\"><img src=\"https://lh3.googleusercontent.com/d/1zIu28QwPzfVpO7CR74KMiTzpHspHj2gh\">\n<figcaption>Giao diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Danh S&aacute;ch Phi&ecirc;n Bản:</p>\n<p><a href=\"files/ad53425b-GiaiTri321x2.jar\" download=\"ad53425b-GiaiTri321x2.jar\">Army 230 v9 S60 Gh&eacute;p X2</a>&nbsp;</p>\n<p><a href=\"files/68311dc3-GiaiTri321x4.jar\" download=\"68311dc3-GiaiTri321x4.jar\">Army 230 v9 S60 Gh&eacute;p X4</a>&nbsp;</p>\n<p><a href=\"files/d488f304-GiaiTri321x6.jar\" download=\"d488f304-GiaiTri321x6.jar\">Army 230 v9 S60 Gh&eacute;p X6</a>&nbsp;</p>\n<p><a href=\"files/068361d2-GiaiTri321x8.jar\" download=\"068361d2-GiaiTri321x8.jar\">Army 230 v9 S60 Gh&eacute;p X8</a>&nbsp;</p>\n<p>&nbsp;</p>",
   "download_type": "upload",
   "download_url": "",
-  "download_file_name": "230X8GiaiTri321.jar",
-  "download_file_size": 3107814,
-  "download_file_path": "downloads/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/230X8GiaiTri321.jar",
+  "download_file_name": "GiaiTri321x8.jar",
+  "download_file_size": 3107516,
+  "download_file_path": "downloads/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/GiaiTri321x8.jar",
   "download_drive_id": "",
   "download_mime": "application/octet-stream",
   "created_at": "2026-08-04T10:24:36.835Z",
-  "updated_at": "2026-08-04T10:24:36.835Z",
-  "icon": "hot",
+  "updated_at": "2026-08-16T06:39:53.099Z",
+  "icon": "hotqua",
   "download_storage": "repo",
   "download_external_url": "",
   "download_release_asset_id": "",
   "images": [
     "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/images/01.jpg",
+    "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/images/03.jpg",
     "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/images/03.jpg"
-  ]
+  ],
+  "contentFiles": [
+    {
+      "fileName": "ad53425b-GiaiTri321x2.jar",
+      "fileSize": 952582,
+      "storage": "repo",
+      "path": "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/files/ad53425b-GiaiTri321x2.jar"
+    },
+    {
+      "fileName": "68311dc3-GiaiTri321x4.jar",
+      "fileSize": 1670853,
+      "storage": "repo",
+      "path": "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/files/68311dc3-GiaiTri321x4.jar"
+    },
+    {
+      "fileName": "d488f304-GiaiTri321x6.jar",
+      "fileSize": 2389108,
+      "storage": "repo",
+      "path": "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/files/d488f304-GiaiTri321x6.jar"
+    },
+    {
+      "fileName": "068361d2-GiaiTri321x8.jar",
+      "fileSize": 3107516,
+      "storage": "repo",
+      "path": "posts/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/files/068361d2-GiaiTri321x8.jar"
+    }
+  ],
+  "extra_files": []
 }
