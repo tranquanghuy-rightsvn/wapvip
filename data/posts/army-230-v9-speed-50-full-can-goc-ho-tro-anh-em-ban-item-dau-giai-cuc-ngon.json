@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "application/octet-stream",
   "created_at": "2026-08-03T20:05:26.475Z",
-  "updated_at": "2026-08-16T05:54:06.252Z",
+  "updated_at": "2026-08-16T05:54:36.081Z",
   "icon": "hot3",
   "download_storage": "repo",
   "download_external_url": "",
@@ -63,18 +63,25 @@
   ],
   "extra_files": [
     {
-      "fileSize": 493688,
-      "fileType": "APK",
+      "name": "e5be04a7-223V9NgangFix100.apk",
       "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/ab79a2f6-e5be04a7-223V9NgangFix100.apk",
+      "fileType": "APK",
       "mime": "application/vnd.android.package-archive",
-      "name": "e5be04a7-223V9NgangFix100.apk"
+      "fileSize": 493688
     },
     {
-      "name": "223V9NgangFix100.apk",
-      "mime": "application/vnd.android.package-archive",
-      "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/06dbb873-223V9NgangFix100.apk",
       "fileSize": 493688,
-      "fileType": "APK"
+      "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/06dbb873-223V9NgangFix100.apk",
+      "name": "223V9NgangFix100.apk",
+      "fileType": "APK",
+      "mime": "application/vnd.android.package-archive"
+    },
+    {
+      "fileType": "PNG",
+      "mime": "image/png",
+      "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/b6a520f9-Untitled.png",
+      "fileSize": 164964,
+      "name": "Test"
     }
   ]
 }
