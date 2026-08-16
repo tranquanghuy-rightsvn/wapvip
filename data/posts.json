@@ -1,5 +1,66 @@
 [
   {
+    "id": "0d586f8f-5116-4d1d-901a-b4bc63976743",
+    "slug": "army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot",
+    "title": "Army 230 V9 Mod X8 Căn Góc Hỗ Trợ Full Item",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Mobi Army 2",
+    "download_type": "upload",
+    "download_url": "",
+    "download_file_name": "GiaiTri321x8.jar",
+    "download_file_size": 3107516,
+    "download_file_path": "downloads/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/GiaiTri321x8.jar",
+    "download_drive_id": "",
+    "download_mime": "application/octet-stream",
+    "created_at": "2026-08-04T10:24:36.835Z",
+    "updated_at": "2026-08-16T06:39:53.099Z",
+    "icon": "hotqua",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1LSHI2nteOAPokNNg5nO-6VxRlo27D4rV"
+      },
+      {
+        "file": "03.jpg",
+        "driveId": "1fIVbwqaatQ_Nttn0C-7uKMk7IxvbPamZ"
+      },
+      {
+        "file": "03.jpg",
+        "driveId": "1zIu28QwPzfVpO7CR74KMiTzpHspHj2gh"
+      }
+    ],
+    "contentFiles": [
+      {
+        "storage": "repo",
+        "fileSize": 952582,
+        "fileName": "ad53425b-GiaiTri321x2.jar",
+        "mimeType": ""
+      },
+      {
+        "storage": "repo",
+        "fileSize": 1670853,
+        "mimeType": "",
+        "fileName": "68311dc3-GiaiTri321x4.jar"
+      },
+      {
+        "storage": "repo",
+        "fileSize": 2389108,
+        "fileName": "d488f304-GiaiTri321x6.jar",
+        "mimeType": ""
+      },
+      {
+        "mimeType": "",
+        "storage": "repo",
+        "fileName": "068361d2-GiaiTri321x8.jar",
+        "fileSize": 3107516
+      }
+    ],
+    "extraFiles": []
+  },
+  {
     "id": "c0c16908-d010-47b5-8190-d96e10675ba1",
     "slug": "army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot",
     "title": "Army 220 Mod V10 Kẻ Góc Hỗ Trợ All Nhân Vật - Speed Mượt",
@@ -478,67 +539,6 @@
     "download_release_asset_id": "",
     "images": [],
     "contentFiles": [],
-    "extraFiles": []
-  },
-  {
-    "id": "0d586f8f-5116-4d1d-901a-b4bc63976743",
-    "slug": "army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot",
-    "title": "Army 230 V9 Mod X8 Căn Góc Hỗ Trợ Full Item",
-    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "Mobi Army 2",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "GiaiTri321x8.jar",
-    "download_file_size": 3107516,
-    "download_file_path": "downloads/army-230-v9-mod-x8-full-can-goc-all-cho-ae-kep-di-boss-speed-sieu-muot/GiaiTri321x8.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-04T10:24:36.835Z",
-    "updated_at": "2026-08-16T04:55:44.161Z",
-    "icon": "hotqua",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1LSHI2nteOAPokNNg5nO-6VxRlo27D4rV"
-      },
-      {
-        "driveId": "1fIVbwqaatQ_Nttn0C-7uKMk7IxvbPamZ",
-        "file": "03.jpg"
-      },
-      {
-        "file": "03.jpg",
-        "driveId": "1zIu28QwPzfVpO7CR74KMiTzpHspHj2gh"
-      }
-    ],
-    "contentFiles": [
-      {
-        "storage": "repo",
-        "fileName": "ad53425b-GiaiTri321x2.jar",
-        "mimeType": "",
-        "fileSize": 952582
-      },
-      {
-        "fileName": "68311dc3-GiaiTri321x4.jar",
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 1670853
-      },
-      {
-        "fileName": "d488f304-GiaiTri321x6.jar",
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 2389108
-      },
-      {
-        "fileName": "068361d2-GiaiTri321x8.jar",
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 3107516
-      }
-    ],
     "extraFiles": []
   }
 ]
