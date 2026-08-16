@@ -13,7 +13,7 @@
     "download_drive_id": "",
     "download_mime": "application/octet-stream",
     "created_at": "2026-08-01T04:38:53.077Z",
-    "updated_at": "2026-08-16T17:56:15.459Z",
+    "updated_at": "2026-08-16T17:58:30.782Z",
     "icon": "hot",
     "download_storage": "repo",
     "download_external_url": "",
@@ -28,42 +28,42 @@
         "file": "03.jpg"
       },
       {
-        "file": "05.jpg",
-        "driveId": "1guOBRgNERrVtF-XGFy298kpQd8BeY0Za"
+        "driveId": "1guOBRgNERrVtF-XGFy298kpQd8BeY0Za",
+        "file": "05.jpg"
       },
       {
         "file": "06.jpg",
         "driveId": "1zAEhQyda10MMAVH-PHpNvac3TNUB70V1"
       },
       {
-        "file": "05.jpg",
-        "driveId": "1LetIkRnVQzwcxL6nCYLbHdCPkuWJS99U"
+        "driveId": "1LetIkRnVQzwcxL6nCYLbHdCPkuWJS99U",
+        "file": "05.jpg"
       },
       {
-        "file": "07.jpg",
-        "driveId": "15Z-sV1L4XNgF8wASbYuWj3XMbNsDn-rj"
+        "driveId": "15Z-sV1L4XNgF8wASbYuWj3XMbNsDn-rj",
+        "file": "07.jpg"
       },
       {
-        "file": "07.jpg",
-        "driveId": "1ZUpUuVS11OWICC-HZ2gKkYK2Paiw-R1O"
+        "driveId": "1ZUpUuVS11OWICC-HZ2gKkYK2Paiw-R1O",
+        "file": "07.jpg"
       },
       {
-        "file": "09.jpg",
-        "driveId": "1SS6Dky5do7uYwvH4b8ilxLlDNtGEnQlW"
+        "driveId": "1SS6Dky5do7uYwvH4b8ilxLlDNtGEnQlW",
+        "file": "09.jpg"
       },
       {
-        "file": "11.jpg",
-        "driveId": "1kiAfpt1MLzcwuU7SRbFnq2AB_oeDYhvw"
+        "driveId": "1kiAfpt1MLzcwuU7SRbFnq2AB_oeDYhvw",
+        "file": "11.jpg"
       }
     ],
     "contentFiles": [],
     "extraFiles": [
       {
+        "fileSize": 493658,
+        "fileType": "JAR",
         "mime": "application/octet-stream",
         "path": "posts/bai-viet-2-3466/extra-files/db1b520c-Army_220_All.jar",
-        "name": "Army_220_All.jar",
-        "fileType": "JAR",
-        "fileSize": 493658
+        "name": "Army_220_All.jar"
       }
     ]
   },
