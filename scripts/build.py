@@ -8,6 +8,7 @@ Chay: python3 scripts/build.py
 import html
 import json
 import re
+import shutil
 import unicodedata
 import urllib.parse
 from datetime import datetime
@@ -502,9 +503,7 @@ def cleanup_removed_posts(posts_full):
     for child in posts_dir.iterdir():
         if child.is_dir() and child.name not in valid_slugs:
             print("  Xoa bai cu khong con trong data: {}".format(child.name))
-            for sub in sorted(child.rglob("*"), reverse=True):
-                sub.unlink()
-            child.rmdir()
+            shutil.rmtree(child)
 
 
 if __name__ == "__main__":
