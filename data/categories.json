@@ -18,15 +18,15 @@
     "order": 3
   },
   {
-    "id": "8d06112f-4307-49ba-9dee-f5997ad51681",
-    "slug": "danh-sach-ung-dung",
-    "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
-    "order": 4
-  },
-  {
     "id": "b25db140-724a-4221-9266-559a9141d8df",
     "slug": "tan-thu",
     "name": "DANH SÁCH GAME OFFLINE",
+    "order": 4
+  },
+  {
+    "id": "8d06112f-4307-49ba-9dee-f5997ad51681",
+    "slug": "danh-sach-ung-dung",
+    "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
     "order": 5
   }
 ]
