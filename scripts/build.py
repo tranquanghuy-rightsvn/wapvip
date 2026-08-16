@@ -180,6 +180,62 @@ def download_button_html(post, depth_prefix):
     return '  <a class="dl-button" href="{}"{}>⬇️ TẢI GAME NGAY</a>'.format(html.escape(href), attrs)
 
 
+def format_file_size(num_bytes):
+    """"914.8KB" kieu - dung RIENG cho khung "TAI VE MAY" (extra_files_html), khop 1:1 voi
+    fmtBytesDisplay() ben gas/js.html (khac fmtBytes() dung noi khac trong CMS: co dau cach, KB
+    lam tron 0 le)."""
+    n = float(num_bytes or 0)
+    if n >= 1024 * 1024:
+        return "{:.1f}MB".format(n / (1024 * 1024))
+    if n >= 1024:
+        return "{:.1f}KB".format(n / 1024)
+    return "{}B".format(int(n))
+
+
+def extra_files_html(post, depth_prefix):
+    """Khung "TẢI VỀ MÁY" - file bo sung QUAN LY RIENG, NAM NGOAI .article-body (khong thuoc noi
+    dung bai viet, khac han nut dl-button/DOWNLOAD_BUTTON van nam TRONG .article-body). Dung LAI
+    dung cau truc "category" cua trang chu (.hdr + .list > .row .ic img, xem build_index) de rong
+    100% giong het category that - xem .list .row.dl-file-row trong html/css/style.css.
+    Tra chuoi rong (khong render gi ca) neu bai khong co file nao (extra_files rong/khong co)."""
+    files = post.get("extra_files") or []
+    if not files:
+        return ""
+    rows = []
+    for f in files:
+        path = f.get("path") or ""
+        if not path:
+            continue
+        href = "{}{}".format(depth_prefix, path)
+        name = f.get("name") or path.rsplit("/", 1)[-1]
+        rows.append(
+            '    <div class="row dl-file-row">\n'
+            '      <span class="ic"><img src="{prefix}images/download.png" alt="download"></span>\n'
+            '      <a class="dl-file-name" href="{href}" download="{name_attr}">{name}</a>\n'
+            '      <span class="sep">|</span>\n'
+            '      <span class="dl-file-type">{ftype}</span>\n'
+            '      <span class="dl-file-size">({fsize})</span>\n'
+            '    </div>'.format(
+                prefix=depth_prefix,
+                href=html.escape(href),
+                name_attr=html.escape(name),
+                name=html.escape(name),
+                ftype=html.escape(f.get("fileType") or "FILE"),
+                fsize=format_file_size(f.get("fileSize")),
+            )
+        )
+    if not rows:
+        return ""
+    # Bao dau/cuoi bang 1 dong trong (\n thua) de khi the vao {{EXTRA_FILES}} trong templates/post.html
+    # tao ra dung 1 dong trong ngan cach voi .dl-button phia tren va bottom-nav phia duoi - GIONG
+    # HET khoang trang khi khong co file nao (template khong con dong trong "cung" nao khac quanh
+    # placeholder, xem templates/post.html).
+    return "\n" + (
+        '  <div class="hdr blue">» TẢI VỀ MÁY</div>\n'
+        '  <div class="list">\n' + "\n".join(rows) + "\n  </div>"
+    ) + "\n"
+
+
 def strip_html_tags(text):
     """Bo tag HTML + &nbsp;/entity co ban, gop khoang trang - dung de sinh meta description tu
     content CMS (content la HTML, khong dung truc tiep duoc trong <meta content="...">)."""
@@ -424,6 +480,7 @@ def build_posts(site, categories, cat_by_id, posts_full):
             "POST_TITLE": html.escape(post["title"]),
             "POST_META": post_meta,
             "DOWNLOAD_BUTTON": download_button,
+            "EXTRA_FILES": extra_files_html(post, depth_prefix),
             "CONTENT": post.get("content", ""),
             "FOOTER_TEXT": "{} © {}".format(html.escape(site_name), datetime.now().year),
             "SEO_META": seo_meta_html(site, page_title, description, url_path, image_path, page_type="article"),

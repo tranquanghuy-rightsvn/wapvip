@@ -387,6 +387,39 @@ a:hover {
 .article-body .dl-button {
   color: #fff;
 }
+
+/* "Tai ve may" - dat truoc .dl-button, thiet ke GIONG TUYET DOI 1 category o trang chu (xem
+   html/index.html: .hdr + .list > .row .ic img) - dung LAI dung .hdr/.list/.row/.ic, KHONG bo
+   goc, KHONG box-shadow, KHONG doi border/padding/font rieng - category trang chu von di cung
+   khong co may thu do. Chi them .dl-file-row de RIENG cho hang nay phong icon to gap doi (8px ->
+   16px -> 32px, da gap doi 2 lan theo yeu cau) ma khong dung tram len .list .row .ic img o cac
+   danh sach khac. FAKE HIEN TAI: chua gan du lieu/tinh nang that, chi de xem giao dien.
+   LUU Y: phai viet ".list .row.dl-file-row .ic img" (4 class) chu KHONG duoc viet gon
+   ".dl-file-row .ic img" (2 class) - .list .row .ic img goc o tren co 3 class, specificity cao
+   hon 2 class nen se de len bat ke thu tu trong file, doi height se thang am tham khong bao gio
+   doi duoc. */
+.list .row.dl-file-row .ic img {
+  height: 14px;
+}
+.dl-file-name {
+  color: #1a56c4;
+  font-weight: bold;
+  font-size: 12px;
+}
+.dl-file-row .sep {
+  color: #111;
+  font-size: 12px;
+}
+.dl-file-type {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 12px;
+}
+.dl-file-size {
+  color: #888;
+  font-weight: normal;
+  font-size: 12px;
+}
 .byline .click span:nth-child(1) { color: #e2231a; }
 .byline .click span:nth-child(2) { color: #2a8a3e; }
 .byline .click span:nth-child(3) { color: #1a56c4; }
