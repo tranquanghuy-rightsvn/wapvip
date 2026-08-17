@@ -1,0 +1,48 @@
+{
+  "id": "06254278-007c-4b84-b9de-f812350a3336",
+  "slug": "gia-lap-javar-choi-game-tren-pc",
+  "title": "Giả Lập Javar chơi Game trên PC",
+  "category_id": "2030177a-91c7-4a12-b619-43a6dee1199a",
+  "game": "Mobi Army 2",
+  "content": "<p>Bước đầu ti&ecirc;n ch&uacute;ng ta cần Download File c&agrave;i Javar cho PC tại đ&acirc;y <a title=\"Download Java\" href=\"https://www.java.com/en/download/manual.jsp\" target=\"_blank\" rel=\"noopener\">Download Java</a></p>\n<p>Ch&uacute;ng ta chọn bản Window Offline 64bit v&agrave; c&agrave;i.</p>\n<p>Tiếp theo ch&uacute;ng ta tải Kemulator hoặc Emulator về chạy thế l&agrave; xong.</p>",
+  "download_type": "none",
+  "download_url": "",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
+  "download_drive_id": "",
+  "download_mime": "",
+  "created_at": "2026-08-17T16:41:50.773Z",
+  "updated_at": "2026-08-17T16:41:50.773Z",
+  "icon": "muiten6",
+  "download_storage": "",
+  "download_external_url": "",
+  "download_release_asset_id": "",
+  "images": [
+    "posts/gia-lap-javar-choi-game-tren-pc/images/01.jpg"
+  ],
+  "contentFiles": [],
+  "extra_files": [
+    {
+      "fileType": "RAR",
+      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/cb6b719b-KEmulator-GiaiTri321.Com.rar",
+      "name": "KEmulator-GiaiTri321.Com.rar",
+      "fileSize": 13201055,
+      "mime": "application/octet-stream"
+    },
+    {
+      "mime": "application/octet-stream",
+      "fileType": "RAR",
+      "name": "Emulator-R2R.rar",
+      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/2290e7fa-Emulator-R2R.rar",
+      "fileSize": 8301134
+    },
+    {
+      "name": "AngelChipEmulator_AutoSleep.jar",
+      "fileSize": 490629,
+      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/892f871e-AngelChipEmulator_AutoSleep.jar",
+      "fileType": "JAR",
+      "mime": "application/octet-stream"
+    }
+  ]
+}
