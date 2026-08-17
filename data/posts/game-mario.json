@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-17T16:59:54.782Z",
-  "updated_at": "2026-08-17T17:02:00.792Z",
+  "updated_at": "2026-08-17T17:03:36.902Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
@@ -22,25 +22,25 @@
   "contentFiles": [],
   "extra_files": [
     {
-      "name": "Super Mario 4.jar",
       "fileType": "JAR",
       "mime": "application/octet-stream",
+      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/f32c7c1e-Super Mario 4.jar",
       "fileSize": 633442,
-      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/f32c7c1e-Super Mario 4.jar"
+      "name": "Super Mario 4.jar"
     },
     {
-      "mime": "application/octet-stream",
-      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/8985a7fe-SUPERM~2.JAR",
       "fileSize": 146805,
+      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/8985a7fe-SUPERM~2.JAR",
       "name": "SUPERM~2.JAR",
-      "fileType": "JAR"
+      "fileType": "JAR",
+      "mime": "application/octet-stream"
     },
     {
-      "mime": "application/octet-stream",
-      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/b42da79e-SUPERM~3.JAR",
       "fileType": "JAR",
-      "name": "SUPERM~3.JAR",
-      "fileSize": 598942
+      "mime": "application/octet-stream",
+      "fileSize": 598942,
+      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/b42da79e-SUPERM~3.JAR",
+      "name": "SUPERM~3.JAR"
     }
   ]
 }
