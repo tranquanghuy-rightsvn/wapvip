@@ -1,0 +1,55 @@
+{
+  "id": "57a519f7-b864-4813-b268-915e9ff51e2d",
+  "slug": "mobi-army2-ban-goc-nph-teamobi",
+  "title": "Mobi Army2 Bản Gốc NPH Teamobi",
+  "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+  "game": "Mobi Army 2",
+  "content": "<p>Dưới đ&acirc;y l&agrave; những phi&ecirc;n bản gốc từ nh&agrave; ph&aacute;t h&agrave;nh Teamobi</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Giao Diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>",
+  "download_type": "none",
+  "download_url": "",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
+  "download_drive_id": "",
+  "download_mime": "",
+  "created_at": "2026-08-17T14:29:44.170Z",
+  "updated_at": "2026-08-17T14:29:44.170Z",
+  "icon": "muiten6",
+  "download_storage": "",
+  "download_external_url": "",
+  "download_release_asset_id": "",
+  "images": [
+    "posts/mobi-army2-ban-goc-nph-teamobi/images/01.jpg"
+  ],
+  "contentFiles": [],
+  "extra_files": [
+    {
+      "name": "Army220.jar",
+      "fileType": "JAR",
+      "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/e773c05e-Army220.jar",
+      "mime": "application/octet-stream",
+      "fileSize": 494665
+    },
+    {
+      "mime": "application/octet-stream",
+      "fileSize": 496467,
+      "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/4f554ae9-Army230.jar",
+      "name": "Army230.jar",
+      "fileType": "JAR"
+    },
+    {
+      "fileType": "JAR",
+      "mime": "application/octet-stream",
+      "fileSize": 498404,
+      "name": "Army239.jar",
+      "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/1f399dcd-Army239.jar"
+    },
+    {
+      "mime": "application/vnd.android.package-archive",
+      "name": "MobiArmy2.3.1.apk",
+      "fileType": "APK",
+      "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/71800748-MobiArmy2.3.1.apk",
+      "fileSize": 4971062
+    }
+  ]
+}
