@@ -13,8 +13,8 @@
     "download_drive_id": "",
     "download_mime": "",
     "created_at": "2026-08-17T14:29:44.170Z",
-    "updated_at": "2026-08-17T14:29:44.170Z",
-    "icon": "muiten6",
+    "updated_at": "2026-08-17T14:30:33.587Z",
+    "icon": "mobiarmy",
     "download_storage": "",
     "download_external_url": "",
     "download_release_asset_id": "",
@@ -27,32 +27,32 @@
     "contentFiles": [],
     "extraFiles": [
       {
-        "name": "Army220.jar",
+        "mime": "application/octet-stream",
         "fileType": "JAR",
         "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/e773c05e-Army220.jar",
-        "mime": "application/octet-stream",
+        "name": "Army220.jar",
         "fileSize": 494665
       },
       {
-        "mime": "application/octet-stream",
         "fileSize": 496467,
         "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/4f554ae9-Army230.jar",
         "name": "Army230.jar",
-        "fileType": "JAR"
-      },
-      {
         "fileType": "JAR",
-        "mime": "application/octet-stream",
-        "fileSize": 498404,
-        "name": "Army239.jar",
-        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/1f399dcd-Army239.jar"
+        "mime": "application/octet-stream"
       },
       {
-        "mime": "application/vnd.android.package-archive",
-        "name": "MobiArmy2.3.1.apk",
+        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/1f399dcd-Army239.jar",
+        "fileType": "JAR",
+        "name": "Army239.jar",
+        "mime": "application/octet-stream",
+        "fileSize": 498404
+      },
+      {
         "fileType": "APK",
-        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/71800748-MobiArmy2.3.1.apk",
-        "fileSize": 4971062
+        "mime": "application/vnd.android.package-archive",
+        "fileSize": 4971062,
+        "name": "MobiArmy2.3.1.apk",
+        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/71800748-MobiArmy2.3.1.apk"
       }
     ]
   },
