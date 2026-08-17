@@ -2,7 +2,7 @@
   "id": "cf294d58-d660-40e7-984f-e171e9e8388f",
   "slug": "ninja-school-123",
   "title": "Ninja School 123",
-  "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+  "category_id": "b25db140-724a-4221-9266-559a9141d8df",
   "game": "",
   "content": "<p>Người chơi v&agrave;o vai một cậu b&eacute; hoặc c&ocirc; b&eacute; c&oacute; ước mơ trở th&agrave;nh ninja vĩ đại. Nh&acirc;n vật sẽ gia nhập một trong ba ng&ocirc;i trường cổ xưa đại diện cho c&aacute;c v&ugrave;ng đất v&agrave; phong c&aacute;ch chiến đấu kh&aacute;c nhau (Hokage, Kurotchi, hoặc Oozaru t&ugrave;y phi&ecirc;n bản/lựa chọn</p>\n<figure class=\"image\"><img src=\"images/04.jpg\">\n<figcaption>Ninja School Offline</figcaption>\n</figure>\n<p>&nbsp;</p>",
   "download_type": "none",
@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-17T16:57:51.365Z",
-  "updated_at": "2026-08-17T16:57:51.365Z",
+  "updated_at": "2026-08-17T17:00:12.709Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
@@ -25,23 +25,23 @@
   "extra_files": [
     {
       "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/3698cef3-Ninja School 2.jar",
+      "mime": "application/octet-stream",
+      "name": "Ninja School 2.jar",
       "fileSize": 440818,
-      "fileType": "JAR",
-      "mime": "application/octet-stream",
-      "name": "Ninja School 2.jar"
-    },
-    {
-      "name": "Ninja School 1.jar",
-      "mime": "application/octet-stream",
-      "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/73f79d2c-Ninja School 1.jar",
-      "fileSize": 298866,
       "fileType": "JAR"
     },
     {
+      "fileSize": 298866,
+      "mime": "application/octet-stream",
       "fileType": "JAR",
-      "fileSize": 500539,
+      "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/73f79d2c-Ninja School 1.jar",
+      "name": "Ninja School 1.jar"
+    },
+    {
       "name": "Ninja School 3.jar",
       "mime": "application/octet-stream",
+      "fileType": "JAR",
+      "fileSize": 500539,
       "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/c3605bed-Ninja School 3.jar"
     }
   ]
