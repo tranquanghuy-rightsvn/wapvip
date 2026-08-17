@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "application/vnd.android.package-archive",
   "created_at": "2026-08-01T12:35:26.079Z",
-  "updated_at": "2026-08-16T06:39:22.096Z",
+  "updated_at": "2026-08-17T05:10:25.682Z",
   "icon": "hot",
   "download_storage": "repo",
   "download_external_url": "",
@@ -22,5 +22,13 @@
     "posts/army-223-mod-v9-android-man-ngang-ho-tro-full-nhan-vat/images/01.png"
   ],
   "contentFiles": [],
-  "extra_files": []
+  "extra_files": [
+    {
+      "fileSize": 493688,
+      "path": "posts/army-223-mod-v9-android-man-ngang-ho-tro-full-nhan-vat/extra-files/b677f16d-223V9NgangFix100.apk",
+      "name": "223V9NgangFix100.apk",
+      "fileType": "APK",
+      "mime": "application/vnd.android.package-archive"
+    }
+  ]
 }
