@@ -1,0 +1,46 @@
+{
+  "id": "14d2690d-84f2-4f3e-95e4-0db77c456203",
+  "slug": "game-mario",
+  "title": "Game Mario",
+  "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+  "game": "",
+  "content": "<p>Tổng Hợp c&aacute;c phi&ecirc;n bản của Mario&nbsp;</p>",
+  "download_type": "none",
+  "download_url": "",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
+  "download_drive_id": "",
+  "download_mime": "",
+  "created_at": "2026-08-17T16:59:54.782Z",
+  "updated_at": "2026-08-17T16:59:54.782Z",
+  "icon": "muiten6",
+  "download_storage": "",
+  "download_external_url": "",
+  "download_release_asset_id": "",
+  "images": [],
+  "contentFiles": [],
+  "extra_files": [
+    {
+      "name": "Super Mario 4.jar",
+      "fileType": "JAR",
+      "fileSize": 633442,
+      "mime": "application/octet-stream",
+      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/f32c7c1e-Super Mario 4.jar"
+    },
+    {
+      "mime": "application/octet-stream",
+      "name": "SUPERM~2.JAR",
+      "fileType": "JAR",
+      "fileSize": 146805,
+      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/8985a7fe-SUPERM~2.JAR"
+    },
+    {
+      "name": "SUPERM~3.JAR",
+      "fileType": "JAR",
+      "mime": "application/octet-stream",
+      "fileSize": 598942,
+      "path": "downloads/14d2690d-84f2-4f3e-95e4-0db77c456203/extra-files/b42da79e-SUPERM~3.JAR"
+    }
+  ]
+}
