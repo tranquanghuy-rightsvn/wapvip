@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-17T16:57:51.365Z",
-  "updated_at": "2026-08-17T17:00:12.709Z",
+  "updated_at": "2026-08-17T17:02:13.521Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
@@ -25,24 +25,24 @@
   "extra_files": [
     {
       "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/3698cef3-Ninja School 2.jar",
-      "mime": "application/octet-stream",
       "name": "Ninja School 2.jar",
+      "fileType": "JAR",
       "fileSize": 440818,
-      "fileType": "JAR"
+      "mime": "application/octet-stream"
     },
     {
-      "fileSize": 298866,
       "mime": "application/octet-stream",
+      "fileSize": 298866,
       "fileType": "JAR",
-      "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/73f79d2c-Ninja School 1.jar",
-      "name": "Ninja School 1.jar"
+      "name": "Ninja School 1.jar",
+      "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/73f79d2c-Ninja School 1.jar"
     },
     {
       "name": "Ninja School 3.jar",
-      "mime": "application/octet-stream",
+      "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/c3605bed-Ninja School 3.jar",
       "fileType": "JAR",
       "fileSize": 500539,
-      "path": "downloads/cf294d58-d660-40e7-984f-e171e9e8388f/extra-files/c3605bed-Ninja School 3.jar"
+      "mime": "application/octet-stream"
     }
   ]
 }
