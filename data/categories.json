@@ -6,33 +6,33 @@
     "order": 1
   },
   {
+    "id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
+    "slug": "game-avatar-dk",
+    "name": "GAME AVATAR - DK",
+    "order": 2
+  },
+  {
     "id": "2030177a-91c7-4a12-b619-43a6dee1199a",
     "slug": "danh-sach-tool",
     "name": "THỦ THUẬT CHƠI GAME",
-    "order": 2
+    "order": 3
   },
   {
     "id": "849ff227-ddac-4db5-8a2e-0f8b3a38c078",
     "slug": "meo-choi-game",
     "name": "DỊCH VỤ GAME ARMY 2",
-    "order": 3
+    "order": 4
   },
   {
     "id": "b25db140-724a-4221-9266-559a9141d8df",
     "slug": "tan-thu",
     "name": "DANH SÁCH GAME OFFLINE",
-    "order": 4
+    "order": 5
   },
   {
     "id": "8d06112f-4307-49ba-9dee-f5997ad51681",
     "slug": "danh-sach-ung-dung",
     "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
-    "order": 5
-  },
-  {
-    "id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
-    "slug": "game-avatar-dk",
-    "name": "GAME AVATAR - DK",
     "order": 6
   }
 ]
