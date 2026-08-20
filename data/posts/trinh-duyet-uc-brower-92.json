@@ -2,7 +2,7 @@
   "id": "1c1d4318-f70e-4992-9b2d-bc8668dc8693",
   "slug": "trinh-duyet-uc-brower-92",
   "title": "Trình Duyệt UC Brower 9.2",
-  "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+  "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
   "game": "",
   "content": "<p>UC Brower 9.2 cho Java - v&agrave; Nokia Symbian th&igrave; tải file .sis l&agrave; ngon</p>\n<figure class=\"image\"><img src=\"images/08.jpg\">\n<figcaption>UC Brower</figcaption>\n</figure>\n<p>&nbsp;</p>",
   "download_type": "none",
@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-20T11:52:11.775Z",
-  "updated_at": "2026-08-20T11:52:11.775Z",
+  "updated_at": "2026-08-20T11:52:34.956Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
@@ -24,45 +24,45 @@
   "contentFiles": [],
   "extra_files": [
     {
-      "fileType": "JAR",
-      "mime": "application/octet-stream",
+      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/8e207098-Uc-9_2-tubor-4_3.jar",
       "fileSize": 487575,
       "name": "Uc-9_2-tubor-4_3.jar",
-      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/8e207098-Uc-9_2-tubor-4_3.jar"
+      "fileType": "JAR",
+      "mime": "application/octet-stream"
     },
     {
-      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/b4665600-Uc-9_3-tubor-3_3.jar",
       "name": "Uc-9_3-tubor-3_3.jar",
-      "mime": "application/octet-stream",
+      "fileSize": 576255,
+      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/b4665600-Uc-9_3-tubor-3_3.jar",
       "fileType": "JAR",
-      "fileSize": 576255
+      "mime": "application/octet-stream"
     },
     {
-      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/76c59152-Uc-Browser-9_4-Beta-Full.jar",
-      "name": "Uc-Browser-9_4-Beta-Full.jar",
-      "fileType": "JAR",
       "mime": "application/octet-stream",
-      "fileSize": 473939
+      "fileSize": 473939,
+      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/76c59152-Uc-Browser-9_4-Beta-Full.jar",
+      "fileType": "JAR",
+      "name": "Uc-Browser-9_4-Beta-Full.jar"
     },
     {
       "mime": "application/octet-stream",
       "name": "UCBrowser_V9.5.jar",
-      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/a02c12bc-UCBrowser_V9.5.jar",
       "fileSize": 468714,
+      "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/a02c12bc-UCBrowser_V9.5.jar",
       "fileType": "JAR"
     },
     {
+      "fileSize": 445313,
       "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/a9b690b5-UCBrowser_8.2.jar",
       "name": "UCBrowser_8.2.jar",
-      "mime": "application/octet-stream",
       "fileType": "JAR",
-      "fileSize": 445313
+      "mime": "application/octet-stream"
     },
     {
+      "fileSize": 2110288,
       "mime": "application/octet-stream",
       "fileType": "SISX",
       "name": "UCBrowser-V9-2-0-336-S60V3-pf28-Build13101511.sisx",
-      "fileSize": 2110288,
       "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/7a2dccbf-UCBrowser-V9-2-0-336-S60V3-pf28-Build13101511.sisx"
     }
   ]
