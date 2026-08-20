@@ -4,7 +4,7 @@
   "title": "Avatar 240 Mod Giao Diện Noel Auto Farm",
   "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
   "game": "",
-  "content": "<p>Mod Noel cho Anh Em</p>",
+  "content": "<p>Mod Noel cho Anh Em Mod by TaamLAG - WapVip.Pro</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Đăng Nhập</figcaption>\n</figure>\n<figure class=\"image\"><img src=\"images/03.jpg\">\n<figcaption>N&ocirc;ng Trại</figcaption>\n</figure>\n<figure class=\"image\"><img src=\"images/05.jpg\">\n<figcaption>C&ocirc;ng Vi&ecirc;n</figcaption>\n</figure>\n<figure class=\"image\"><img src=\"images/07.jpg\">\n<figcaption>Giao Diện Noel</figcaption>\n</figure>\n<p>&nbsp;</p>",
   "download_type": "none",
   "download_url": "",
   "download_file_name": "",
@@ -13,20 +13,25 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-20T11:56:31.686Z",
-  "updated_at": "2026-08-20T11:56:31.686Z",
+  "updated_at": "2026-08-20T12:10:20.380Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
   "download_release_asset_id": "",
-  "images": [],
+  "images": [
+    "posts/avatar-240-mod-giao-dien-noel-auto-farm/images/01.jpg",
+    "posts/avatar-240-mod-giao-dien-noel-auto-farm/images/03.jpg",
+    "posts/avatar-240-mod-giao-dien-noel-auto-farm/images/05.jpg",
+    "posts/avatar-240-mod-giao-dien-noel-auto-farm/images/07.jpg"
+  ],
   "contentFiles": [],
   "extra_files": [
     {
-      "name": "Avatar240-ModNoel.jar",
-      "mime": "application/octet-stream",
       "path": "downloads/b064e01e-1756-4f02-8625-b05325161f85/extra-files/7b2eda0c-Avatar240-ModNoel.jar",
       "fileType": "JAR",
-      "fileSize": 638804
+      "mime": "application/octet-stream",
+      "fileSize": 638804,
+      "name": "Avatar240-ModNoel.jar"
     }
   ]
 }
