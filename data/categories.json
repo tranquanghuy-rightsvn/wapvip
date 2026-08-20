@@ -28,5 +28,11 @@
     "slug": "danh-sach-ung-dung",
     "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
     "order": 5
+  },
+  {
+    "id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
+    "slug": "game-avatar-dk",
+    "name": "GAME AVATAR - DK",
+    "order": 6
   }
 ]
