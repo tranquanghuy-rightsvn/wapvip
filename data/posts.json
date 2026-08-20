@@ -1,5 +1,36 @@
 [
   {
+    "id": "b064e01e-1756-4f02-8625-b05325161f85",
+    "slug": "avatar-240-mod-giao-dien-noel-auto-farm",
+    "title": "Avatar 240 Mod Giao Diện Noel Auto Farm",
+    "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
+    "game": "",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-20T11:56:31.686Z",
+    "updated_at": "2026-08-20T11:56:31.686Z",
+    "icon": "muiten6",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [],
+    "contentFiles": [],
+    "extraFiles": [
+      {
+        "name": "Avatar240-ModNoel.jar",
+        "mime": "application/octet-stream",
+        "path": "downloads/b064e01e-1756-4f02-8625-b05325161f85/extra-files/7b2eda0c-Avatar240-ModNoel.jar",
+        "fileType": "JAR",
+        "fileSize": 638804
+      }
+    ]
+  },
+  {
     "id": "2adb8059-3725-470b-a792-fd871b557787",
     "slug": "avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all",
     "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
