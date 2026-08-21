@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "application/octet-stream",
   "created_at": "2026-08-07T05:50:41.427Z",
-  "updated_at": "2026-08-20T11:55:05.282Z",
+  "updated_at": "2026-08-21T13:32:55.429Z",
   "icon": "muiten6",
   "download_storage": "repo",
   "download_external_url": "",
@@ -22,11 +22,25 @@
   "contentFiles": [],
   "extra_files": [
     {
-      "name": "Avatar_LAPRO (1).jar",
-      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
-      "mime": "application/octet-stream",
+      "fileSize": 882039,
       "fileType": "JAR",
-      "fileSize": 882039
+      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
+      "name": "Avatar_LAPRO (1).jar",
+      "mime": "application/octet-stream"
+    },
+    {
+      "fileType": "JPEG",
+      "fileSize": 291452,
+      "mime": "image/jpeg",
+      "name": "IMG_0024.jpeg",
+      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/f7bd85ee-IMG_0024.jpeg"
+    },
+    {
+      "mime": "image/jpeg",
+      "fileType": "JPEG",
+      "fileSize": 216154,
+      "name": "IMG_0023.jpeg",
+      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/3e9dcb56-IMG_0023.jpeg"
     }
   ]
 }
