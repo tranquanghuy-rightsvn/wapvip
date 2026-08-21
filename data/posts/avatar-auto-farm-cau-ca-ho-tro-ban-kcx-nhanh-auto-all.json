@@ -7,13 +7,13 @@
   "content": "<p>Mod by Trần Đức Huy&nbsp;</p>",
   "download_type": "upload",
   "download_url": "",
-  "download_file_name": "Avatar_LAPRO (1).jar",
-  "download_file_size": 882039,
-  "download_file_path": "downloads/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/Avatar_LAPRO (1).jar",
+  "download_file_name": "IMG_0023.jpeg",
+  "download_file_size": 216154,
+  "download_file_path": "downloads/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/IMG_0023.jpeg",
   "download_drive_id": "",
-  "download_mime": "application/octet-stream",
+  "download_mime": "image/jpeg",
   "created_at": "2026-08-07T05:50:41.427Z",
-  "updated_at": "2026-08-21T13:32:55.429Z",
+  "updated_at": "2026-08-21T13:39:26.406Z",
   "icon": "muiten6",
   "download_storage": "repo",
   "download_external_url": "",
@@ -27,20 +27,6 @@
       "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
       "name": "Avatar_LAPRO (1).jar",
       "mime": "application/octet-stream"
-    },
-    {
-      "fileType": "JPEG",
-      "fileSize": 291452,
-      "mime": "image/jpeg",
-      "name": "IMG_0024.jpeg",
-      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/f7bd85ee-IMG_0024.jpeg"
-    },
-    {
-      "mime": "image/jpeg",
-      "fileType": "JPEG",
-      "fileSize": 216154,
-      "name": "IMG_0023.jpeg",
-      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/3e9dcb56-IMG_0023.jpeg"
     }
   ]
 }
