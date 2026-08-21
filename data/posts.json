@@ -1,5 +1,50 @@
 [
   {
+    "id": "2adb8059-3725-470b-a792-fd871b557787",
+    "slug": "avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all",
+    "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
+    "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
+    "game": "Avatar",
+    "download_type": "upload",
+    "download_url": "",
+    "download_file_name": "Avatar_LAPRO (1).jar",
+    "download_file_size": 882039,
+    "download_file_path": "downloads/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/Avatar_LAPRO (1).jar",
+    "download_drive_id": "",
+    "download_mime": "application/octet-stream",
+    "created_at": "2026-08-07T05:50:41.427Z",
+    "updated_at": "2026-08-21T13:32:55.429Z",
+    "icon": "muiten6",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [],
+    "contentFiles": [],
+    "extraFiles": [
+      {
+        "fileSize": 882039,
+        "fileType": "JAR",
+        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
+        "name": "Avatar_LAPRO (1).jar",
+        "mime": "application/octet-stream"
+      },
+      {
+        "fileType": "JPEG",
+        "fileSize": 291452,
+        "mime": "image/jpeg",
+        "name": "IMG_0024.jpeg",
+        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/f7bd85ee-IMG_0024.jpeg"
+      },
+      {
+        "mime": "image/jpeg",
+        "fileType": "JPEG",
+        "fileSize": 216154,
+        "name": "IMG_0023.jpeg",
+        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/3e9dcb56-IMG_0023.jpeg"
+      }
+    ]
+  },
+  {
     "id": "3461cd3b-566b-4d2a-bfc7-9517c45ae257",
     "slug": "trinh-duyet-opera-mini-80",
     "title": "Trình Duyệt Opera Mini 8.0",
@@ -80,37 +125,6 @@
         "mime": "application/octet-stream",
         "fileSize": 638804,
         "name": "Avatar240-ModNoel.jar"
-      }
-    ]
-  },
-  {
-    "id": "2adb8059-3725-470b-a792-fd871b557787",
-    "slug": "avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all",
-    "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
-    "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
-    "game": "Avatar",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "Avatar_LAPRO (1).jar",
-    "download_file_size": 882039,
-    "download_file_path": "downloads/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/Avatar_LAPRO (1).jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-07T05:50:41.427Z",
-    "updated_at": "2026-08-20T11:55:05.282Z",
-    "icon": "muiten6",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [],
-    "contentFiles": [],
-    "extraFiles": [
-      {
-        "name": "Avatar_LAPRO (1).jar",
-        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
-        "mime": "application/octet-stream",
-        "fileType": "JAR",
-        "fileSize": 882039
       }
     ]
   },
