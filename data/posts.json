@@ -13,15 +13,15 @@
     "download_drive_id": "",
     "download_mime": "",
     "created_at": "2026-08-26T10:20:10.513Z",
-    "updated_at": "2026-08-26T10:22:19.747Z",
+    "updated_at": "2026-08-26T15:40:19.849Z",
     "icon": "hot3",
     "download_storage": "",
     "download_external_url": "",
     "download_release_asset_id": "",
     "images": [
       {
-        "driveId": "1aPSRqwTaq7B4zvoBX1-bn3946CmDWE5f",
-        "file": "01.jpg"
+        "file": "01.jpg",
+        "driveId": "1aPSRqwTaq7B4zvoBX1-bn3946CmDWE5f"
       },
       {
         "driveId": "1r8R46tGw1MlM497_976rC5eHo5wDL7Ue",
@@ -33,7 +33,22 @@
       }
     ],
     "contentFiles": [],
-    "extraFiles": []
+    "extraFiles": [
+      {
+        "fileType": "JAR",
+        "name": "GiaiTri321 QK.jar",
+        "mime": "application/octet-stream",
+        "fileSize": 788122,
+        "path": "posts/army-230-v10-full-tien-ich-mod-giao-dien-quoc-khanh-2026/extra-files/16df2317-GiaiTri321 QK.jar"
+      },
+      {
+        "name": "GiaiTri321 QK360.jar",
+        "fileType": "JAR",
+        "fileSize": 796023,
+        "mime": "application/octet-stream",
+        "path": "posts/army-230-v10-full-tien-ich-mod-giao-dien-quoc-khanh-2026/extra-files/21774597-GiaiTri321 QK360.jar"
+      }
+    ]
   },
   {
     "id": "c0c16908-d010-47b5-8190-d96e10675ba1",
