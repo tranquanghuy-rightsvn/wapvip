@@ -1,56 +1,5 @@
 [
   {
-    "id": "9b7cdb3f-6816-4e12-b45b-0744c5b53d0c",
-    "slug": "army-230-v10-full-tien-ich-mod-giao-dien-quoc-khanh-2026",
-    "title": "Army 230 V10 Full Tiện Ích MOD Giao Diện Quốc Khánh 2026",
-    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "Mobi Army 2",
-    "download_type": "none",
-    "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-08-26T10:20:10.513Z",
-    "updated_at": "2026-08-26T16:13:13.371Z",
-    "icon": "hot3",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1aPSRqwTaq7B4zvoBX1-bn3946CmDWE5f"
-      },
-      {
-        "driveId": "1r8R46tGw1MlM497_976rC5eHo5wDL7Ue",
-        "file": "03.jpg"
-      },
-      {
-        "driveId": "1iVFuELRWwu7y2ltPoaxjGzWxcdXpq3U2",
-        "file": "05.jpg"
-      }
-    ],
-    "contentFiles": [],
-    "extraFiles": [
-      {
-        "fileSize": 788122,
-        "fileType": "JAR",
-        "path": "posts/army-230-v10-full-tien-ich-mod-giao-dien-quoc-khanh-2026/extra-files/ed7895e1-GiaiTri321 QK.jar",
-        "name": "GiaiTri321 QK.jar",
-        "mime": "application/octet-stream"
-      },
-      {
-        "mime": "application/octet-stream",
-        "fileSize": 796023,
-        "fileType": "JAR",
-        "path": "posts/army-230-v10-full-tien-ich-mod-giao-dien-quoc-khanh-2026/extra-files/86a7e320-GiaiTri321 QK360.jar",
-        "name": "GiaiTri321 QK360.jar"
-      }
-    ]
-  },
-  {
     "id": "c0c16908-d010-47b5-8190-d96e10675ba1",
     "slug": "army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot",
     "title": "Army 220 Mod V10 Kẻ Góc Hỗ Trợ All Nhân Vật - Speed Mượt",
