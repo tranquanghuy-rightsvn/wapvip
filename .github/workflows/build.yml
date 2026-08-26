@@ -10,35 +10,69 @@ on:
       - 'data/posts.json'
       - 'data/categories.json'
       - 'data/site.json'
+  # Nut "Run workflow" de build lai bang tay khi html/ bi lech voi data/.
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+# GAS CMS day NHIEU commit lien tiep cho 1 thao tac (vd sua bai = 1 commit data/posts/<slug>.json
+# + 1 commit data/posts.json), moi commit posts.json lai bat 1 run. Khong xep hang thi cac run
+# chong nhau va tranh nhau push -> run cu bi "! [rejected] (fetch first)" va chet, html/ khong
+# duoc cap nhat trong khi CMS DA xoa/doi thu muc html/posts/<slug> -> index.html con tro toi
+# bai khong ton tai -> click ra 404.
+# cancel-in-progress: false - run bi huy giua chung cung de lai html/ lech voi data/.
+concurrency:
+  group: build-html-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Checkout theo branch (khong phai github.sha detached) de push thang len master.
+          ref: master
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Build html/ from data/ + templates/
-        run: python3 scripts/build.py
-
-      - name: Commit & push generated html/
+      - name: Build html/ tu data/ + templates/ roi push (retry neu bi tu choi)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Dung "-A -- html" (khong phai "html/index.html html/posts"): git add fail cung neu
-          # 1 pathspec khong ton tai tren dia (vd 0 bai viet -> html/posts/ khong con thu muc),
-          # lam ca script dung giua chung do "bash -e". "-A -- html" luon hop le vi html/ luon
-          # ton tai, va tu dong stage ca file moi/sua/xoa duoi no.
-          git add -A -- html
-          if git diff --cached --quiet; then
-            echo "Khong co thay doi, bo qua commit."
-          else
+
+          for attempt in 1 2 3 4 5; do
+            # Luon build tren dung trang thai MOI NHAT cua remote. Neu CMS push them commit
+            # trong luc job dang chay, lan thu lai se build lai tu data moi thay vi push de len.
+            # An toan tuyet doi vi build.py sinh lai toan bo html/ tu data/ (co ca
+            # cleanup_removed_posts) - khong bao gio conflict, khong can merge.
+            git fetch origin master
+            git reset --hard origin/master
+
+            python3 scripts/build.py
+
+            # Dung "-A -- html" (khong phai "html/index.html html/posts"): git add fail cung neu
+            # 1 pathspec khong ton tai tren dia (vd 0 bai viet -> html/posts/ khong con thu muc),
+            # lam ca script dung giua chung do "bash -e". "-A -- html" luon hop le vi html/ luon
+            # ton tai, va tu dong stage ca file moi/sua/xoa duoi no.
+            git add -A -- html
+            if git diff --cached --quiet; then
+              echo "Khong co thay doi, bo qua commit."
+              exit 0
+            fi
             git commit -m "CI: build html from data"
-            git push
-          fi
+
+            if git push origin HEAD:master; then
+              echo "Push thanh cong o lan thu $attempt."
+              exit 0
+            fi
+
+            echo "Push bi tu choi (remote vua co commit moi tu CMS). Build lai tu dau... (lan $attempt)"
+            sleep 5
+          done
+
+          echo "::error::Push that bai sau 5 lan thu - html/ dang lech voi data/, chay lai workflow bang tay."
+          exit 1
