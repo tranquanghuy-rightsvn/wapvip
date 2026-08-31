@@ -1,5 +1,43 @@
 [
   {
+    "id": "2adb8059-3725-470b-a792-fd871b557787",
+    "slug": "avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all",
+    "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
+    "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
+    "game": "Avatar",
+    "download_type": "upload",
+    "download_url": "",
+    "download_file_name": "IMG_0023.jpeg",
+    "download_file_size": 216154,
+    "download_file_path": "downloads/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/IMG_0023.jpeg",
+    "download_drive_id": "",
+    "download_mime": "image/jpeg",
+    "created_at": "2026-08-07T05:50:41.427Z",
+    "updated_at": "2026-08-31T15:45:11.551Z",
+    "icon": "muiten6",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [],
+    "contentFiles": [],
+    "extraFiles": [
+      {
+        "fileSize": 882039,
+        "mime": "application/octet-stream",
+        "fileType": "JAR",
+        "name": "Avatar_LAPRO (1).jar",
+        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar"
+      },
+      {
+        "name": "IMG_0276.jpeg",
+        "fileSize": 711689,
+        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/9b9ba833-IMG_0276.jpeg",
+        "fileType": "JPEG",
+        "mime": "image/jpeg"
+      }
+    ]
+  },
+  {
     "id": "893e469d-c1c2-48ab-9551-b2321e50b717",
     "slug": "army-230-v10-mod-giao-dien-quoc-khanh-2026-full-tien-ich",
     "title": "Army 230 V10 Mod Giao Diện Quốc Khánh 2026 Full Tiện Ích",
@@ -119,37 +157,6 @@
         "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/190060e2-Army_220_V10_PA.jar",
         "mime": "application/octet-stream",
         "fileSize": 397477
-      }
-    ]
-  },
-  {
-    "id": "2adb8059-3725-470b-a792-fd871b557787",
-    "slug": "avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all",
-    "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
-    "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
-    "game": "Avatar",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "IMG_0023.jpeg",
-    "download_file_size": 216154,
-    "download_file_path": "downloads/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/IMG_0023.jpeg",
-    "download_drive_id": "",
-    "download_mime": "image/jpeg",
-    "created_at": "2026-08-07T05:50:41.427Z",
-    "updated_at": "2026-08-21T13:39:26.406Z",
-    "icon": "muiten6",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [],
-    "contentFiles": [],
-    "extraFiles": [
-      {
-        "fileSize": 882039,
-        "fileType": "JAR",
-        "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
-        "name": "Avatar_LAPRO (1).jar",
-        "mime": "application/octet-stream"
       }
     ]
   },
