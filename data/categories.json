@@ -34,5 +34,11 @@
     "slug": "danh-sach-ung-dung",
     "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
     "order": 6
+  },
+  {
+    "id": "0805c903-d07c-476d-a0d5-008beca3fff7",
+    "slug": "khi-phach-anh-hong",
+    "name": "Khí Phách Anh Hùng",
+    "order": 7
   }
 ]
