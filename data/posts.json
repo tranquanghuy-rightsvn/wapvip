@@ -13,7 +13,7 @@
     "download_drive_id": "",
     "download_mime": "",
     "created_at": "2026-09-01T10:46:59.803Z",
-    "updated_at": "2026-09-01T10:46:59.803Z",
+    "updated_at": "2026-09-01T10:53:05.662Z",
     "icon": "hotqua02",
     "download_storage": "",
     "download_external_url": "",
@@ -29,7 +29,15 @@
       }
     ],
     "contentFiles": [],
-    "extraFiles": []
+    "extraFiles": [
+      {
+        "name": "KPAH_276.jar",
+        "path": "posts/kpah-ban-goc-teamobi/extra-files/b77f2c16-KPAH_276.jar",
+        "fileType": "JAR",
+        "fileSize": 1698227,
+        "mime": "application/java-archive"
+      }
+    ]
   },
   {
     "id": "2adb8059-3725-470b-a792-fd871b557787",
