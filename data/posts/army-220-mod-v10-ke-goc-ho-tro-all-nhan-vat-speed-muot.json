@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "application/octet-stream",
   "created_at": "2026-08-01T12:25:25.803Z",
-  "updated_at": "2026-08-22T06:39:06.478Z",
+  "updated_at": "2026-09-01T12:33:15.503Z",
   "icon": "hot",
   "download_storage": "repo",
   "download_external_url": "",
@@ -48,11 +48,18 @@
   ],
   "extra_files": [
     {
-      "fileType": "JAR",
       "name": "Army_220_V10_PA.jar",
-      "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/190060e2-Army_220_V10_PA.jar",
+      "fileSize": 397477,
+      "fileType": "JAR",
       "mime": "application/octet-stream",
-      "fileSize": 397477
+      "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/190060e2-Army_220_V10_PA.jar"
+    },
+    {
+      "fileSize": 426972,
+      "mime": "application/octet-stream",
+      "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/94297892-Army220 PA Item.jar",
+      "fileType": "JAR",
+      "name": "Army220 PA Item.jar"
     }
   ]
 }
