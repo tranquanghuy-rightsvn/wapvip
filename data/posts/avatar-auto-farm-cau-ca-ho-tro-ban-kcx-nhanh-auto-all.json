@@ -4,7 +4,7 @@
   "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
   "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
   "game": "Avatar",
-  "content": "<p>Mod by Trần Đức Huy&nbsp;</p>",
+  "content": "<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Caption ảnh</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Mod by Trần Đức Huy&nbsp;</p>",
   "download_type": "upload",
   "download_url": "",
   "download_file_name": "IMG_0276.jpeg",
@@ -13,20 +13,22 @@
   "download_drive_id": "",
   "download_mime": "image/jpeg",
   "created_at": "2026-08-07T05:50:41.427Z",
-  "updated_at": "2026-08-31T15:55:17.559Z",
+  "updated_at": "2026-09-01T10:40:01.065Z",
   "icon": "muiten6",
   "download_storage": "repo",
   "download_external_url": "",
   "download_release_asset_id": "",
-  "images": [],
+  "images": [
+    "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/images/01.jpg"
+  ],
   "contentFiles": [],
   "extra_files": [
     {
       "mime": "application/octet-stream",
-      "name": "Avatar_LAPRO (1).jar",
       "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
       "fileType": "JAR",
-      "fileSize": 882039
+      "fileSize": 882039,
+      "name": "Avatar_LAPRO (1).jar"
     }
   ]
 }
