@@ -13,20 +13,25 @@
     "download_drive_id": "",
     "download_mime": "image/jpeg",
     "created_at": "2026-08-07T05:50:41.427Z",
-    "updated_at": "2026-08-31T15:55:17.559Z",
+    "updated_at": "2026-09-01T10:40:01.065Z",
     "icon": "muiten6",
     "download_storage": "repo",
     "download_external_url": "",
     "download_release_asset_id": "",
-    "images": [],
+    "images": [
+      {
+        "driveId": "19IsA8bGwKmv_go0szzQujqd_GKEsfk90",
+        "file": "01.jpg"
+      }
+    ],
     "contentFiles": [],
     "extraFiles": [
       {
         "mime": "application/octet-stream",
-        "name": "Avatar_LAPRO (1).jar",
         "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
         "fileType": "JAR",
-        "fileSize": 882039
+        "fileSize": 882039,
+        "name": "Avatar_LAPRO (1).jar"
       }
     ]
   },
