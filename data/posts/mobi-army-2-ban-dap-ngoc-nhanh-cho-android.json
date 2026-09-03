@@ -1,0 +1,39 @@
+{
+  "id": "12f480d2-3125-499b-aa53-c4183c142fa8",
+  "slug": "mobi-army-2-ban-dap-ngoc-nhanh-cho-android",
+  "title": "Mobi Army 2 Bản Đập Ngọc Nhanh Cho Android",
+  "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+  "game": "Mobi Army 2",
+  "content": "",
+  "download_type": "none",
+  "download_url": "",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
+  "download_drive_id": "",
+  "download_mime": "",
+  "created_at": "2026-09-03T06:35:05.098Z",
+  "updated_at": "2026-09-03T06:35:05.098Z",
+  "icon": "muiten6",
+  "download_storage": "",
+  "download_external_url": "",
+  "download_release_asset_id": "",
+  "images": [],
+  "contentFiles": [],
+  "extra_files": [
+    {
+      "fileType": "APK",
+      "path": "downloads/12f480d2-3125-499b-aa53-c4183c142fa8/extra-files/18a7e008-1740574425-đập ngọc.apk",
+      "fileSize": 2782757,
+      "name": "1740574425-đập ngọc.apk",
+      "mime": "application/vnd.android.package-archive"
+    },
+    {
+      "path": "downloads/12f480d2-3125-499b-aa53-c4183c142fa8/extra-files/6e0fb1ff-1740574425-ngoc.apk",
+      "mime": "application/vnd.android.package-archive",
+      "name": "1740574425-ngoc.apk",
+      "fileSize": 2782757,
+      "fileType": "APK"
+    }
+  ]
+}
