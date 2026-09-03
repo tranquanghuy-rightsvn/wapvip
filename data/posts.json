@@ -13,19 +13,27 @@
     "download_drive_id": "",
     "download_mime": "",
     "created_at": "2026-09-03T17:00:57.896Z",
-    "updated_at": "2026-09-03T17:00:57.896Z",
+    "updated_at": "2026-09-03T17:08:31.697Z",
     "icon": "hot3",
     "download_storage": "",
     "download_external_url": "",
     "download_release_asset_id": "",
     "images": [
       {
-        "file": "01.jpg",
-        "driveId": "1lFO2evaiLFhfQFvtwc7M_u4rcQm5fxZd"
+        "driveId": "1lFO2evaiLFhfQFvtwc7M_u4rcQm5fxZd",
+        "file": "01.jpg"
       }
     ],
     "contentFiles": [],
-    "extraFiles": []
+    "extraFiles": [
+      {
+        "name": "thachsanhv_em8np6lc.jar",
+        "fileType": "JAR",
+        "path": "posts/thach-sanh-offline/extra-files/afbc740e-thachsanhv_em8np6lc.jar",
+        "mime": "application/java-archive",
+        "fileSize": 125361
+      }
+    ]
   },
   {
     "id": "12f480d2-3125-499b-aa53-c4183c142fa8",
