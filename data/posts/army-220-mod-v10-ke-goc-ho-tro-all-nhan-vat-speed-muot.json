@@ -5,17 +5,17 @@
   "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
   "game": "",
   "content": "<p>Phi&ecirc;n bản 220 l&agrave; một trong những phi&ecirc;n bản chạy &iacute;t lỗi nhất</p>\n<p>Mod by WapVip v&agrave; m&igrave;nh đ&atilde; tinh chỉnh l&agrave; một số thứ check KeyLog an to&agrave;n cho anh em v&agrave;o Game cực mượt</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Giao diện đăng nhập</figcaption>\n</figure>\n<p>Kẻ g&oacute;c V10 hỗ trợ anh em đủ nh&acirc;n vật</p>\n<figure class=\"image\"><img src=\"images/03.jpg\">\n<figcaption>Giao diện kẻ g&oacute;c V10 lực hỗ trợ Chicky</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Menu V10 hỗ trợ ae setup 2 lực đơn giản</p>\n<figure class=\"image\"><img src=\"images/05.jpg\">\n<figcaption>Caption ảnh</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
-  "download_type": "upload",
+  "download_type": "none",
   "download_url": "",
-  "download_file_name": "Army_220_V10_PA.jar",
-  "download_file_size": 397477,
-  "download_file_path": "downloads/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/Army_220_V10_PA.jar",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
   "download_drive_id": "",
-  "download_mime": "application/octet-stream",
+  "download_mime": "",
   "created_at": "2026-08-01T12:25:25.803Z",
-  "updated_at": "2026-09-01T12:33:15.503Z",
+  "updated_at": "2026-09-06T09:12:29.645Z",
   "icon": "hot",
-  "download_storage": "repo",
+  "download_storage": "",
   "download_external_url": "",
   "download_release_asset_id": "",
   "images": [
@@ -48,18 +48,18 @@
   ],
   "extra_files": [
     {
+      "mime": "application/octet-stream",
       "name": "Army_220_V10_PA.jar",
       "fileSize": 397477,
       "fileType": "JAR",
-      "mime": "application/octet-stream",
       "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/190060e2-Army_220_V10_PA.jar"
     },
     {
-      "fileSize": 426972,
-      "mime": "application/octet-stream",
       "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/94297892-Army220 PA Item.jar",
-      "fileType": "JAR",
-      "name": "Army220 PA Item.jar"
+      "name": "Army220 PA Item.jar",
+      "mime": "application/octet-stream",
+      "fileSize": 426972,
+      "fileType": "JAR"
     }
   ]
 }
