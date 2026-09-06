@@ -1,5 +1,84 @@
 [
   {
+    "id": "c0c16908-d010-47b5-8190-d96e10675ba1",
+    "slug": "army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot",
+    "title": "Army 220 Mod V10 Kẻ Góc Hỗ Trợ All Nhân Vật - Speed Mượt",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-08-01T12:25:25.803Z",
+    "updated_at": "2026-09-06T09:12:29.645Z",
+    "icon": "hot",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1J3flxpza3jG1Nn_NONdt6nXjJ9QR2yXW"
+      },
+      {
+        "driveId": "1J1_G20XSkyKCD-uQaYdiriPWvXEsJTfX",
+        "file": "03.jpg"
+      },
+      {
+        "driveId": "1mdxoxq0weIH1lBG7OWPwXLJgm0v6Ea37",
+        "file": "05.jpg"
+      }
+    ],
+    "contentFiles": [
+      {
+        "mimeType": "application/vnd.android.package-archive",
+        "storage": "release",
+        "fileSize": 493688,
+        "releaseAssetId": "515854927",
+        "fileName": "fbedb76a-223V9NgangFix100.apk"
+      },
+      {
+        "releaseAssetId": "515855030",
+        "fileName": "095f0de6-223V9NgangFix100.apk",
+        "storage": "release",
+        "mimeType": "application/vnd.android.package-archive",
+        "fileSize": 493688
+      },
+      {
+        "fileSize": 493688,
+        "mimeType": "application/vnd.android.package-archive",
+        "storage": "release",
+        "releaseAssetId": "515876367",
+        "fileName": "ca073a99-095f0de6-223V9NgangFix100.apk"
+      },
+      {
+        "mimeType": "application/vnd.android.package-archive",
+        "fileName": "e5be04a7-223V9NgangFix100.apk",
+        "storage": "repo",
+        "fileSize": 493688
+      }
+    ],
+    "extraFiles": [
+      {
+        "mime": "application/octet-stream",
+        "name": "Army_220_V10_PA.jar",
+        "fileSize": 397477,
+        "fileType": "JAR",
+        "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/190060e2-Army_220_V10_PA.jar"
+      },
+      {
+        "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/94297892-Army220 PA Item.jar",
+        "name": "Army220 PA Item.jar",
+        "mime": "application/octet-stream",
+        "fileSize": 426972,
+        "fileType": "JAR"
+      }
+    ]
+  },
+  {
     "id": "56a479ca-3c37-46cb-848c-5dc41fcfb9d4",
     "slug": "bxh-xa-thu-xuat-sac-nhat-2026",
     "title": "BXH Xạ Thủ Xuất Sắc Nhất 2026",
@@ -191,85 +270,6 @@
         "path": "downloads/12f480d2-3125-499b-aa53-c4183c142fa8/extra-files/6e0fb1ff-1740574425-ngoc.apk",
         "mime": "application/vnd.android.package-archive",
         "fileType": "APK"
-      }
-    ]
-  },
-  {
-    "id": "c0c16908-d010-47b5-8190-d96e10675ba1",
-    "slug": "army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot",
-    "title": "Army 220 Mod V10 Kẻ Góc Hỗ Trợ All Nhân Vật - Speed Mượt",
-    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "Army_220_V10_PA.jar",
-    "download_file_size": 397477,
-    "download_file_path": "downloads/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/Army_220_V10_PA.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-01T12:25:25.803Z",
-    "updated_at": "2026-09-01T12:33:15.503Z",
-    "icon": "hot",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "driveId": "1J3flxpza3jG1Nn_NONdt6nXjJ9QR2yXW",
-        "file": "01.jpg"
-      },
-      {
-        "driveId": "1J1_G20XSkyKCD-uQaYdiriPWvXEsJTfX",
-        "file": "03.jpg"
-      },
-      {
-        "driveId": "1mdxoxq0weIH1lBG7OWPwXLJgm0v6Ea37",
-        "file": "05.jpg"
-      }
-    ],
-    "contentFiles": [
-      {
-        "fileName": "fbedb76a-223V9NgangFix100.apk",
-        "storage": "release",
-        "releaseAssetId": "515854927",
-        "fileSize": 493688,
-        "mimeType": "application/vnd.android.package-archive"
-      },
-      {
-        "releaseAssetId": "515855030",
-        "mimeType": "application/vnd.android.package-archive",
-        "fileSize": 493688,
-        "storage": "release",
-        "fileName": "095f0de6-223V9NgangFix100.apk"
-      },
-      {
-        "fileName": "ca073a99-095f0de6-223V9NgangFix100.apk",
-        "releaseAssetId": "515876367",
-        "storage": "release",
-        "fileSize": 493688,
-        "mimeType": "application/vnd.android.package-archive"
-      },
-      {
-        "mimeType": "application/vnd.android.package-archive",
-        "fileSize": 493688,
-        "fileName": "e5be04a7-223V9NgangFix100.apk",
-        "storage": "repo"
-      }
-    ],
-    "extraFiles": [
-      {
-        "name": "Army_220_V10_PA.jar",
-        "fileSize": 397477,
-        "fileType": "JAR",
-        "mime": "application/octet-stream",
-        "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/190060e2-Army_220_V10_PA.jar"
-      },
-      {
-        "fileSize": 426972,
-        "mime": "application/octet-stream",
-        "path": "posts/army-220-mod-v10-ke-goc-ho-tro-all-nhan-vat-speed-muot/extra-files/94297892-Army220 PA Item.jar",
-        "fileType": "JAR",
-        "name": "Army220 PA Item.jar"
       }
     ]
   },
