@@ -1,5 +1,56 @@
 [
   {
+    "id": "b5beecc0-1ace-47dd-a519-a4d6ab30ddcd",
+    "slug": "army-230-vmax-mod-giao-dien-dem-2026",
+    "title": "Army 230 VMax Mod Giao Diện Đêm 2026",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Mobi Army 2",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-09-07T07:56:59.731Z",
+    "updated_at": "2026-09-07T07:56:59.731Z",
+    "icon": "muiten6",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "03.jpg",
+        "driveId": "1gkZ9wwdgOfAXbWQOWjzqPNCpiUYjzity"
+      },
+      {
+        "file": "05.jpg",
+        "driveId": "1p3YjTD_nw5Ss5x_gQx9tJV_yInvqvIUn"
+      },
+      {
+        "driveId": "1ZP00HTeJ4tIP1QYJ_LVz7XiXBO_ePAIu",
+        "file": "07.jpg"
+      }
+    ],
+    "contentFiles": [],
+    "extraFiles": [
+      {
+        "name": "Army 230 NightV10.jar",
+        "fileSize": 548057,
+        "mime": "application/octet-stream",
+        "path": "downloads/b5beecc0-1ace-47dd-a519-a4d6ab30ddcd/extra-files/eb474813-Army 230 NightV10.jar",
+        "fileType": "JAR"
+      },
+      {
+        "mime": "application/octet-stream",
+        "fileType": "JAR",
+        "name": "Army 230 NightVmax.jar",
+        "fileSize": 559125,
+        "path": "downloads/b5beecc0-1ace-47dd-a519-a4d6ab30ddcd/extra-files/9c8f7d1d-Army 230 NightVmax.jar"
+      }
+    ]
+  },
+  {
     "id": "ba4c9c68-4bbd-4f76-9f4b-4ea3b58294f5",
     "slug": "thach-sanh-offline",
     "title": "Thạch Sanh Offline",
