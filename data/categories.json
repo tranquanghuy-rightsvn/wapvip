@@ -40,5 +40,11 @@
     "slug": "khi-phach-anh-hong",
     "name": "Khí Phách Anh Hùng",
     "order": 7
+  },
+  {
+    "id": "7f7420e9-ebbd-42e2-86d0-acbc6a9e9877",
+    "slug": "mobi-army-2-android",
+    "name": "MOBI ARMY 2 - ANDROID",
+    "order": 8
   }
 ]
