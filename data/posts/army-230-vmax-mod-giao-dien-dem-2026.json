@@ -13,8 +13,8 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-09-07T07:56:59.731Z",
-  "updated_at": "2026-09-07T07:56:59.731Z",
-  "icon": "muiten6",
+  "updated_at": "2026-09-07T08:02:08.982Z",
+  "icon": "hot",
   "download_storage": "",
   "download_external_url": "",
   "download_release_asset_id": "",
@@ -26,18 +26,18 @@
   "contentFiles": [],
   "extra_files": [
     {
+      "fileType": "JAR",
       "name": "Army 230 NightV10.jar",
       "fileSize": 548057,
-      "mime": "application/octet-stream",
       "path": "downloads/b5beecc0-1ace-47dd-a519-a4d6ab30ddcd/extra-files/eb474813-Army 230 NightV10.jar",
-      "fileType": "JAR"
+      "mime": "application/octet-stream"
     },
     {
-      "mime": "application/octet-stream",
-      "fileType": "JAR",
       "name": "Army 230 NightVmax.jar",
-      "fileSize": 559125,
-      "path": "downloads/b5beecc0-1ace-47dd-a519-a4d6ab30ddcd/extra-files/9c8f7d1d-Army 230 NightVmax.jar"
+      "fileType": "JAR",
+      "path": "downloads/b5beecc0-1ace-47dd-a519-a4d6ab30ddcd/extra-files/9c8f7d1d-Army 230 NightVmax.jar",
+      "mime": "application/octet-stream",
+      "fileSize": 559125
     }
   ]
 }
