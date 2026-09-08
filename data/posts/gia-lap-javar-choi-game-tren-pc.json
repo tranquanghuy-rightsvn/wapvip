@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-17T16:41:50.773Z",
-  "updated_at": "2026-09-04T15:19:48.495Z",
+  "updated_at": "2026-09-08T10:21:21.305Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
@@ -24,18 +24,18 @@
   "contentFiles": [],
   "extra_files": [
     {
+      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/892f871e-AngelChipEmulator_AutoSleep.jar",
+      "fileSize": 490629,
       "fileType": "JAR",
       "name": "AngelChipEmulator_AutoSleep.jar",
-      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/892f871e-AngelChipEmulator_AutoSleep.jar",
-      "mime": "application/octet-stream",
-      "fileSize": 490629
+      "mime": "application/octet-stream"
     },
     {
       "mime": "application/octet-stream",
-      "path": "posts/gia-lap-javar-choi-game-tren-pc/extra-files/26477c35-Gia_Lap_Microemulator.rar",
+      "fileSize": 1910487,
       "name": "Gia_Lap_Microemulator.rar",
-      "fileType": "RAR",
-      "fileSize": 1910487
+      "path": "posts/gia-lap-javar-choi-game-tren-pc/extra-files/26477c35-Gia_Lap_Microemulator.rar",
+      "fileType": "RAR"
     }
   ]
 }
