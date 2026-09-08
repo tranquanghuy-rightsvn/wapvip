@@ -21,7 +21,7 @@ SITE_DIR = ROOT / "html"
 
 # Dung khi data/site.json chua co "site_url" (vd sheet Site chua duoc luu lai lan nao sau khi
 # them field nay) - xem README muc sitemap.xml. Doi qua Cau hinh Site trong CMS khi doi domain.
-DEFAULT_SITE_URL = "http://giaitri321.com"
+DEFAULT_SITE_URL = "https://giaitri321.com"
 
 NAME_CLASSES = ["c1", "c2", "c3", "c4", "c5"]  # mau cycle, tai su dung tu style.css hien co
 HDR_CLASSES = ["teal", "blue"]  # xen ke theo template hien tai (DANH SACH TAI GAME=teal, TOOL=blue)
