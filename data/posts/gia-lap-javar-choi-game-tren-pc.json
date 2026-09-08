@@ -24,20 +24,6 @@
   "contentFiles": [],
   "extra_files": [
     {
-      "fileSize": 13201055,
-      "fileType": "RAR",
-      "mime": "application/octet-stream",
-      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/cb6b719b-KEmulator-GiaiTri321.Com.rar",
-      "name": "KEmulator-GiaiTri321.Com.rar"
-    },
-    {
-      "fileSize": 8301134,
-      "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/2290e7fa-Emulator-R2R.rar",
-      "mime": "application/octet-stream",
-      "name": "Emulator-R2R.rar",
-      "fileType": "RAR"
-    },
-    {
       "fileType": "JAR",
       "name": "AngelChipEmulator_AutoSleep.jar",
       "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/892f871e-AngelChipEmulator_AutoSleep.jar",

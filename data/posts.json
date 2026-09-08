@@ -308,20 +308,6 @@
     "contentFiles": [],
     "extraFiles": [
       {
-        "fileSize": 13201055,
-        "fileType": "RAR",
-        "mime": "application/octet-stream",
-        "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/cb6b719b-KEmulator-GiaiTri321.Com.rar",
-        "name": "KEmulator-GiaiTri321.Com.rar"
-      },
-      {
-        "fileSize": 8301134,
-        "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/2290e7fa-Emulator-R2R.rar",
-        "mime": "application/octet-stream",
-        "name": "Emulator-R2R.rar",
-        "fileType": "RAR"
-      },
-      {
         "fileType": "JAR",
         "name": "AngelChipEmulator_AutoSleep.jar",
         "path": "downloads/06254278-007c-4b84-b9de-f812350a3336/extra-files/892f871e-AngelChipEmulator_AutoSleep.jar",
@@ -465,42 +451,6 @@
     ]
   },
   {
-    "id": "3461cd3b-566b-4d2a-bfc7-9517c45ae257",
-    "slug": "trinh-duyet-opera-mini-80",
-    "title": "Trình Duyệt Opera Mini 8.0",
-    "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
-    "game": "",
-    "download_type": "none",
-    "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-08-20T11:48:58.207Z",
-    "updated_at": "2026-08-20T12:13:52.091Z",
-    "icon": "muiten6",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.webp",
-        "driveId": "1aF8XtPYsrNPCQUkO4VSDY39_aUl8ACib"
-      }
-    ],
-    "contentFiles": [],
-    "extraFiles": [
-      {
-        "fileType": "JAR",
-        "fileSize": 317765,
-        "name": "Opera-Mini-8.jar",
-        "path": "downloads/3461cd3b-566b-4d2a-bfc7-9517c45ae257/extra-files/2f2b5e9a-Opera-Mini-8.jar",
-        "mime": "application/octet-stream"
-      }
-    ]
-  },
-  {
     "id": "b064e01e-1756-4f02-8625-b05325161f85",
     "slug": "avatar-240-mod-giao-dien-noel-auto-farm",
     "title": "Avatar 240 Mod Giao Diện Noel Auto Farm",
@@ -545,77 +495,6 @@
         "mime": "application/octet-stream",
         "fileSize": 638804,
         "name": "Avatar240-ModNoel.jar"
-      }
-    ]
-  },
-  {
-    "id": "1c1d4318-f70e-4992-9b2d-bc8668dc8693",
-    "slug": "trinh-duyet-uc-brower-92",
-    "title": "Trình Duyệt UC Brower 9.2",
-    "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
-    "game": "",
-    "download_type": "none",
-    "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-08-20T11:52:11.775Z",
-    "updated_at": "2026-08-20T11:52:34.956Z",
-    "icon": "muiten6",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "driveId": "1wlf_FxLUrEgoRY6P_P3EpQdwIa_Vdj_F",
-        "file": "08.jpg"
-      }
-    ],
-    "contentFiles": [],
-    "extraFiles": [
-      {
-        "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/8e207098-Uc-9_2-tubor-4_3.jar",
-        "fileSize": 487575,
-        "name": "Uc-9_2-tubor-4_3.jar",
-        "fileType": "JAR",
-        "mime": "application/octet-stream"
-      },
-      {
-        "name": "Uc-9_3-tubor-3_3.jar",
-        "fileSize": 576255,
-        "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/b4665600-Uc-9_3-tubor-3_3.jar",
-        "fileType": "JAR",
-        "mime": "application/octet-stream"
-      },
-      {
-        "mime": "application/octet-stream",
-        "fileSize": 473939,
-        "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/76c59152-Uc-Browser-9_4-Beta-Full.jar",
-        "fileType": "JAR",
-        "name": "Uc-Browser-9_4-Beta-Full.jar"
-      },
-      {
-        "mime": "application/octet-stream",
-        "name": "UCBrowser_V9.5.jar",
-        "fileSize": 468714,
-        "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/a02c12bc-UCBrowser_V9.5.jar",
-        "fileType": "JAR"
-      },
-      {
-        "fileSize": 445313,
-        "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/a9b690b5-UCBrowser_8.2.jar",
-        "name": "UCBrowser_8.2.jar",
-        "fileType": "JAR",
-        "mime": "application/octet-stream"
-      },
-      {
-        "fileSize": 2110288,
-        "mime": "application/octet-stream",
-        "fileType": "SISX",
-        "name": "UCBrowser-V9-2-0-336-S60V3-pf28-Build13101511.sisx",
-        "path": "downloads/1c1d4318-f70e-4992-9b2d-bc8668dc8693/extra-files/7a2dccbf-UCBrowser-V9-2-0-336-S60V3-pf28-Build13101511.sisx"
       }
     ]
   },
@@ -1267,52 +1146,6 @@
         "driveId": "1WZGCEW-NAogUl2Bs8sAtQ_tgXsz12iTE"
       }
     ],
-    "contentFiles": [],
-    "extraFiles": []
-  },
-  {
-    "id": "d993df23-c5e9-4c8c-a3cd-4c59317a024d",
-    "slug": "opera-mini-80",
-    "title": "Opera Mini 8.0",
-    "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
-    "game": "",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "Opera Mini 8.jar",
-    "download_file_size": 336084,
-    "download_file_path": "downloads/opera-mini-80/Opera Mini 8.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-15T17:29:39.587Z",
-    "updated_at": "2026-08-16T06:40:54.681Z",
-    "icon": "muiten6",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [],
-    "contentFiles": [],
-    "extraFiles": []
-  },
-  {
-    "id": "153d6535-2347-420e-bd7c-dbd2808bdc84",
-    "slug": "phan-mem-zalo",
-    "title": "Phần Mềm Zalo",
-    "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
-    "game": "",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "Zalo.jar",
-    "download_file_size": 1042465,
-    "download_file_path": "downloads/phan-mem-zalo/Zalo.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-15T17:30:38.653Z",
-    "updated_at": "2026-08-16T06:40:23.768Z",
-    "icon": "muiten6",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [],
     "contentFiles": [],
     "extraFiles": []
   },
