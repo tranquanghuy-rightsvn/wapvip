@@ -1,5 +1,162 @@
 [
   {
+    "id": "8bf8f74d-a2e5-4418-8150-19f15d0bdc9b",
+    "slug": "army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon",
+    "title": "Army 230 V10 Full Căn Góc Đầy Đủ Tốc Độ",
+    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
+    "game": "Mobi Army 2",
+    "download_type": "upload",
+    "download_url": "",
+    "download_file_name": "Army 230VMax.jar",
+    "download_file_size": 557934,
+    "download_file_path": "downloads/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/Army 230VMax.jar",
+    "download_drive_id": "",
+    "download_mime": "application/octet-stream",
+    "created_at": "2026-08-03T20:05:26.475Z",
+    "updated_at": "2026-09-12T10:39:46.568Z",
+    "icon": "hot3",
+    "download_storage": "repo",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1fEftelU-Mhw7nqHH2RVnrJSorjAhTTJE"
+      },
+      {
+        "driveId": "1taGUAUOG7BklH-QQokhCPNXVW3un5NII",
+        "file": "03.jpg"
+      },
+      {
+        "driveId": "1tICAP08ZEpVy0KXYPzSeyIyN0kK_rYAP",
+        "file": "05.jpg"
+      },
+      {
+        "file": "07.jpg",
+        "driveId": "1mM_0vGTA4ji1rO60B1WacKGQJ_F2RDIz"
+      },
+      {
+        "file": "09.jpg",
+        "driveId": "1Q7_8BeBMhU-pTG17Wdgerf3sdNh42sy3"
+      },
+      {
+        "file": "11.jpg",
+        "driveId": "1rjaOy0siZmOTXlY9Ir2zz4q_VbkTZ44M"
+      },
+      {
+        "driveId": "10gg-w_O6IuTbEB83xGEwQd9sVZDG6DTj",
+        "file": "13.jpg"
+      },
+      {
+        "file": "08.jpg",
+        "driveId": "1VqTLXb0S0Qid-plS3P1589eEETgtT4ot"
+      },
+      {
+        "file": "15.jpg",
+        "driveId": "1NPTotSFB63ypqwPRTt_zEtPGMF427Jua"
+      }
+    ],
+    "contentFiles": [
+      {
+        "fileName": "35687050-Army 230VMax.jar",
+        "fileSize": 557934,
+        "mimeType": "",
+        "storage": "repo"
+      },
+      {
+        "fileName": "8f230bc0-Army 230VMaxS80.jar",
+        "mimeType": "",
+        "fileSize": 557937,
+        "storage": "repo"
+      },
+      {
+        "storage": "repo",
+        "fileName": "fbbf1ae1-Army 230VMaxS100.jar",
+        "fileSize": 557935,
+        "mimeType": ""
+      },
+      {
+        "mimeType": "",
+        "fileSize": 557936,
+        "fileName": "efd2479d-Army 230VMax Goc.jar",
+        "storage": "repo"
+      },
+      {
+        "storage": "repo",
+        "fileName": "6a8ba6bb-Army 230VMaxS20.jar",
+        "mimeType": "",
+        "fileSize": 557936
+      },
+      {
+        "storage": "repo",
+        "fileName": "a840172c-Army 230VMax Goc.jar",
+        "fileSize": 557936,
+        "mimeType": ""
+      },
+      {
+        "fileName": "de7c003b-Army 230VMaxS20.jar",
+        "fileSize": 557936,
+        "mimeType": "",
+        "storage": "repo"
+      },
+      {
+        "storage": "repo",
+        "fileSize": 557934,
+        "mimeType": "",
+        "fileName": "341149b6-Army 230VMax.jar"
+      },
+      {
+        "fileName": "0c4d62e4-Army 230VMaxS80.jar",
+        "storage": "repo",
+        "fileSize": 557937,
+        "mimeType": ""
+      },
+      {
+        "storage": "repo",
+        "fileSize": 557935,
+        "mimeType": "",
+        "fileName": "5275ef0a-Army 230VMaxS100.jar"
+      }
+    ],
+    "extraFiles": [
+      {
+        "mime": "application/octet-stream",
+        "fileSize": 557936,
+        "fileType": "JAR",
+        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/e8d11266-Army 230VMax Goc.jar",
+        "name": "Army 230VMax Goc.jar"
+      },
+      {
+        "name": "Army 230VMaxS20.jar",
+        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/802d0227-Army 230VMaxS20.jar",
+        "fileSize": 557936,
+        "mime": "application/octet-stream",
+        "fileType": "JAR"
+      },
+      {
+        "name": "Army 230VMax.jar",
+        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/0747d4a1-Army 230VMax.jar",
+        "fileSize": 557934,
+        "fileType": "JAR",
+        "mime": "application/octet-stream"
+      },
+      {
+        "fileSize": 557937,
+        "fileType": "JAR",
+        "mime": "application/octet-stream",
+        "name": "Army 230VMaxS80.jar",
+        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/1bd3a920-Army 230VMaxS80.jar"
+      },
+      {
+        "fileSize": 557935,
+        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/e84c3362-Army 230VMaxS100.jar",
+        "name": "Army 230VMaxS100.jar",
+        "fileType": "JAR",
+        "mime": "application/octet-stream"
+      }
+    ]
+  },
+  {
     "id": "57a519f7-b864-4813-b268-915e9ff51e2d",
     "slug": "mobi-army2-ban-goc-nph-teamobi",
     "title": "Mobi Army2 Bản Gốc NPH Teamobi",
@@ -719,163 +876,6 @@
         "mime": "application/octet-stream",
         "path": "posts/bai-viet-2-3466/extra-files/db1b520c-Army_220_All.jar",
         "name": "Army_220_All.jar"
-      }
-    ]
-  },
-  {
-    "id": "8bf8f74d-a2e5-4418-8150-19f15d0bdc9b",
-    "slug": "army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon",
-    "title": "Army 230 V10 Full Căn Góc Đầy Đủ Tốc Độ",
-    "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
-    "game": "Mobi Army 2",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "Army 230VMax.jar",
-    "download_file_size": 557934,
-    "download_file_path": "downloads/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/Army 230VMax.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-03T20:05:26.475Z",
-    "updated_at": "2026-08-16T17:42:04.674Z",
-    "icon": "hot3",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1fEftelU-Mhw7nqHH2RVnrJSorjAhTTJE"
-      },
-      {
-        "file": "03.jpg",
-        "driveId": "1taGUAUOG7BklH-QQokhCPNXVW3un5NII"
-      },
-      {
-        "driveId": "1tICAP08ZEpVy0KXYPzSeyIyN0kK_rYAP",
-        "file": "05.jpg"
-      },
-      {
-        "driveId": "1mM_0vGTA4ji1rO60B1WacKGQJ_F2RDIz",
-        "file": "07.jpg"
-      },
-      {
-        "driveId": "1Q7_8BeBMhU-pTG17Wdgerf3sdNh42sy3",
-        "file": "09.jpg"
-      },
-      {
-        "file": "11.jpg",
-        "driveId": "1rjaOy0siZmOTXlY9Ir2zz4q_VbkTZ44M"
-      },
-      {
-        "file": "13.jpg",
-        "driveId": "10gg-w_O6IuTbEB83xGEwQd9sVZDG6DTj"
-      },
-      {
-        "driveId": "1VqTLXb0S0Qid-plS3P1589eEETgtT4ot",
-        "file": "08.jpg"
-      },
-      {
-        "file": "15.jpg",
-        "driveId": "1NPTotSFB63ypqwPRTt_zEtPGMF427Jua"
-      }
-    ],
-    "contentFiles": [
-      {
-        "mimeType": "",
-        "fileSize": 557934,
-        "storage": "repo",
-        "fileName": "35687050-Army 230VMax.jar"
-      },
-      {
-        "fileSize": 557937,
-        "mimeType": "",
-        "storage": "repo",
-        "fileName": "8f230bc0-Army 230VMaxS80.jar"
-      },
-      {
-        "fileName": "fbbf1ae1-Army 230VMaxS100.jar",
-        "fileSize": 557935,
-        "storage": "repo",
-        "mimeType": ""
-      },
-      {
-        "fileName": "efd2479d-Army 230VMax Goc.jar",
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 557936
-      },
-      {
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 557936,
-        "fileName": "6a8ba6bb-Army 230VMaxS20.jar"
-      },
-      {
-        "mimeType": "",
-        "fileSize": 557936,
-        "storage": "repo",
-        "fileName": "a840172c-Army 230VMax Goc.jar"
-      },
-      {
-        "fileName": "de7c003b-Army 230VMaxS20.jar",
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 557936
-      },
-      {
-        "mimeType": "",
-        "storage": "repo",
-        "fileSize": 557934,
-        "fileName": "341149b6-Army 230VMax.jar"
-      },
-      {
-        "fileName": "0c4d62e4-Army 230VMaxS80.jar",
-        "storage": "repo",
-        "mimeType": "",
-        "fileSize": 557937
-      },
-      {
-        "mimeType": "",
-        "fileSize": 557935,
-        "storage": "repo",
-        "fileName": "5275ef0a-Army 230VMaxS100.jar"
-      }
-    ],
-    "extraFiles": [
-      {
-        "fileSize": 557936,
-        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/e8d11266-Army 230VMax Goc.jar",
-        "mime": "application/octet-stream",
-        "fileType": "JAR",
-        "name": "Army 230VMax Goc.jar"
-      },
-      {
-        "fileType": "JAR",
-        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/802d0227-Army 230VMaxS20.jar",
-        "mime": "application/octet-stream",
-        "fileSize": 557936,
-        "name": "Army 230VMaxS20.jar"
-      },
-      {
-        "name": "Army 230VMax.jar",
-        "fileSize": 557934,
-        "mime": "application/octet-stream",
-        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/0747d4a1-Army 230VMax.jar",
-        "fileType": "JAR"
-      },
-      {
-        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/1bd3a920-Army 230VMaxS80.jar",
-        "mime": "application/octet-stream",
-        "fileSize": 557937,
-        "name": "Army 230VMaxS80.jar",
-        "fileType": "JAR"
-      },
-      {
-        "name": "Army 230VMaxS100.jar",
-        "fileType": "JAR",
-        "fileSize": 557935,
-        "path": "posts/army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon/extra-files/e84c3362-Army 230VMaxS100.jar",
-        "mime": "application/octet-stream"
       }
     ]
   },
