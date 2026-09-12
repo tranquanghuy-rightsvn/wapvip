@@ -372,54 +372,6 @@
     ]
   },
   {
-    "id": "b064e01e-1756-4f02-8625-b05325161f85",
-    "slug": "avatar-240-mod-giao-dien-noel-auto-farm",
-    "title": "Avatar 240 Mod Giao Diện Noel Auto Farm",
-    "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
-    "game": "",
-    "download_type": "none",
-    "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-08-20T11:56:31.686Z",
-    "updated_at": "2026-08-20T12:10:20.380Z",
-    "icon": "muiten6",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1qY1_fHwUBbJOPbXKc2QHXJizbwakeyER"
-      },
-      {
-        "driveId": "1rwn5G5bHCnj2FO1qlGkuC99g93FTYZJS",
-        "file": "03.jpg"
-      },
-      {
-        "driveId": "1HIcx6gYPKH_qXXz06NMGnw10hMr55ieD",
-        "file": "05.jpg"
-      },
-      {
-        "driveId": "1WEkfjB4Y5xrsDKd19UGFG5zfKjw0Ws7S",
-        "file": "07.jpg"
-      }
-    ],
-    "contentFiles": [],
-    "extraFiles": [
-      {
-        "path": "downloads/b064e01e-1756-4f02-8625-b05325161f85/extra-files/7b2eda0c-Avatar240-ModNoel.jar",
-        "fileType": "JAR",
-        "mime": "application/octet-stream",
-        "fileSize": 638804,
-        "name": "Avatar240-ModNoel.jar"
-      }
-    ]
-  },
-  {
     "id": "0ff3eab0-eb4b-41fd-9dea-4c70ed301096",
     "slug": "huong-dan-dang-ky-nick-chuyen-sim-lay-mat-khau-teamobi",
     "title": "Hướng Dẫn Đăng Ký Nick, Chuyển Sim, Lấy Mật Khẩu Teamobi",
@@ -699,27 +651,6 @@
         "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/e773c05e-Army220.jar",
         "name": "Army220.jar",
         "fileSize": 494665
-      },
-      {
-        "fileSize": 496467,
-        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/4f554ae9-Army230.jar",
-        "name": "Army230.jar",
-        "fileType": "JAR",
-        "mime": "application/octet-stream"
-      },
-      {
-        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/1f399dcd-Army239.jar",
-        "fileType": "JAR",
-        "name": "Army239.jar",
-        "mime": "application/octet-stream",
-        "fileSize": 498404
-      },
-      {
-        "fileType": "APK",
-        "mime": "application/vnd.android.package-archive",
-        "fileSize": 4971062,
-        "name": "MobiArmy2.3.1.apk",
-        "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/71800748-MobiArmy2.3.1.apk"
       }
     ]
   },
@@ -1067,29 +998,6 @@
         "driveId": "1WZGCEW-NAogUl2Bs8sAtQ_tgXsz12iTE"
       }
     ],
-    "contentFiles": [],
-    "extraFiles": []
-  },
-  {
-    "id": "08f75eee-8e6f-4352-adaf-2bab61f7bc21",
-    "slug": "boi-tinh-yeu",
-    "title": "Bói Tình Yêu",
-    "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
-    "game": "",
-    "download_type": "upload",
-    "download_url": "",
-    "download_file_name": "Bói Tình Yêu.jar",
-    "download_file_size": 239699,
-    "download_file_path": "downloads/boi-tinh-yeu/Bói Tình Yêu.jar",
-    "download_drive_id": "",
-    "download_mime": "application/octet-stream",
-    "created_at": "2026-08-15T17:32:13.274Z",
-    "updated_at": "2026-08-16T06:40:09.701Z",
-    "icon": "muiten6",
-    "download_storage": "repo",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [],
     "contentFiles": [],
     "extraFiles": []
   },
