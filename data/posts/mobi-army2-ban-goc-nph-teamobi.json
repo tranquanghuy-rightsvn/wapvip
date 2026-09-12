@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-17T14:29:44.170Z",
-  "updated_at": "2026-08-17T14:30:33.587Z",
+  "updated_at": "2026-09-12T10:29:24.910Z",
   "icon": "mobiarmy",
   "download_storage": "",
   "download_external_url": "",
@@ -24,11 +24,11 @@
   "contentFiles": [],
   "extra_files": [
     {
-      "mime": "application/octet-stream",
       "fileType": "JAR",
       "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/e773c05e-Army220.jar",
+      "fileSize": 494665,
       "name": "Army220.jar",
-      "fileSize": 494665
+      "mime": "application/octet-stream"
     }
   ]
 }
