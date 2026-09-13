@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://giaitri321.com/sitemap.xml
+Sitemap: http://giaitri321.com/sitemap.xml
