@@ -1,0 +1,34 @@
+{
+  "id": "c8c1f5e2-7b41-4e1c-aa8e-c2d76e2ada8a",
+  "slug": "uc-browser-v95-jar",
+  "title": "UC Browser v9.5 jar",
+  "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
+  "game": "UC Browser v9.5",
+  "content": "<p><strong data-path-to-node=\"0\" data-index-in-node=\"0\">UC Browser v9.5 (file .jar)</strong> l&agrave; một trong những phi&ecirc;n bản tr&igrave;nh duyệt di động kinh điển d&agrave;nh cho c&aacute;c d&ograve;ng điện thoại hỗ trợ nền tảng Java (J2ME) như Nokia cũ, Sony Ericsson, v.v.</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Giao diện ứng dụng</figcaption>\n</figure>\n<p>&nbsp;</p>",
+  "download_type": "none",
+  "download_url": "",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
+  "download_drive_id": "",
+  "download_mime": "",
+  "created_at": "2026-09-13T08:56:19.529Z",
+  "updated_at": "2026-09-13T08:56:19.529Z",
+  "icon": "muiten6",
+  "download_storage": "",
+  "download_external_url": "",
+  "download_release_asset_id": "",
+  "images": [
+    "posts/uc-browser-v95-jar/images/01.jpg"
+  ],
+  "contentFiles": [],
+  "extra_files": [
+    {
+      "fileType": "JAR",
+      "mime": "application/java-archive",
+      "fileSize": 468714,
+      "name": "UCBrowser_V9.5.jar",
+      "path": "downloads/c8c1f5e2-7b41-4e1c-aa8e-c2d76e2ada8a/extra-files/1e52a333-UCBrowser_V9.5.jar"
+    }
+  ]
+}
