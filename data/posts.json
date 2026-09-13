@@ -1,5 +1,41 @@
 [
   {
+    "id": "c8c1f5e2-7b41-4e1c-aa8e-c2d76e2ada8a",
+    "slug": "uc-browser-v95-jar",
+    "title": "UC Browser v9.5 jar",
+    "category_id": "8d06112f-4307-49ba-9dee-f5997ad51681",
+    "game": "UC Browser v9.5",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-09-13T08:56:19.529Z",
+    "updated_at": "2026-09-13T08:56:19.529Z",
+    "icon": "muiten6",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1ugz_HFDgUV9tw5LkPArZ-atVePrpgCwT"
+      }
+    ],
+    "contentFiles": [],
+    "extraFiles": [
+      {
+        "fileType": "JAR",
+        "mime": "application/java-archive",
+        "fileSize": 468714,
+        "name": "UCBrowser_V9.5.jar",
+        "path": "downloads/c8c1f5e2-7b41-4e1c-aa8e-c2d76e2ada8a/extra-files/1e52a333-UCBrowser_V9.5.jar"
+      }
+    ]
+  },
+  {
     "id": "8bf8f74d-a2e5-4418-8150-19f15d0bdc9b",
     "slug": "army-230-v9-speed-50-full-can-goc-ho-tro-anh-em-ban-item-dau-giai-cuc-ngon",
     "title": "Army 230 V10 Full Căn Góc Đầy Đủ Tốc Độ",
