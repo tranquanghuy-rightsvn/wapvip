@@ -11,14 +11,15 @@
     "GIAITRI321.COM – Nơi ký ức tuổi thơ được tiếp nối."
   ],
   "menu_games": [
+    "Avatar",
     "Mobi Army 2"
   ],
-  "site_url": "https://giaitri321.com",
+  "site_url": "http://giaitri321.com",
   "logo_url": "images/LogoWEB TrungThu.png",
   "banner": {
     "type": "image",
     "text": "",
     "url": "banner/Banner WEb.png"
   },
-  "updated_at": "2026-09-03T07:41:23.852Z"
+  "updated_at": "2026-09-13T17:12:47.584Z"
 }
