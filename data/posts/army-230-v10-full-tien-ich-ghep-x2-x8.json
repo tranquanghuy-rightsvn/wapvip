@@ -4,7 +4,7 @@
   "title": "Army 230 V10 Full Tiện Ích Ghép X2 - X8",
   "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
   "game": "",
-  "content": "",
+  "content": "<p>Đ&acirc;y l&agrave; bản Gh&eacute;p x2- x8 sped 60 mượt m&agrave;&nbsp;</p>\n<p>nhấn giữ ph&iacute;m&nbsp;<strong>*</strong> để đổi tap&nbsp;</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Giao diện&nbsp;<br><br></figcaption>\n</figure>\n<p>Dưới đ&acirc;y l&agrave; giao diện đăng nhập</p>\n<figure class=\"image\"><img src=\"images/03.jpg\">\n<figcaption>Giao diện đăng nhập&nbsp;</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
   "download_type": "none",
   "download_url": "",
   "download_file_name": "",
@@ -13,41 +13,44 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-09-13T17:16:48.888Z",
-  "updated_at": "2026-09-13T17:16:48.888Z",
+  "updated_at": "2026-09-14T10:37:44.516Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
   "download_release_asset_id": "",
-  "images": [],
+  "images": [
+    "posts/army-230-v10-full-tien-ich-ghep-x2-x8/images/01.jpg",
+    "posts/army-230-v10-full-tien-ich-ghep-x2-x8/images/03.jpg"
+  ],
   "contentFiles": [],
   "extra_files": [
     {
-      "fileType": "JAR",
       "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/c0c03297-GiaiTri321x2.jar",
       "name": "GiaiTri321x2.jar",
-      "mime": "application/octet-stream",
-      "fileSize": 953685
-    },
-    {
-      "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/e19c02df-GiaiTri321x4.jar",
+      "fileSize": 953685,
       "fileType": "JAR",
-      "mime": "application/octet-stream",
-      "name": "GiaiTri321x4.jar",
-      "fileSize": 1671956
+      "mime": "application/octet-stream"
     },
     {
+      "fileType": "JAR",
+      "name": "GiaiTri321x4.jar",
+      "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/e19c02df-GiaiTri321x4.jar",
+      "fileSize": 1671956,
+      "mime": "application/octet-stream"
+    },
+    {
+      "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/a9e4349b-GiaiTri321x6.jar",
       "name": "GiaiTri321x6.jar",
       "fileType": "JAR",
-      "mime": "application/octet-stream",
-      "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/a9e4349b-GiaiTri321x6.jar",
-      "fileSize": 2390211
+      "fileSize": 2390211,
+      "mime": "application/octet-stream"
     },
     {
+      "mime": "application/octet-stream",
       "fileType": "JAR",
-      "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/bbe2d880-GiaiTri321x8.jar",
       "name": "GiaiTri321x8.jar",
       "fileSize": 3108619,
-      "mime": "application/octet-stream"
+      "path": "downloads/68ddd2b1-f447-4a93-bf92-f72dc0b17a0a/extra-files/bbe2d880-GiaiTri321x8.jar"
     }
   ]
 }
