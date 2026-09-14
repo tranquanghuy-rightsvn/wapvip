@@ -5,17 +5,17 @@
   "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
   "game": "Mobi Army 2",
   "content": "<p>Mod by Đắc Th&agrave;nh - Clan BigOne 2015</p>\n<figure class=\"image\"><img src=\"images/07.jpg\">\n<figcaption>Giao Diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Menu V5.6 cho anh em setup</p>\n<figure class=\"image\"><img src=\"images/11.jpg\">\n<figcaption>Giao diện căn g&oacute;c V5.6 All 360</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
-  "download_type": "upload",
+  "download_type": "none",
   "download_url": "",
-  "download_file_name": "Army_220_All.jar",
-  "download_file_size": 493658,
-  "download_file_path": "downloads/bai-viet-2-3466/Army_220_All.jar",
+  "download_file_name": "",
+  "download_file_size": 0,
+  "download_file_path": "",
   "download_drive_id": "",
-  "download_mime": "application/octet-stream",
+  "download_mime": "",
   "created_at": "2026-08-01T04:38:53.077Z",
-  "updated_at": "2026-08-16T17:58:30.782Z",
+  "updated_at": "2026-09-14T10:50:30.493Z",
   "icon": "hot",
-  "download_storage": "repo",
+  "download_storage": "",
   "download_external_url": "",
   "download_release_asset_id": "",
   "images": [
@@ -33,10 +33,10 @@
   "extra_files": [
     {
       "fileSize": 493658,
-      "fileType": "JAR",
       "mime": "application/octet-stream",
+      "name": "Army_220_All.jar",
       "path": "posts/bai-viet-2-3466/extra-files/db1b520c-Army_220_All.jar",
-      "name": "Army_220_All.jar"
+      "fileType": "JAR"
     }
   ]
 }
