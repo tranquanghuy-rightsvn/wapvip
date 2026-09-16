@@ -1,5 +1,37 @@
 [
   {
+    "id": "d3239f0d-9aac-465b-83fe-e214c4904cb3",
+    "slug": "huong-dan-xac-thuc-tai-khoan-bang-sdt",
+    "title": "Hướng Dẫn Xác Thực Tài Khoản Bằng SĐT",
+    "category_id": "2030177a-91c7-4a12-b619-43a6dee1199a",
+    "game": "Xác Thực Tài Khoản Army2 , Avatar ...",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-09-16T10:34:05.822Z",
+    "updated_at": "2026-09-16T10:34:05.822Z",
+    "icon": "muiten6",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "driveId": "1jBUxFeEKcVsA17o4m2tiOu9onxFNSMls",
+        "file": "01.jpg"
+      },
+      {
+        "driveId": "1c8V8j8P9oGbPJHf0VeaLaUGvzcYVUbb9",
+        "file": "03.jpg"
+      }
+    ],
+    "contentFiles": [],
+    "extraFiles": []
+  },
+  {
     "id": "db9ebde3-3387-48f7-8df4-40c19f488241",
     "slug": "su-kien-offline-gap-go-giao-luu-279",
     "title": "Sự Kiện Offline - Gặp Gỡ Giao Lưu ( 27/9 )",
