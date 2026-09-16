@@ -46,5 +46,11 @@
     "slug": "danh-sach-ung-dung",
     "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
     "order": 8
+  },
+  {
+    "id": "37d440d3-61c1-4285-ac8c-48a8530976cc",
+    "slug": "tin-tuc-su-kien-mobi-army-2",
+    "name": "Tin Tức , Sự Kiện Mobi Army 2",
+    "order": 9
   }
 ]
