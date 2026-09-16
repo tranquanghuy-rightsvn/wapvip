@@ -4,7 +4,7 @@
   "title": "Avatar Auto Farm, Câu Cá, Hỗ Trợ bán KCX nhanh, Auto All",
   "category_id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
   "game": "Avatar",
-  "content": "<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Caption ảnh</figcaption>\n</figure>\n<p>&nbsp;</p>\n<p>Mod by Trần Đức Huy&nbsp;</p>",
+  "content": "<p>&nbsp;</p>\n<p>Mod : By : Trần Đức Huy .&nbsp;<br>Pb gốc của Teamobi&nbsp;</p>\n<figure class=\"image\"><img src=\"images/06.jpg\">\n<figcaption>Giao diện trong game</figcaption>\n</figure>\n<p>&nbsp;</p>",
   "download_type": "none",
   "download_url": "",
   "download_file_name": "",
@@ -13,22 +13,25 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-07T05:50:41.427Z",
-  "updated_at": "2026-09-14T10:51:00.081Z",
+  "updated_at": "2026-09-16T16:35:28.199Z",
   "icon": "muiten6",
   "download_storage": "",
   "download_external_url": "",
   "download_release_asset_id": "",
   "images": [
-    "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/images/01.jpg"
+    "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/images/01.jpg",
+    "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/images/02.jpg",
+    "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/images/04.jpg",
+    "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/images/06.jpg"
   ],
   "contentFiles": [],
   "extra_files": [
     {
-      "fileType": "JAR",
-      "name": "Avatar_LAPRO (1).jar",
-      "fileSize": 882039,
       "mime": "application/octet-stream",
-      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar"
+      "name": "Avatar_LAPRO (1).jar",
+      "fileType": "JAR",
+      "path": "posts/avatar-auto-farm-cau-ca-ho-tro-ban-kcx-nhanh-auto-all/extra-files/8549a785-Avatar_LAPRO (1).jar",
+      "fileSize": 882039
     }
   ]
 }
