@@ -4,7 +4,7 @@
   "title": "Mobi Army2 Bản Gốc NPH Teamobi",
   "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
   "game": "Mobi Army 2",
-  "content": "<p>Dưới đ&acirc;y l&agrave; những phi&ecirc;n bản gốc từ nh&agrave; ph&aacute;t h&agrave;nh Teamobi</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Giao Diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>",
+  "content": "<p>Dưới đ&acirc;y l&agrave; những phi&ecirc;n bản gốc từ nh&agrave; ph&aacute;t h&agrave;nh Teamobi</p>\n<p>MobiArmy2 l&agrave; game mobile nhập vai chơi theo lượt với phong c&aacute;ch đồ họa sinh động, lối chơi đa dạng v&agrave; đầy hấp dẫn.</p>\n<p>Trong game người chơi phải t&iacute;nh to&aacute;n g&oacute;c bắn v&agrave; lực bắn đồng thời phải kết hợp với sức gi&oacute; để đường đi của vi&ecirc;n đạn tr&uacute;ng mục ti&ecirc;u.&nbsp;</p>\n<p>Với lối chơi đa dạng người chơi c&oacute; thể chiến đấu với nhau, hoặc lập th&agrave;nh 1 nh&oacute;m để tham gia khi&ecirc;u chiến với Boss.</p>\n<figure class=\"image\"><img src=\"images/01.jpg\">\n<figcaption>Giao Diện Đăng Nhập</figcaption>\n</figure>\n<p>&nbsp;</p>",
   "download_type": "none",
   "download_url": "",
   "download_file_name": "",
@@ -13,7 +13,7 @@
   "download_drive_id": "",
   "download_mime": "",
   "created_at": "2026-08-17T14:29:44.170Z",
-  "updated_at": "2026-09-12T10:29:24.910Z",
+  "updated_at": "2026-09-20T13:45:20.400Z",
   "icon": "mobiarmy",
   "download_storage": "",
   "download_external_url": "",
@@ -24,10 +24,10 @@
   "contentFiles": [],
   "extra_files": [
     {
-      "fileType": "JAR",
-      "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/e773c05e-Army220.jar",
-      "fileSize": 494665,
       "name": "Army220.jar",
+      "fileSize": 494665,
+      "path": "downloads/57a519f7-b864-4813-b268-915e9ff51e2d/extra-files/e773c05e-Army220.jar",
+      "fileType": "JAR",
       "mime": "application/octet-stream"
     }
   ]
