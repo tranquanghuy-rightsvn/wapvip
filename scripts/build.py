@@ -290,6 +290,7 @@ def jsonld_website(site, site_name):
     data = {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "creator": {"@type": "Organization", "@id": "https://web100.vn/#organization", "name": "Web100", "url": "https://web100.vn/"},
         "name": site_name,
         "url": site_url + "/",
         "potentialAction": {
