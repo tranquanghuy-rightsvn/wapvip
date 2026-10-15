@@ -2,7 +2,7 @@
   {
     "id": "e05b806a-e0c5-409d-bd71-e653bc0fa6c8",
     "slug": "army-230-v10-full-tien-ich-mod-giao-dien-haloween-2026",
-    "title": "Army 230 V10 Full Tiện Ích MOD Giao Diện Haloween 2026",
+    "title": "Army 230 V10 Full Tiện Ích Mod Giao Diện Haloween 2026",
     "category_id": "8794b354-83d8-4dab-9049-0fe0c58cdfc8",
     "game": "",
     "download_type": "none",
@@ -13,7 +13,7 @@
     "download_drive_id": "",
     "download_mime": "",
     "created_at": "2026-10-15T05:22:48.053Z",
-    "updated_at": "2026-10-15T05:22:48.053Z",
+    "updated_at": "2026-10-15T05:26:27.548Z",
     "icon": "muiten6",
     "download_storage": "",
     "download_external_url": "",
@@ -27,18 +27,18 @@
     "contentFiles": [],
     "extraFiles": [
       {
-        "fileType": "JAR",
-        "mime": "application/octet-stream",
         "name": "Army 230 Halowen V10.jar",
+        "mime": "application/octet-stream",
+        "path": "downloads/e05b806a-e0c5-409d-bd71-e653bc0fa6c8/extra-files/59728371-Army 230 Halowen V10.jar",
         "fileSize": 596266,
-        "path": "downloads/e05b806a-e0c5-409d-bd71-e653bc0fa6c8/extra-files/59728371-Army 230 Halowen V10.jar"
+        "fileType": "JAR"
       },
       {
-        "fileSize": 603629,
-        "path": "downloads/e05b806a-e0c5-409d-bd71-e653bc0fa6c8/extra-files/c23dd35c-Army 230 Halowen vMax.jar",
-        "fileType": "JAR",
+        "name": "Army 230 Halowen vMax.jar",
         "mime": "application/octet-stream",
-        "name": "Army 230 Halowen vMax.jar"
+        "path": "downloads/e05b806a-e0c5-409d-bd71-e653bc0fa6c8/extra-files/c23dd35c-Army 230 Halowen vMax.jar",
+        "fileSize": 603629,
+        "fileType": "JAR"
       }
     ]
   },
