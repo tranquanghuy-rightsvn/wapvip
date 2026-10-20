@@ -1,5 +1,57 @@
 [
   {
+    "id": "c9e56c77-13fd-4bee-8ebe-421ee2d3ab53",
+    "slug": "army-245-full-ke-goc-nv-ho-tro-cac-dong-android-full-chuc-nang",
+    "title": "Army 245 Full Kẻ Góc NV Hỗ Trợ Các Dòng Android Full Chức Năng",
+    "category_id": "7f7420e9-ebbd-42e2-86d0-acbc6a9e9877",
+    "game": "Army 245 Tiện Ích",
+    "download_type": "none",
+    "download_url": "",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-10-20T14:04:23.920Z",
+    "updated_at": "2026-10-20T14:04:23.920Z",
+    "icon": "mobiarmy",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "driveId": "1HZdHSOtQu9A3oF41DpLoT1swDwmpiqQn",
+        "file": "01.jpg"
+      },
+      {
+        "driveId": "1iLbWyBPx2GPT7zBQDwUdN15uj_BeEP3S",
+        "file": "03.jpg"
+      },
+      {
+        "file": "05.jpg",
+        "driveId": "1lGu4V-vovfjECvM-W0P2E2ZOon82HmOM"
+      },
+      {
+        "file": "07.jpg",
+        "driveId": "1fBg2y2z4RUS9z38w9zhWpAA37BTlNRS8"
+      },
+      {
+        "driveId": "1dVTnAc7v_R7DW33qVmPDjG7Xl0rdg_YI",
+        "file": "09.jpg"
+      },
+      {
+        "file": "11.jpg",
+        "driveId": "1J6-9gFsKFovQrtkRBMcq7MjcYGTM81L1"
+      },
+      {
+        "file": "13.jpg",
+        "driveId": "1mHA4hbCXLjFytlUgZuh9xCGQIJgMPlss"
+      }
+    ],
+    "contentFiles": [],
+    "extraFiles": []
+  },
+  {
     "id": "e05b806a-e0c5-409d-bd71-e653bc0fa6c8",
     "slug": "army-230-v10-full-tien-ich-mod-giao-dien-haloween-2026",
     "title": "Army 230 V10 Full Tiện Ích Mod Giao Diện Haloween 2026",
