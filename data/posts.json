@@ -5,47 +5,47 @@
     "title": "Army 245 Full Kẻ Góc NV Hỗ Trợ Các Dòng Android Full Chức Năng",
     "category_id": "7f7420e9-ebbd-42e2-86d0-acbc6a9e9877",
     "game": "Army 245 Tiện Ích",
-    "download_type": "none",
+    "download_type": "upload",
     "download_url": "",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
+    "download_file_name": "Army245 GiaiTri321.apk",
+    "download_file_size": 20898839,
+    "download_file_path": "downloads/army-245-full-ke-goc-nv-ho-tro-cac-dong-android-full-chuc-nang/Army245 GiaiTri321.apk",
     "download_drive_id": "",
-    "download_mime": "",
+    "download_mime": "application/octet-stream",
     "created_at": "2026-10-20T14:04:23.920Z",
-    "updated_at": "2026-10-24T14:41:30.492Z",
+    "updated_at": "2026-10-24T14:59:54.273Z",
     "icon": "mobiarmy",
-    "download_storage": "",
+    "download_storage": "repo",
     "download_external_url": "",
     "download_release_asset_id": "",
     "images": [
       {
-        "driveId": "1HZdHSOtQu9A3oF41DpLoT1swDwmpiqQn",
-        "file": "01.jpg"
+        "file": "01.jpg",
+        "driveId": "1HZdHSOtQu9A3oF41DpLoT1swDwmpiqQn"
       },
       {
-        "driveId": "1iLbWyBPx2GPT7zBQDwUdN15uj_BeEP3S",
-        "file": "03.jpg"
+        "file": "03.jpg",
+        "driveId": "1iLbWyBPx2GPT7zBQDwUdN15uj_BeEP3S"
       },
       {
-        "driveId": "1lGu4V-vovfjECvM-W0P2E2ZOon82HmOM",
-        "file": "05.jpg"
+        "file": "05.jpg",
+        "driveId": "1lGu4V-vovfjECvM-W0P2E2ZOon82HmOM"
       },
       {
-        "driveId": "1fBg2y2z4RUS9z38w9zhWpAA37BTlNRS8",
-        "file": "07.jpg"
+        "file": "07.jpg",
+        "driveId": "1fBg2y2z4RUS9z38w9zhWpAA37BTlNRS8"
       },
       {
-        "driveId": "1dVTnAc7v_R7DW33qVmPDjG7Xl0rdg_YI",
-        "file": "09.jpg"
+        "file": "09.jpg",
+        "driveId": "1dVTnAc7v_R7DW33qVmPDjG7Xl0rdg_YI"
       },
       {
         "driveId": "1J6-9gFsKFovQrtkRBMcq7MjcYGTM81L1",
         "file": "11.jpg"
       },
       {
-        "driveId": "1mHA4hbCXLjFytlUgZuh9xCGQIJgMPlss",
-        "file": "13.jpg"
+        "file": "13.jpg",
+        "driveId": "1mHA4hbCXLjFytlUgZuh9xCGQIJgMPlss"
       }
     ],
     "contentFiles": [],
