@@ -12,57 +12,57 @@
     "order": 2
   },
   {
+    "id": "6f71c1a1-691f-4c43-bb35-a913de808f40",
+    "slug": "mobi-army-2-pc-laptop",
+    "name": "Mobi Army 2 - PC , LapTop",
+    "order": 3
+  },
+  {
     "id": "fdace761-1df1-4b12-b59c-5ff64cf66a26",
     "slug": "game-avatar-dk",
     "name": "GAME AVATAR - DK",
-    "order": 3
+    "order": 4
   },
   {
     "id": "2030177a-91c7-4a12-b619-43a6dee1199a",
     "slug": "danh-sach-tool",
     "name": "THỦ THUẬT CHƠI GAME",
-    "order": 4
+    "order": 5
   },
   {
     "id": "849ff227-ddac-4db5-8a2e-0f8b3a38c078",
     "slug": "meo-choi-game",
     "name": "DỊCH VỤ GAME ARMY 2",
-    "order": 5
+    "order": 6
   },
   {
     "id": "37d440d3-61c1-4285-ac8c-48a8530976cc",
     "slug": "tin-tuc-su-kien-mobi-army-2",
     "name": "Tin Tức , Sự Kiện Mobi Army 2",
-    "order": 6
+    "order": 7
   },
   {
     "id": "0805c903-d07c-476d-a0d5-008beca3fff7",
     "slug": "khi-phach-anh-hong",
     "name": "Khí Phách Anh Hùng",
-    "order": 7
+    "order": 8
   },
   {
     "id": "b25db140-724a-4221-9266-559a9141d8df",
     "slug": "tan-thu",
     "name": "DANH SÁCH GAME OFFLINE",
-    "order": 8
+    "order": 9
   },
   {
     "id": "8d06112f-4307-49ba-9dee-f5997ad51681",
     "slug": "danh-sach-ung-dung",
     "name": "PHẦN MỀM - ỨNG DỤNG JAVA",
-    "order": 9
+    "order": 10
   },
   {
     "id": "9683fdaa-8319-43d0-9d82-7fe8e7ce17d8",
     "slug": "kenh-youtobe-tiktok",
     "name": "Kênh Youtobe , TikTok",
-    "order": 10
-  },
-  {
-    "id": "6f71c1a1-691f-4c43-bb35-a913de808f40",
-    "slug": "mobi-army-2-pc-laptop",
-    "name": "Mobi Army 2 - PC , LapTop",
     "order": 11
   }
 ]
