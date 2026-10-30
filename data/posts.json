@@ -1,5 +1,61 @@
 [
   {
+    "id": "93564897-10fc-449e-9819-65d4d162a07a",
+    "slug": "army2-245-full-can-goc-nv-ho-tro-cac-dong-android-full-chuc-nang",
+    "title": "Army2 245 Full Căn Góc NV Hỗ Trợ Các Dòng Android Full Chức Năng",
+    "category_id": "7f7420e9-ebbd-42e2-86d0-acbc6a9e9877",
+    "game": "Army 245",
+    "download_type": "link",
+    "download_url": "https://github.com/BUIDUYANH02/MobiArmy245/releases/download/Mobiarmy2/Army245.apk",
+    "download_file_name": "",
+    "download_file_size": 0,
+    "download_file_path": "",
+    "download_drive_id": "",
+    "download_mime": "",
+    "created_at": "2026-10-26T15:28:52.066Z",
+    "updated_at": "2026-10-30T17:42:56.406Z",
+    "icon": "mobiarmy",
+    "download_storage": "",
+    "download_external_url": "",
+    "download_release_asset_id": "",
+    "images": [
+      {
+        "file": "01.jpg",
+        "driveId": "1II6sA-ob1AZOAbPIHzD90uDdyVvStnoL"
+      },
+      {
+        "file": "03.jpg",
+        "driveId": "1CGBLUcXVXgJOEvFLQL76ZxZQ5nD-CSdK"
+      },
+      {
+        "driveId": "1TCVWCa9923KOHxaIJyOfZLT8Wlw6WuA2",
+        "file": "05.jpg"
+      },
+      {
+        "driveId": "1kAvvMoj48GWwOfkCHzRBE2Y_cBMvHw13",
+        "file": "07.jpg"
+      },
+      {
+        "driveId": "1OC-IzYCE5srUbGFtP-cti4gwYDxFF4dV",
+        "file": "09.jpg"
+      },
+      {
+        "driveId": "1rMh5j7twwSupACMWFVYNNLw-C1TjHF7O",
+        "file": "11.png"
+      },
+      {
+        "driveId": "1ONrpZOnc8G80MNjq9GzegOg7xWvDNaOc",
+        "file": "13.jpg"
+      },
+      {
+        "driveId": "1CD6ZG1yYRGbG744UlZFXGC-IMfEdwpmE",
+        "file": "08.png"
+      }
+    ],
+    "contentFiles": [],
+    "extraFiles": []
+  },
+  {
     "id": "24f56b90-e9d4-41c0-981c-b98548308f7a",
     "slug": "up-date-cac-pb-army-2-245-andoird-pc",
     "title": "Up Date Các Pb Army 2 245 , Andoird , Pc Mới Nhất",
@@ -22,58 +78,6 @@
       {
         "file": "01.jpg",
         "driveId": "1FBzy4yLHGfGD-Ckh8rhUGhy8VlezTOp_"
-      }
-    ],
-    "contentFiles": [],
-    "extraFiles": []
-  },
-  {
-    "id": "93564897-10fc-449e-9819-65d4d162a07a",
-    "slug": "army2-245-full-can-goc-nv-ho-tro-cac-dong-android-full-chuc-nang",
-    "title": "Army2 245 Full Căn Góc NV Hỗ Trợ Các Dòng Android Full Chức Năng",
-    "category_id": "7f7420e9-ebbd-42e2-86d0-acbc6a9e9877",
-    "game": "Army 245",
-    "download_type": "link",
-    "download_url": "https://github.com/BUIDUYANH02/MobiArmy245/releases/download/Mobiarmy2/Army245.apk",
-    "download_file_name": "",
-    "download_file_size": 0,
-    "download_file_path": "",
-    "download_drive_id": "",
-    "download_mime": "",
-    "created_at": "2026-10-26T15:28:52.066Z",
-    "updated_at": "2026-10-27T14:55:13.871Z",
-    "icon": "mobiarmy",
-    "download_storage": "",
-    "download_external_url": "",
-    "download_release_asset_id": "",
-    "images": [
-      {
-        "file": "01.jpg",
-        "driveId": "1II6sA-ob1AZOAbPIHzD90uDdyVvStnoL"
-      },
-      {
-        "file": "03.jpg",
-        "driveId": "1CGBLUcXVXgJOEvFLQL76ZxZQ5nD-CSdK"
-      },
-      {
-        "file": "05.jpg",
-        "driveId": "1TCVWCa9923KOHxaIJyOfZLT8Wlw6WuA2"
-      },
-      {
-        "file": "07.jpg",
-        "driveId": "1kAvvMoj48GWwOfkCHzRBE2Y_cBMvHw13"
-      },
-      {
-        "file": "09.jpg",
-        "driveId": "1OC-IzYCE5srUbGFtP-cti4gwYDxFF4dV"
-      },
-      {
-        "driveId": "1rMh5j7twwSupACMWFVYNNLw-C1TjHF7O",
-        "file": "11.png"
-      },
-      {
-        "file": "13.jpg",
-        "driveId": "1ONrpZOnc8G80MNjq9GzegOg7xWvDNaOc"
       }
     ],
     "contentFiles": [],
